@@ -1,0 +1,61 @@
+@import "./config";
+.submit {
+  background: $primary-color;
+  color: #fff;
+  padding: 1.5em;
+  a{
+    text-decoration: none;
+  }
+}
+
+.heading {
+  display: flex;
+  flex-flow: column;
+  img {
+    margin: 0 auto 1em;
+  }
+  p {
+    margin: 0;
+    // margin-left: 1em;
+  }
+}
+
+.btn {
+  margin-top: 2em;
+  border: 2px solid #fff;
+  padding: 1em;
+  background: none;
+  color: #fff;
+  border-radius: 3px;
+  display: block;
+  font-size: 0.8rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all .3s ease-out;
+  &:hover{
+    color: $primary-color;
+    background-color: #fff;
+    
+  }
+}
+
+@media (min-width: 500px) {
+  .submit {
+    padding: 2.5em;
+  }
+  .heading {
+    flex-flow: unset;
+    align-items: flex-start;
+    img {
+      margin: 0;
+    }
+    p {
+      margin-left: 1em;
+    }
+  }
+  .btn {
+    padding: 1em 3em;
+    display: inline-block;
+    margin-left: calc(30px + 1em);
+  }
+}

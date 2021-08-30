@@ -1,0 +1,78 @@
+// Typography
+@font-face {
+  font-family: "J&J CircularTT Bold Web";
+  src: url("/fonts/J&J CircularTT-Bold.eot");
+  src: url("/fonts/J&J CircularTT-Bold.woff2") format("woff2"),
+    url("/fonts/J&J CircularTT-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "J&J CircularTT sBold Italic Web";
+  src: url("/fonts/J&J CircularTT-BoldItalic.eot");
+  src: url("/fonts/J&J CircularTT-BoldItalic.woff2") format("woff2"),
+    url("/fonts/J&J CircularTT-BoldItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "J&J CircularTT Book Web";
+  src: url("/fonts/J&J CircularTT-Book.eot");
+  src: url("/fonts/J&J CircularTT-Book.woff2") format("woff2"),
+    url("/fonts/J&J CircularTT-Book.woff") format("woff");
+}
+
+@font-face {
+  font-family: "J&J CircularTT Book Italic Web";
+  src: url("/fonts/J&J CircularTT-BookItalic.eot");
+  src: url("/fonts/J&J CircularTT-BookItalic.woff2") format("woff2"),
+    url("/fonts/J&J CircularTT-BookItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "J&J CircularTT Light Web";
+  src: url("/fonts/J&J CircularTT-Light.eot");
+  src: url("/fonts/J&J CircularTT-Light.woff2") format("woff2"),
+    url("/fonts/J&J CircularTT-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "J&J CircularTT Light Italic Web";
+  src: url("/fonts/J&J CircularTT-LightItalic.eot");
+  src: url("/fonts/J&J CircularTT-LightItalic.woff2") format("woff2"),
+    url("/fonts/J&J CircularTT-LightItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "J&J CircularTT Medium Web";
+  src: url("/fonts/J&J CircularTT-Medium.eot");
+  src: url("/fonts/J&J CircularTT-Medium.woff2") format("woff2"),
+    url("/fonts/J&J CircularTT-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "J&J CircularTT Medium Italic Web";
+  src: url("/fonts/J&J CircularTT-MediumItalic.eot");
+  src: url("/fonts/J&J CircularTT-MediumItalic.woff2") format("woff2"),
+    url("/fonts/J&J CircularTT-MediumItalic.woff") format("woff");
+}
+
+// Variables
+$font-bold: "J&J CircularTT Bold Web", sans-serif;
+$font-bold-italic: "J&J CircularTT sBold Italic Web", sans-serif;
+$font-book: "J&J CircularTT Book Web";
+$font-book-italic: "J&J CircularTT Book Italic Web";
+$font-light: "J&J CircularTT Light Web", sans-serif;
+$font-light-italic: "J&J CircularTT Light Italic Web", sans-serif;
+$font-medium: "J&J CircularTT Medium Web", sans-serif;
+$font-medium-italic: "J&J CircularTT Medium Italic Web", sans-serif;
+
+$primary-color: #da0025;
+$secondary-color: #0800a0;
+$accent-color: #db00a6;
+$copy-color: #212121;
+$light-color: #f4f4f4;
+$nav-color: #3b3b3b;
+
+// Mixins
+@mixin easeOut {
+  transition: all 0.3s ease-out;
+}

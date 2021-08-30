@@ -1,0 +1,64 @@
+@import "./config";
+
+.title{
+  font-size: 1.3rem;
+}
+.timeline {
+  position: relative;
+  max-width: 700px;
+  margin: 2em 0;
+  color: $copy-color;
+  z-index: 1;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: $copy-color;
+  }
+  .container {
+    padding: 2em;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 1em;
+      height: 1em;
+      border-radius: 50%;
+      background: $secondary-color;
+      top: 2em;
+      left: -7.5px;
+      z-index: 2;
+    }
+  }
+  span {
+    font-family: $font-bold;
+  }
+  .callout {
+    margin-top: 1em;
+    padding: 2em;
+    p {
+      margin: 0;
+    }
+
+    &-icon {
+      margin-top: 1em;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      img {
+        margin-right: 1em;
+      }
+    }
+  }
+  .gray {
+    background: $light-color;
+  }
+  .blue {
+    color: #fff;
+    padding: 2em 2em 1em;
+    background: $secondary-color;
+  }
+}
