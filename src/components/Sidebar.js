@@ -26,13 +26,13 @@ export default function Sidebar() {
             <Link to="#" className="btn btn-red">
               {intl.formatMessage({ id: "header.red_button" })}
             </Link>
-            <Link
+            <a
               to="https://www.surveymonkey.com/r/jjpension"
               target="_blank"
               className="btn btn-outline"
             >
               {intl.formatMessage({ id: "header.outline_button" })}
-            </Link>
+            </a>
           </div>
         </div>
 

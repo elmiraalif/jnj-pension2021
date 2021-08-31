@@ -72,13 +72,13 @@ export default function Home() {
                 <FormattedMessage id="home.callout_p1" />
               </p>
               <p>
-                <Link to="https://jnj.hroffice.com/" target="_blank">
+                <a to="https://jnj.hroffice.com/" target="_blank">
                   <FormattedMessage id="fyi_portal" />
                   <span class="link-icon">
                     &nbsp;
                     <FontAwesomeIcon icon={faExternalLinkAlt} />
                   </span>
-                </Link>{" "}
+                </a>{" "}
                 <FormattedMessage id="home.callout_p2" />
               </p>
             </div>

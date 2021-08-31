@@ -69,20 +69,6 @@ export default function Timeline() {
         <p>
           <FormattedMessage id="timeline.november_p" />
         </p>
-        {/* <div className={`${styles.callout} ${styles.gray}`}>
-          <p>
-            <span>
-              <FormattedMessage id="important" />:
-            </span>
-            <FormattedMessage id="timeline.november_callout1_p" />
-          </p>
-          <div className={styles.calloutIcon}>
-            <img src={Icon} alt="" width="30" />
-            <Link to="#">
-              <FormattedMessage id="timeline.november_callout_icon" />
-            </Link>
-          </div>
-        </div> */}
         <div className={styles.blue}>
           <h3>
             <FormattedMessage id="timeline.november_callout_title" />

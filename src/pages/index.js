@@ -28,9 +28,9 @@ export default function Home() {
             <Link to="/whats-changing" className={btn}>
               Explore the Pension & Savings Program
             </Link>
-            <Link to="http://jnjbenefitsguide.ca/" className={btn}>
+            <a to="http://jnjbenefitsguide.ca/" className={btn}>
               Explore the Benefits Plan
-            </Link>
+            </a>
           </div>
           <Language />
         </div>
