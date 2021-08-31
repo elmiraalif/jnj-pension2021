@@ -16,7 +16,7 @@ export default function Page02() {
   return (
     <Layout>
       <Helmet>
-        <title>{intl.formatMessage({ id: "page02.title" })}</title>
+        <title>{intl.formatMessage({ id: "page2.title" })}</title>
       </Helmet>
       <StaticImage src="../images/banner02.jpg" alt="Banner" />
       <div id="page02">
@@ -24,29 +24,31 @@ export default function Page02() {
           <h1
             className="space-top-x"
             dangerouslySetInnerHTML={{
-              __html: intl.formatMessage({ id: "page02.h1" }),
+              __html: intl.formatMessage({ id: "page2.copy1.title" }),
             }}
           />
           <p className="intro-copy">
-            <FormattedMessage id="page02.p1" />
+            <FormattedMessage id="page2.copy1.p1" />
           </p>
           <p>
-            <FormattedMessage id="page02.p1_black" />
+            <FormattedMessage id="page2.copy1.p2" />
           </p>
           <div className="space-top-x">&nbsp;</div>
           <iframe
             width="100%"
             height="365"
-            src="https://player.vimeo.com/video/386002177?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;h=dbf0ff0bad"
-            title="Our new Pension & Savings Program"
+            src={intl.formatMessage({ id: "page2.video.src" })}
+            title={intl.formatMessage({ id: "page2.video.title" })}
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
           <div className="space-bottom-2x">&nbsp;</div>
           <p>
-            The program includes these{" "}
-            <span className="bold">key components:</span>
+            <FormattedMessage id="page2.copy2.p" />{" "}
+            <span className="bold">
+              <FormattedMessage id="page2.copy2.bold" />
+            </span>
           </p>
           <Accordion
             title={intl.formatMessage({ id: "core_component" })}
@@ -54,12 +56,11 @@ export default function Page02() {
             color={secondary}
             border={secondary}
           >
-            <div className="acc-box secondary">Core DB</div>
+            <div className="acc-box secondary">
+              <FormattedMessage id="core_db" />
+            </div>
             <p className="space-2x">
-              Pays an annual pension for as long as you live — 0.50% of your
-              final average earnings (FAE) multiplied by your credited service
-              earned. All contributions fully funded by Johnson & Johnson on
-              your behalf; you do not make any contributions.
+              <FormattedMessage id="page2.accordion1" />
             </p>
           </Accordion>
           <Accordion
@@ -68,118 +69,106 @@ export default function Page02() {
             color={secondary}
             border={secondary}
           >
-            <div className="acc-box primary">DB Option</div>
+            <div className="acc-box primary">
+              <FormattedMessage id="db_option" />
+            </div>
             <div className="wrapper-center">
-              <Accordion title="Optional DB" icon={Icon} color={accent}>
+              <Accordion
+                title={intl.formatMessage({ id: "optional_db" })}
+                icon={Icon}
+                color={accent}
+              >
                 <p>
-                  Pays an annual pension for as long as you live, on top of the
-                  core DB component – 0.70% of your final average earnings (FAE)
-                  multiplied by your credited service earned. Contributions are
-                  pre-tax (meaning you only pay tax when you start receiving a
-                  monthly pension).
+                  <FormattedMessage id="page2.accordion2" />
                 </p>
               </Accordion>
             </div>
-            <div className="acc-box accent">Non-DB Options</div>
+            <div className="acc-box accent">
+              <FormattedMessage id="non_db_options" />
+            </div>
             <div className="wrapper-center">
               <Accordion
                 icon={Icon}
                 color={accent}
                 border={secondary}
-                title="Defined Contribution (DC)"
+                title={intl.formatMessage({ id: "dc" })}
               >
                 <p>
-                  When you retire, you will receive an account balance that you
-                  can use to boost your retirement income. The account balance
-                  is based on contributions and investment earnings. You choose
-                  how much to withdraw each year (within set minimum/maximum
-                  limits). Contributions are pre-tax (you only pay tax when you
-                  withdraw the money).
+                  <FormattedMessage id="page2.accordion3" />
                 </p>
               </Accordion>
               <Accordion
                 border={secondary}
                 icon={Icon}
                 color={accent}
-                title="Registered Retirement Savings Plan (RRSP)"
+                title={intl.formatMessage({ id: "rrsp" })}
                 border={secondary}
               >
                 <p>
-                  You will receive an account balance that you can use to boost
-                  your retirement income. The account balance is based on
-                  contributions and investment earnings. You can also use the
-                  RRSP for the{" "}
+                  <FormattedMessage id="page2.accordion4.p1" />{" "}
                   <a
-                    href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/what-home-buyers-plan.html"
+                    href={intl.formatMessage({ id: "home_buyers_href" })}
                     target="_blank"
                   >
-                    Homebuyers’ Plan
+                    <FormattedMessage id="home_buyers" />
                     <span className="link-icon">
                       &nbsp;
                       <FontAwesomeIcon icon={faExternalLinkAlt} />
                     </span>
                   </a>{" "}
-                  and the{" "}
+                  <FormattedMessage id="page2.accordion4.p2" />{" "}
                   <a
-                    href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/lifelong-learning-plan.html"
+                    href={intl.formatMessage({ id: "lifelong_learning_href" })}
                     target="_blank"
                   >
-                    Lifelong Learning Plan
+                    <FormattedMessage id="lifelong_learning" />
                     <span className="link-icon">
                       &nbsp;
                       <FontAwesomeIcon icon={faExternalLinkAlt} />
                     </span>
                   </a>{" "}
-                  before you retire. Contributions are pre-tax (you only pay tax
-                  when you withdraw the money).
+                  <FormattedMessage id="page2.accordion4.p3" />
                 </p>
               </Accordion>
               <Accordion
                 border={secondary}
                 icon={Icon}
                 color={accent}
-                title="Optional Ancillary Contributions (OAC)"
+                title={intl.formatMessage({ id: "oac" })}
               >
                 <p>
-                  You can use your OAC account to purchase additional DB
-                  benefits (i.e., to increase your monthly pension or improve
-                  benefits to your spouse/beneficiary), up to the{" "}
-                  <a href="https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html" target="_blank">
-                    CRA maximum
+                  <FormattedMessage id="page2.accordion5.p1" />{" "}
+                  <a
+                    href={intl.formatMessage({ id: "cra_maximum_href" })}
+                    target="_blank"
+                  >
+                    <FormattedMessage id="cra_maximum" />
                     <span className="link-icon">
                       &nbsp;
                       <FontAwesomeIcon icon={faExternalLinkAlt} />
                     </span>
-                  </a>. The unused balance of your OAC account will be paid in cash
-                  (less tax deductions). Contributions to your OAC account are
-                  pre-tax and they don’t reduce your RRSP contribution room.
+                  </a>
+                  <FormattedMessage id="page2.accordion5.p2" />
                 </p>
               </Accordion>
               <Accordion
                 border={secondary}
                 icon={Icon}
                 color={accent}
-                title="Tax-Free Savings Account (TFSA)"
+                title={intl.formatMessage({ id: "tfsa" })}
               >
                 <p>
-                  You will receive an account balance that is based on
-                  contributions and investment earnings. Contributions are
-                  after-tax, but your investments can grow tax-free. You can
-                  withdraw money from your TFSA whenever you need it.
+                  <FormattedMessage id="page2.accordion6" />
                 </p>
               </Accordion>
               <Accordion
                 border={secondary}
                 icon={Icon}
                 color={accent}
-                title="Non-registered"
+                title={intl.formatMessage({ id: "non_registered" })}
               >
                 <p>
-                  Contributions are after-tax, and there’s no limit to how much
-                  you can contribute. However, you will need to pay tax on any
-                  investment earnings (capital gains and dividends). You can
-                  withdraw money from your Non-registered account whenever you
-                  need it.
+                  <FormattedMessage id="page2.accordion7" />
                 </p>
               </Accordion>
             </div>

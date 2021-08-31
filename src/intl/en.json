@@ -3,6 +3,21 @@
   "note": "Note",
   "fyb_portal": "FYB Portal",
   "core_component": "Core component (all eligible employees participate):",
+  "core_db": "Core DB",
+  "db_option": "DB Option",
+  "optional_db": "Optional DB",
+  "non_db_options": "Non-DB Options",
+  "dc": "Defined Contribution (DC)",
+  "rrsp": "Registered Retirement Savings Plan (RRSP)",
+  "oac": "Optional Ancillary Contributions (OAC)",
+  "tfsa": "Tax-Free Savings Account (TFSA)",
+  "non_registered": "Non-registered",
+  "home_buyers": "Homebuyers’ Plan",
+  "home_buyers_href": "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/what-home-buyers-plan.html",
+  "lifelong_learning": "Lifelong Learning Plan",
+  "lifelong_learning_href": "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/lifelong-learning-plan.html",
+  "cra_maximum": "CRA maximum",
+  "cra_maximum_href": "https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html",
   "optional_components": "Optional components:",
   "header": {
     "red_button": "See the Benefits Plan guide",
@@ -80,15 +95,36 @@
         "callout": "All changes are applied prospectively and do not impact any benefits already earned prior to January 1, 2022."
       },
       "twice_copy": "As before, going forward you can join or change your participation in the optional DB and DC plans twice a year (in January and July). You can modify your investment allocations and contributions to the RRSP, OAC, TFSA and Non-registered at any time. All changes are applied prospectively and do not impact benefits already earned."
-    },
-
-    "page02": {
-      "title": "Pension & Savings Program",
-      "h1": "How the <span>Pension & Savings Program</span> works",
+    }
+  },
+  "page2": {
+    "title": "Pension & Savings Program",
+    "copy1": {
+      "title": "How the <span>Pension & Savings Program</span> works",
       "p1": "The Pension & Savings Program supports your financial wellness and savings goals — whether you’re focused on increasing your retirement income or saving for the shorter-term.",
-      "p1_black": "For a quick program overview, watch this video!",
-      "p2_black": "The program includes these key components:"
+      "p2": "For a quick program overview, watch this video!"
     },
-    "about": "About Page"
+    "video": {
+      "src": "https://player.vimeo.com/video/386002177?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;h=dbf0ff0bad",
+      "title": "Our new Pension & Savings Program"
+    },
+    "copy2": {
+      "p": "The program includes these",
+      "bold": "key components:"
+    },
+    "accordion1": "Pays an annual pension for as long as you live — 0.50% of your final average earnings (FAE) multiplied by your credited service earned. All contributions fully funded by Johnson & Johnson on your behalf; you do not make any contributions.",
+    "accordion2": "Pays an annual pension for as long as you live, on top of the core DB component — 0.70% of your final average earnings (FAE) multiplied by your credited service earned. Contributions are pre-tax (meaning you only pay tax when you start receiving a monthly pension).",
+    "accordion3": "When you retire, you will receive an account balance that you can use to boost your retirement income. The account balance is based on contributions and investment earnings. You choose how much to withdraw each year (within set minimum/maximum limits). Contributions are pre-tax (you only pay tax when you withdraw the money).",
+    "accordion4": {
+      "p1": "You will receive an account balance that you can use to boost your retirement income. The account balance is based on contributions and investment earnings. You can also use the RRSP for the",
+      "p2": "and the",
+      "p3": "before you retire. Contributions are pre-tax (you only pay tax when you withdraw the money)."
+    },
+    "accordion5": {
+      "p1": "You can use your OAC account to purchase additional DB benefits (i.e., to increase your monthly pension or improve benefits to your spouse/beneficiary), up to the ",
+      "p2": ". The unused balance of your OAC account will be paid in cash (less tax deductions). Contributions to your OAC account are pre-tax and they don’t reduce your RRSP contribution room."
+    },
+    "accordion6": "You will receive an account balance that is based on contributions and investment earnings. Contributions are after-tax, but your investments can grow tax-free. You can withdraw money from your TFSA whenever you need it.",
+    "accordion7": "Contributions are after-tax, and there’s no limit to how much you can contribute. However, you will need to pay tax on any investment earnings (capital gains and dividends). You can withdraw money from your Non-registered account whenever you need it."
   }
 }
