@@ -1,4 +1,15 @@
 {
-  "title": "le guide des retraites",
-  "about": "A propos!"
+  "title": "",
+  "about": "A propos!",
+  "nav": {
+    "item1": "Ce qui change",
+    "item2": "Programme de retraite et d’épargne",
+    "item3": "Cotisations",
+    "item4": "Choisir les bonnes options",
+    "item5": "Scénarios d’objectifs d’épargne",
+    "item6": "Comment adhérer",
+    "item7": "Gestion de votre épargne",
+    "item8": "Départ de Johnson & Johnson",
+    "item9": "Questions?"
+  }
 }
