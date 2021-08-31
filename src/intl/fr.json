@@ -1,7 +1,7 @@
 {
   "title": "Guide du retraite et d’épargne",
   "about": "A propos!",
-  "note": "Remarque",
+  "note": "Remarque ",
   "fyb_portal": "Portail À votre avantage",
   "fyb_href": "",
   "core_component": "Volet de base (tous les employés admissibles y participent):",
@@ -113,8 +113,8 @@
       "p": "Le programme comprend ces ",
       "bold": "principaux volets:"
     },
-    "accordion1": "Vous verse une rente annuelle pendant le reste de votre vie — 0.50% de votre salaire moyen de fin de carrière multiplié par vos années de service reconnu. Toutes les cotisations sont entièrement financées par Johnson & Johnson en votre nom; vous ne cotisez pas à ce régime.",
-    "accordion2": "Vous verse une rente annuelle pendant le reste de votre vie — 0.70% de votre salaire moyen de fin de carrière multiplié par vos années de service reconnu, en plus du régime PD de base. Les cotisations sont versées avant impôt (ce qui signifie que vous ne payez l’impôt que lorsque vous commencez à recevoir une rente mensuelle).",
+    "accordion1": "Vous verse une rente annuelle pendant le reste de votre vie — 0.50 % de votre salaire moyen de fin de carrière multiplié par vos années de service reconnu. Toutes les cotisations sont entièrement financées par Johnson & Johnson en votre nom; vous ne cotisez pas à ce régime.",
+    "accordion2": "Vous verse une rente annuelle pendant le reste de votre vie — 0.70 % de votre salaire moyen de fin de carrière multiplié par vos années de service reconnu, en plus du régime PD de base. Les cotisations sont versées avant impôt (ce qui signifie que vous ne payez l’impôt que lorsque vous commencez à recevoir une rente mensuelle).",
     "accordion3": "À votre retraite, vous recevrez le solde de votre compte que vous pourrez utiliser pour augmenter votre revenu de retraite. Le solde de votre compte est fonction des cotisations et des revenus de placement. Vous décidez du montant à retirer chaque année (sous réserve des minimums et des maximums établis). Les cotisations sont versées avant impôt (vous ne payez l’impôt que lorsque vous retirez votre argent).",
     "accordion4": {
       "p1": "Vous recevrez le solde de votre compte que vous pourrez utiliser pour augmenter votre revenu de retraite. Le solde de votre compte est fonction des cotisations et des revenus de placement. Avant votre retraite, vous pouvez aussi utiliser le REER pour le",
@@ -127,5 +127,56 @@
     },
     "accordion6": "Vous recevrez le solde de votre compte qui est fonction des cotisations et des revenus de placement. Les cotisations sont nettes d’impôt, mais vos placements peuvent croître à l’abri de l’impôt. Vous pouvez retirer de l’argent de votre CELI quand vous en avez besoin",
     "accordion7": "Les cotisations sont nettes d’impôt et il n’y a pas de limite au montant que vous pouvez cotiser. Toutefois, vous devrez payer l’impôt sur les revenus de placement (gains en capital et dividendes). Vous pouvez retirer de l’argent de votre compte non enregistré quand vous en avez besoin"
+  },
+  "page3": {
+    "title": "Cotisations",
+    "db": "PD",
+    "non_db": "Non-PD (facultatif)",
+    "your_contribution": "Vos <br /> cotisations",
+    "jj_contribution": "Cotisations de <br/> Johnson & Johnson",
+    "core_db": {
+      "left": "S/O",
+      "right": "Les cotisations de Johnson & Johnson sont déterminées sur la base d’une évaluation actuarielle"
+    },
+    "optional_db": {
+      "left": "2.25 % des gains",
+      "right": "Les cotisations de Johnson & Johnson sont déterminées sur la base d’une évaluation actuarielle"
+    },
+    "match_100": "Contrepartie de 100 %:",
+    "match_50": "Contrepartie de 50 %",
+    "dc": {
+      "dc": "CD",
+      "left1": "Jusqu’à 1.75 % si vous participez au volet PD facultatif",
+      "left2": "Jusqu’à 4 % si vous <span>ne participez pas</span> au volet PD facultatif",
+      "right1": "Jusqu’à 1.75 % si vous participez au volet PD facultatif",
+      "right2": "Jusqu’à 4 % si vous <span>ne participez pas</span> au volet PD facultatif"
+    },
+    "rrsp": {
+      "rrsp": "REER, CAO",
+      "left1": "Vous pouvez cotiser autant que vous le souhaitez, jusqu’à concurrence du ",
+      "left2": "(notez que les cotisations que Johnson & Johnson verse dans votre REER réduisent vos droits de cotisation à un REER personnel)",
+      "right1": "Jusqu’à 1.75 % si vous participez au volet PD facultatif",
+      "right2": "Jusqu’à 4 % si vous <span>ne participez pas</span> au volet PD facultatif",
+      "callout": "les CAO de contrepartie sont versées dans le régime non enregistré, mais vous pouvez les rediriger vers votre REER ou votre CELI."
+    },
+    "tfsa": {
+      "tfsa": "CELI, non enregistré",
+      "left1": "Vous pouvez cotiser autant que vous le souhaitez, jusqu’à concurrence du ",
+      "left2": "(notez que les cotisations de Johnson & Johnson réduisent les droits de cotisation à un CELI; aucune limite pour les régimes non enregistrés)",
+      "right1": "Jusqu’à 1.75 % si vous participez au volet PD facultatif (contrepartie max. de 0.875 %)",
+      "right2": "Jusqu’à 4 % si vous <span>ne participez pas</span> au volet PD facultatif (contrepartie max. de 2 %)"
+    },
+    "sub": "*SMFC : salaire moyen de fin de carrière",
+    "callout1": {
+      "title": "Combinaisons des cotisations",
+      "p1": "La Société verse des cotisations équivalentes à vos cotisations aux volets non-PD jusqu’à concurrence de 1.75 % si le volet facultatif PD est sélectionné, ou jusqu’à concurrence de 4 % si le volet facultatif PD n’est pas sélectionné. Vous pouvez cotiser ",
+      "bold": "plus",
+      "p2": "afin d’atteindre vos objectifs d’épargne.",
+      "p3": "Par exemple, si vous cotisez 4 % au REER et 4 % au CELI, la Société versera des cotisations de contrepartie égales à 100 % de vos cotisations de 4 % au REER. La Société ne cotisera pas à votre CELI, mais vous bénéficierez d’une épargne et de frais de gestion des placements peu élevés. C’est à vous de choisir!"
+    },
+    "callout2": {
+      "title": "Pourquoi la cotisation de contrepartie maximale de la Société est-elle différente pour chaque volet facultatif?",
+      "p": "Le montant maximal global que Johnson & Johnson peut verser à un participant pour les options non-PD est de 1.75 % si le volet PD facultatif est choisi ou de 4 % si le volet PD facultatif n’est pas choisi. Le montant de la cotisation de Johnson & Johnson dépend aussi des options non-PD que vous choisissez (CD, REER, CAO, CELI ou régime non enregistré), comme l’indique le tableau ci-dessus. Les cotisations de contrepartie sont plus élevées pour les volets CD, REER et CAO, car la Société veut vous encourager à épargner pour le long terme."
+    }
   }
 }

@@ -126,5 +126,57 @@
     },
     "accordion6": "You will receive an account balance that is based on contributions and investment earnings. Contributions are after-tax, but your investments can grow tax-free. You can withdraw money from your TFSA whenever you need it.",
     "accordion7": "Contributions are after-tax, and there’s no limit to how much you can contribute. However, you will need to pay tax on any investment earnings (capital gains and dividends). You can withdraw money from your Non-registered account whenever you need it."
+  },
+  "page3": {
+    "title": "Contributions",
+    "db": "DB",
+    "non_db": "Non-DB (Optional)",
+    "your_contribution": "Your <br /> Contribution",
+    "jj_contribution": "Johnson & Johnson <br /> Contributions",
+    "core_db": {
+      "left": "N/A",
+      "right": "Johnson & Johnson contributions are determined based on an actuarial valuation"
+    },
+    "optional_db": {
+      "left": "2.25% of earnings",
+      "right": "Johnson & Johnson contributions are determined based on an actuarial valuation"
+    },
+    "match_100": "100% match:",
+    "match_50": "50% match:",
+    "dc": {
+      "dc": "DC",
+      "left1": "Up to 1.75% if you participate in the Optional DB",
+      "left2": "Up to 4% if you do <span>not</span> participate in the Optional DB",
+      "right1": "Up to <span>1.75%</span> if you participate in the Optional DB",
+      "right2": "Up to <span>4%</span> if you do <span> not</span> participate in the Optional DB"
+    },
+    "rrsp": {
+      "rrsp": "RRSP, OAC",
+      "left1": "You can contribute as much as you wish, up to the",
+      "left2": "(note that Johnson & Johnson contributions to your RRSP reduce the RRSP room you will have available)",
+      "right1": "Up to <span>1.75%</span> if you participate in the Optional DB",
+      "right2": "Up to <span>4%</span> if you do <span>not</span> participate in the Optional DB",
+      "callout": " OAC matching contributions are paid into the Non-registered plan, but you can redirect them to your RRSP or TFSA"
+    },
+    "tfsa": {
+      "tfsa": "TFSA, Non-registered",
+      "left1": "You can contribute as much as you wish, up to the",
+      "left2": "(note that Johnson & Johnson contributions reduce the room you will have available for TFSA; no limit for Non-registered)",
+      "right1": "Up to <span>1.75%</span> if you participate in the Optional DB (max. 0.875% match)",
+      "right2": "Up to <span>4%</span> if you do <span>not</span> participate in the Optional DB (max. 2% match)"
+    },
+    "sub": "*FAE: Final average earnings",
+    "callout1": {
+      "title": "Mixing and matching contributions",
+      "p1": "The Company matches your contributions to the Non-DB options up to 1.75% if Optional DB is selected, or up to 4% if Optional DB is not selected. You can also choose to contribute",
+      "bold": "more",
+      "p2": "to meet your savings goals.",
+      "p3": "<span class=\"bold\">Example</span>: you could contribute 4% to the RRSP, and an additional 4% to the TFSA. The Company will match your 4% RRSP contribution at 100%. There will be no Company match on your TFSA contributions, but you’ll benefit from additional savings and low investment management fees. The choice is yours!"
+    },
+    "callout2":{
+      "title": "Why is the maximum Company match different for each optional component?",
+      "p": "The aggregate maximum amount that a member can have matched by Johnson & Johnson for Non-DB options is either 1.75% if Optional DB is selected or 4% if Optional DB is not selected. How much Johnson & Johnson matches also depends on your selection of Non-DB options (i.e., DC, RRSP, OAC, TFSA or Non-registered) — as shown in the table above. The Company match is higher for DC, RRSP and OAC since the Company wants to encourage you to save for the long-term."
+    }
+
   }
 }

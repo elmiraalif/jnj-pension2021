@@ -16,7 +16,9 @@ export default function Page03() {
   return (
     <Layout>
       <Helmet>
-        <title>Contributions</title>
+        <title>
+          {intl.formatMessage({id: "page3.title"})}
+        </title>
       </Helmet>
       <StaticImage src="../images/banner03.jpg" alt="Banner" />
       <div id="page03">
@@ -27,170 +29,218 @@ export default function Page03() {
 
           <div className="heading-icon space-2x">
             <img src={"/icons/one-red.svg"} alt="One" width="30" />
-            <h3>DB</h3>
+            <h3>
+              <FormattedMessage id="page3.db" />
+            </h3>
           </div>
-          <Table title="Core DB" color={secondary}>
+          <Table
+            title={intl.formatMessage({ id: "core_db" })}
+            color={secondary}
+          >
             <div className="subtitle">
               <img src={"/icons/icon_dollar.svg"} alt="" width="35" />
-              <h4>
-                Your <br /> Contribution
-              </h4>
+              <h4
+                dangerouslySetInnerHTML={{
+                  __html: intl.formatMessage({ id: "page3.your_contribution" }),
+                }}
+              />
             </div>
             <div className="subtitle">
               <img src={"/icons/icon_pig.svg"} alt="" width="35" />
-              <h4>
-                Johnson & Johnson <br /> Contribution
-              </h4>
+              <h4
+                dangerouslySetInnerHTML={{
+                  __html: intl.formatMessage({ id: "page3.jj_contribution" }),
+                }}
+              />
             </div>
 
-            <div className="cell">N/A</div>
+            <div className="cell">
+              <FormattedMessage id="page3.core_db.left" />
+            </div>
 
             <div className="cell">
-              Johnson & Johnson contributions are determined based on an
-              actuarial valuation
+              <FormattedMessage id="page3.core_db.right" />
             </div>
           </Table>
-          <Table title="Optional DB" color={primary}>
-            <div className="cell">2.25% of earnings</div>
+          <Table
+            title={intl.formatMessage({ id: "optional_db" })}
+            color={primary}
+          >
             <div className="cell">
-              Johnson & Johnson contributions are determined based on an
-              actuarial valuation
+              <FormattedMessage id="page3.optional_db.left" />
+            </div>
+            <div className="cell">
+              <FormattedMessage id="page3.optional_db.right" />
             </div>
           </Table>
           <div className="divider"></div>
           <div className="heading-icon space-2x">
             <img src={"/icons/two-red.svg"} alt="Two" width="30" />
-            <h3>Non-DB (Optional)</h3>
+            <h3>
+              <FormattedMessage id="page3.non_db" />
+            </h3>
           </div>
-          <Table title="DC" color={accent}>
+          <Table
+            title={intl.formatMessage({ id: "page3.dc.dc" })}
+            color={accent}
+          >
             <div className="subtitle">
               <img src={"/icons/icon_dollar.svg"} alt="" width="35" />
-              <h4>
-                Your <br /> Contributions
-              </h4>
+              <h4
+                dangerouslySetInnerHTML={{
+                  __html: intl.formatMessage({ id: "page3.your_contribution" }),
+                }}
+              />
             </div>
             <div className="subtitle">
               <img src={"/icons/icon_pig.svg"} alt="" width="35" />
-              <h4>
-                Johnson & Johnson <br /> Contributions
-              </h4>
+              <h4
+                dangerouslySetInnerHTML={{
+                  __html: intl.formatMessage({ id: "page3.jj_contribution" }),
+                }}
+              />
             </div>
             <div className="cell list">
               <ul>
-                <li>Up to 1.75% if you participate in the Optional DB</li>
-                <li>
-                  Up to 4% if you do <span>not </span> participate in the
-                  Optional DB
-                </li>
+                <li
+                  dangerouslySetInnerHTML={{
+                    __html: intl.formatMessage({ id: "page3.dc.left1" }),
+                  }}
+                />
+                <li
+                  dangerouslySetInnerHTML={{
+                    __html: intl.formatMessage({ id: "page3.dc.left2" }),
+                  }}
+                />
               </ul>
             </div>
             <div className="cell list">
               <p className="match">
-                <span>100% match:</span>
+                <span>
+                  <FormattedMessage id="page3.match_100" />
+                </span>
               </p>
               <ul>
-                <li>
-                  Up to <span>1.75%</span> if you participate in the Optional DB
-                </li>
-                <li>
-                  Up to <span>4%</span> if you do <span> not</span> participate
-                  in the Optional DB
-                </li>
+                <li
+                  dangerouslySetInnerHTML={{
+                    __html: intl.formatMessage({ id: "page3.dc.right1" }),
+                  }}
+                />
+                <li
+                  dangerouslySetInnerHTML={{
+                    __html: intl.formatMessage({ id: "page3.dc.right2" }),
+                  }}
+                />
               </ul>
             </div>
           </Table>
-          <Table title="RRSP, OAC" color={accent}>
+          <Table
+            title={intl.formatMessage({ id: "page3.rrsp.rrsp" })}
+            color={accent}
+          >
             <div className="cell top">
-              You can contribute as much as you wish, up to the{" "}
+              <FormattedMessage id="page3.rrsp.left1" />{" "}
               <a
-                href="https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html"
+                href={intl.formatMessage({ id: "cra_maximum_href" })}
                 target="_blank"
               >
-                CRA maximum
+                <FormattedMessage id="cra_maximum" />
                 <span className="link-icon">
                   &nbsp;
                   <FontAwesomeIcon icon={faExternalLinkAlt} />
                 </span>
               </a>{" "}
-              (note that Johnson & Johnson contributions to your RRSP reduce the
-              RRSP room you will have available)
+              <FormattedMessage id="page3.rrsp.left2" />
             </div>
             <div className="cell list">
               <p className="match">
-                <span>100% match:</span>
+                <span>
+                  <FormattedMessage id="page3.match_100" />
+                </span>
               </p>
               <ul>
-                <li>
-                  Up to <span>1.75%</span> if you participate in the Optional DB
-                </li>
-                <li>
-                  Up to <span>4%</span> if you do <span>not</span> participate
-                  in the Optional DB
-                </li>
+                <li
+                  dangerouslySetInnerHTML={{
+                    __html: intl.formatMessage({ id: "page3.rrsp.right1" }),
+                  }}
+                />
+                <li
+                  dangerouslySetInnerHTML={{
+                    __html: intl.formatMessage({ id: "page3.rrsp.right2" }),
+                  }}
+                />
               </ul>
               <div className="callout-pointer">
-                <span>Note:</span> OAC matching contributions are paid into the
-                Non-registered plan, but you can redirect them to your RRSP or
-                TFSA
+                <span>
+                  <FormattedMessage id="note" />
+                </span>:{" "}
+                <FormattedMessage id="page3.rrsp.callout" />
               </div>
               <div className="space-bottom-x"></div>
             </div>
           </Table>
-          <Table title="TFSA, Non-registered" color={accent}>
+          <Table
+            title={intl.formatMessage({ id: "page3.tfsa.tfsa" })}
+            color={accent}
+          >
             <div className="cell top">
-              You can contribute as much as you wish, up to the{" "}
+              <FormattedMessage id="page3.tfsa.left1" />{" "}
               <a
-                href="https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html"
+                href={intl.formatMessage({ id: "cra_maximum_href" })}
                 target="_blank"
               >
-                CRA maximum
+                <FormattedMessage id="cra_maximum" />
                 <span className="link-icon">
                   &nbsp;
                   <FontAwesomeIcon icon={faExternalLinkAlt} />
                 </span>
               </a>{" "}
-              (note that Johnson & Johnson contributions reduce the room you
-              will have available for TFSA; no limit for Non-registered)
+              <FormattedMessage id="page3.tfsa.left2" />
             </div>
             <div className="cell list">
               <p className="match">
-                <span>50% match:</span>
+                <span>
+                  <FormattedMessage id="page3.match_50" />
+                </span>
               </p>
               <ul>
-                <li>
-                  Up to <span>1.75%</span> if you participate in the Optional DB
-                  (max. 0.875% match)
-                </li>
-                <li>
-                  Up to <span>4%</span> if you do <span>not</span> participate
-                  in the Optional DB (max. 2% match)
-                </li>
+                <li
+                  dangerouslySetInnerHTML={{
+                    __html: intl.formatMessage({ id: "page3.tfsa.right1" }),
+                  }}
+                />
+                <li
+                  dangerouslySetInnerHTML={{
+                    __html: intl.formatMessage({ id: "page3.tfsa.right2" }),
+                  }}
+                />
               </ul>
             </div>
           </Table>
           <span
             style={{ fontSize: ".7rem", marginTop: "1em", display: "block" }}
           >
-            *FAE: Final average earnings
+            <FormattedMessage id="page3.sub" />
           </span>
         </div>
         <div className="space-2x"></div>
         <div className="callout-gray">
           <div className="wrapper">
-            <h3 className="space-top-x">Mixing and matching contributions</h3>
+            <h3 className="space-top-x">
+              <FormattedMessage id="page3.callout1.title" />
+            </h3>
             <p>
-              The Company matches your contributions to the Non-DB options up to
-              1.75% if Optional DB is selected, or up to 4% if Optional DB is
-              not selected. You can also choose to contribute{" "}
-              <em className="bold">more</em> to meet your savings goals.
+              <FormattedMessage id="page3.callout1.p1" />{" "}
+              <em className="bold">
+                <FormattedMessage id="page3.callout1.bold" />
+              </em>{" "}
+              <FormattedMessage id="page3.callout1.p2" />
             </p>
-            <p>
-              <span className="bold">Example</span>: you could contribute 4% to
-              the RRSP, and an additional 4% to the TFSA. The Company will match
-              your 4% RRSP contribution at 100%. There will be no Company match
-              on your TFSA contributions, but you’ll benefit from additional
-              savings and low investment management fees. The choice is yours!
-            </p>
+            <p
+              dangerouslySetInnerHTML={{
+                __html: intl.formatMessage({ id: "page3.callout1.p3" }),
+              }}
+            />
           </div>
         </div>
         <div className="callout">
@@ -198,18 +248,10 @@ export default function Page03() {
             <img src={"/icons/icon_info.svg"} alt="" width="30" />
             <div>
               <h3>
-                Why is the maximum Company match different for each optional
-                component?
+                <FormattedMessage id="page3.callout2.title" />
               </h3>
               <p>
-                The aggregate maximum amount that a member can have matched by
-                Johnson & Johnson for Non-DB options is either 1.75% if Optional
-                DB is selected or 4% if Optional DB is not selected. How much
-                Johnson & Johnson matches also depends on your selection of
-                Non-DB options (i.e., DC, RRSP, OAC, TFSA or Non-registered) —
-                as shown in the table above. The Company match is higher for DC,
-                RRSP and OAC since the Company wants to encourage you to save
-                for the long-term.
+                <FormattedMessage id="page3.callout2.p" />
               </p>
             </div>
           </div>
