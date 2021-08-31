@@ -1,6 +1,18 @@
 {
-  "title": "",
+  "title": "Guide du retraite et d’épargne",
   "about": "A propos!",
+  "note": "Remarque",
+  "fyb_portal": "Portail À votre avantage",
+  "fyb_href": "",
+  "header": {
+    "red_button": "Voir le guide d’assurance collective",
+    "outline_button": "Envoyer une question"
+  },
+  "footer": {
+    "h4": "Obtenez de l’aide",
+    "p1": "Appelez le Centre d’appels des avantages sociaux",
+    "p2": "au 1 866 769-8521"
+  },
   "nav": {
     "item1": "Ce qui change",
     "item2": "Programme de retraite et d’épargne",
@@ -11,5 +23,62 @@
     "item7": "Gestion de votre épargne",
     "item8": "Départ de Johnson & Johnson",
     "item9": "Questions?"
+  },
+  "home": {
+    "copy1": {
+      "title": "Ce qui <span>change</span>",
+      "p": "Le programme de retraite et d’épargne de Johnson & Johnson est conçu pour soutenir votre mieux-être financier dans les moments importants. Le 1<sup>er</sup> janvier 2022, nous lancerons un nouveau programme qui offrira plus de flexibilité et permettra à nos employés d’équilibrer leurs objectifs d’épargne à court terme et à long terme."
+    },
+    "callout1": {
+      "p1": "L’adhésion au nouveau programme sera ",
+      "critical": "essentielle",
+      "p2": ", car vos choix actuels ne seront pas transférés au nouveau programme. Les volets facultatifs ne sont offerts que pendant la période d’adhésion. Si vous n’adhérez pas au programme, vous ne bénéficierez pas non plus des cotisations de contrepartie de Johnson & Johnson ni des prestations de retraite acquises supplémentaires.",
+      "calendar": "Ajoutez la période d’adhésion à votre calendrier ici!"
+    },
+    "callout2": {
+      "title": "Vous voulez un rappel de ce qui change?",
+      "p1": "Passez en revue le guide sur la comparaison des régimes et les scénarios de modifications: ",
+      "p2": " > Formulaires et documents > Formulaires retraite et épargne > Comparaison des régimes et scénarios des modifications "
+    },
+    "copy2": {
+      "title": "Ce que vous <span>devez faire</span> et quand",
+      "p1": "C’est à vous de décider comment tirer le meilleur parti du nouveau programme; ce qui veut dire choisir des options d’épargne qui répondent à vos objectifs uniques et ajuster vos choix au fil du temps à mesure que vos besoins évoluent.",
+      "p2": "Mais ne vous inquiétez pas, nous sommes là pour vous aider à chaque étape du processus!"
+    },
+    "timeline": {
+      "september": "Septembre ",
+      "october": "Octobre",
+      "nov_dec": "Novembre et décembre",
+      "january": "Janvier 2022",
+      "twice_a_year": "Deux fois par année",
+      "september_copy": {
+        "p1": "Répondez à ce ",
+        "link": "sondage d’ici",
+        "href": "https://fr.surveymonkey.com/r/JJpensionfr",
+        "bold": "le 30 septembre ",
+        "p2": "pour poser vos questions sur les rentes de retraite. Nous ferons de notre mieux pour répondre à vos questions lors des séances d’information en octobre."
+      },
+      "october_copy": {
+        "p1": "Assistez à une séance d’information pour obtenir les détails du nouveau programme;",
+        "link1": "inscrivez-vous ici",
+        "href1": "",
+        "p2": "Envisagez consulter un conseiller financier pour mieux comprendre comment le programme de retraite et d’épargne s’intègre à votre épargne personnelle —",
+        "link2": "trouvez un conseiller ici",
+        "href2": "https://www.iqpf.org/services-au-public/repertoire",
+        "p3": "si vous n’en avez pas déjà un!"
+      },
+      "november_copy": {
+        "p": "Adhérez — c’est l’occasion de déterminer la façon dont vous pouvez tirer le meilleur parti du programme de retraite et d’épargne en vue d’épargner pour les événements importants."
+      },
+      "callout1": {
+        "title": "Outil « Aidez-moi à choisir »",
+        "p": "Vous pourrez essayer un nouvel outil qui peut vous aider à choisir les options d’épargne les plus appropriées à votre situation financière."
+      },
+      "january_copy": {
+        "p": "Les modifications entrent en vigueur.",
+        "callout": "tous les changements seront appliqués de manière prospective et n’auront aucune incidence sur les prestations acquises avant le 1<sup>er</sup> janvier 2022."
+      },
+      "twice_copy": "Comme auparavant, vous pouvez adhérer ou modifier votre participation aux régimes facultatifs PD et CD deux fois par année (en janvier et en juillet). Vous pouvez modifier la répartition de vos placements et vos cotisations aux REER, CAO, CELI et régime non enregistré en tout temps. Tous les changements seront appliqués de manière prospective et n’auront aucune incidence sur les prestations déjà acquises."
+    }
   }
 }

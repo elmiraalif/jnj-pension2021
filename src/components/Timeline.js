@@ -10,97 +10,98 @@ export default function Timeline() {
     <div className={styles.timeline}>
       <div className={styles.container}>
         <h4 className={styles.title}>
-          <FormattedMessage id="timeline.september" />:
+          <FormattedMessage id="home.timeline.september" />:
         </h4>
-        {/* <p
-          dangerouslySetInnerHTML={{
-            __html: intl.formatMessage({ id: "timeline.september_p" }),
-          }}
-        /> */}
         <p>
-          Complete{" "}
-          <a href="https://www.surveymonkey.com/r/jjpension" target="_blank">
-            this survey
+          <FormattedMessage id="home.timeline.september_copy.p1" />{" "}
+          <a
+            href={intl.formatMessage({
+              id: "home.timeline.september_copy.href",
+            })}
+            target="_blank"
+          >
+            <FormattedMessage id="home.timeline.september_copy.link" />
             <span className="link-icon">
               &nbsp;
               <FontAwesomeIcon icon={faExternalLinkAlt} />
             </span>
           </a>{" "}
-          <strong>by September 30</strong> to ask your pension questions. We’ll
-          do our best to answer your questions during our information sessions
-          in October.
+          <strong>
+            <FormattedMessage id="home.timeline.september_copy.bold" />
+          </strong>{" "}
+          <FormattedMessage id="home.timeline.september_copy.p2" />
         </p>
       </div>
       <div className={styles.container}>
         <h4 className={styles.title}>
-          <FormattedMessage id="timeline.october" />:
+          <FormattedMessage id="home.timeline.october" />:
         </h4>
         <p>
-          Attend an information session to learn about the new program in detail
-          — <a href="#">sign up here</a>!
+          <FormattedMessage id="home.timeline.october_copy.p1" />{" "}
+          <a href="#" target="_blank">
+            <FormattedMessage id="home.timeline.october_copy.link1" />
+          </a>
+          !
         </p>
         <p>
-          Consider consulting a financial advisor to better understand how the
-          Pension & Savings Program fits in with your other savings —{" "}
-          <a href="https://fpcanada.ca/findaplanner" target="_blank">
-            find an advisor here
+          <FormattedMessage id="home.timeline.october_copy.p2" />{" "}
+          <a
+            href={intl.formatMessage({
+              id: "home.timeline.october_copy.href2",
+            })}
+            target="_blank"
+          >
+            <FormattedMessage id="home.timeline.october_copy.link2" />
             <span className="link-icon">
               &nbsp;
               <FontAwesomeIcon icon={faExternalLinkAlt} />
             </span>
           </a>{" "}
-          if you don’t have one!
+          <FormattedMessage id="home.timeline.october_copy.p3" />
         </p>
-        {/* <p
-          dangerouslySetInnerHTML={{
-            __html: intl.formatMessage({ id: "timeline.october_p1" }),
-          }}
-        />
-        <p
-          dangerouslySetInnerHTML={{
-            __html: intl.formatMessage({ id: "timeline.october_p2" }),
-          }}
-        /> */}
       </div>
       <div className={styles.container}>
         <h4 className={styles.title}>
-          <FormattedMessage id="timeline.nov_dec" />:
+          <FormattedMessage id="home.timeline.nov_dec" />:
         </h4>
         <p>
-          <FormattedMessage id="timeline.november_p" />
+          <FormattedMessage id="home.timeline.november_copy.p" />
         </p>
         <div className={styles.blue}>
           <h3>
-            <FormattedMessage id="timeline.november_callout_title" />
+            <FormattedMessage id="home.timeline.callout1.title" />
           </h3>
           <p>
-            <FormattedMessage id="timeline.november_callout_copy" />
+            <FormattedMessage id="home.timeline.callout1.p" />
           </p>
         </div>
       </div>
       <div className={styles.container}>
         <h4 className={styles.title}>
-          <FormattedMessage id="timeline.january" />:
+          <FormattedMessage id="home.timeline.january" />:
         </h4>
         <p>
-          <FormattedMessage id="timeline.january_p" />
+          <FormattedMessage id="home.timeline.january_copy.p" />
         </p>
         <p className="callout-pointer">
           <strong>
             <FormattedMessage id="note" />:
-          </strong>
-          {/* <FormattedMessage id="timeline.january_callout_arrow1" />
-           */}{" "}
-          All changes are applied prospectively and do not impact any benefits
-          already earned prior to January 1, 2022.
+          </strong>{" "}
+          <c
+            dangerouslySetInnerHTML={{
+              __html: intl.formatMessage({
+                id: "home.timeline.january_copy.callout",
+              }),
+            }}
+          />
         </p>
       </div>
       <div className={styles.container}>
         <h4 className={styles.title}>
-          <FormattedMessage id="timeline.twice_a_year" />:
+          <FormattedMessage id="home.timeline.twice_a_year" />:
         </h4>
         <p>
-          <FormattedMessage id="timeline.twice_p" />
+          <FormattedMessage id="home.timeline.twice_copy" />
         </p>
       </div>
     </div>

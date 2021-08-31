@@ -34,6 +34,16 @@ body {
     font-size: 12px;
   }
 }
+@media (max-height: 800px) and (min-width: 900px) {
+  .wrapper{
+    width: 650px;
+  }
+  html,
+  body {
+    font-size: 15px;
+  }
+}
+
 
 main {
   min-height: 100vh;
@@ -377,6 +387,7 @@ p {
       border-bottom: 1px solid #d8d8d8;
       text-decoration: none;
       font-size: 1rem;
+      white-space: nowrap;
       &:hover {
         color: $secondary-color;
       }
@@ -417,7 +428,7 @@ p {
       min-height: 95vh;
     }
     .btn {
-      font-size: 0.8rem;
+      font-size: 0.7rem;
     }
   }
 }

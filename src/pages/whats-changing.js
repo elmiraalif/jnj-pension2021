@@ -18,68 +18,60 @@ export default function Home() {
       <StaticImage src="../images/test-banner.jpg" alt="Banner" width="1920" />
       <div id="home">
         <div className="wrapper">
-          {/* <h1
+          <h1
             className="space-top-x"
             dangerouslySetInnerHTML={{
-              __html: intl.formatMessage({ id: "home.h1" }),
+              __html: intl.formatMessage({ id: "home.copy1.title" }),
             }}
-          /> */}
-          <h1 className="space-top-x">
-            What’s <span>changing</span>
-          </h1>
-          <p className="intro-copy">
-            {/* <FormattedMessage id="home.p1" /> */}
-            The Johnson & Johnson Pension & Savings Program is designed to
-            support your financial wellness in the moments that matter. On
-            January 1, 2022, we are launching a new program that offers more
-            flexibility and balances short- and long-term savings goals of our
-            employees.
-          </p>
+          />
+
+          <p
+            className="intro-copy"
+            dangerouslySetInnerHTML={{
+              __html: intl.formatMessage({ id: "home.copy1.p" }),
+            }}
+          />
+            
         </div>
 
-        {/* Gray callout */}
         <div className="gray-callout space-top-x">
           <div className="wrapper">
             <p>
-              <span>
-                <FormattedMessage id="important" />:
-              </span>
-              {/* <FormattedMessage id="timeline.november_callout1_p" /> */}{" "}
-              Enrolling in the new program is{" "}
-              <b class="italic-bold">critical</b>; your current selections will
-              not roll over to the new program. Optional components are only
-              available if you enrol during the enrolment period. If you don’t
-              enrol, you will also miss out on Johnson & Johnson matching
-              contributions and/or additional pension benefits earned.
+              <span>Important:</span>{" "}
+              <FormattedMessage id="home.callout1.p1" />{" "}
+              <b class="italic-bold">
+                {" "}
+                <FormattedMessage id="home.callout1.critical" />
+              </b>
+              <FormattedMessage id="home.callout1.p2" />
             </p>
             <div className="heading-icon space-top-2x space-bottom-x">
               <img src={"/icons/home-icon-check.svg"} alt="" width="30" />
               <Link to="#">
-                <FormattedMessage id="timeline.november_callout_icon" />
+                <FormattedMessage id="home.callout1.calendar" />
               </Link>
             </div>
           </div>
         </div>
-        {/* Gray callout */}
         <div className="callout">
           <div className="wrapper">
             <img src={`/icons/icon_info.svg`} alt="" width="30" />
             <div>
               <h3>
-                <FormattedMessage id="home.callout_h3" />
+                <FormattedMessage id="home.callout2.title" />
               </h3>
               <p>
-                <FormattedMessage id="home.callout_p1" />
+                <FormattedMessage id="home.callout2.p1" />
               </p>
               <p>
                 <a to="https://jnj.hroffice.com/" target="_blank">
-                  <FormattedMessage id="fyi_portal" />
+                  <FormattedMessage id="fyb_portal" />
                   <span class="link-icon">
                     &nbsp;
                     <FontAwesomeIcon icon={faExternalLinkAlt} />
                   </span>
                 </a>{" "}
-                <FormattedMessage id="home.callout_p2" />
+                <FormattedMessage id="home.callout2.p2" />
               </p>
             </div>
           </div>
@@ -88,14 +80,14 @@ export default function Home() {
           <h2
             className="space-x"
             dangerouslySetInnerHTML={{
-              __html: intl.formatMessage({ id: "home.h2" }),
+              __html: intl.formatMessage({ id: "home.copy2.title" }),
             }}
           />
           <p className="intro-copy">
-            <FormattedMessage id="home.section2_p1" />
+            <FormattedMessage id="home.copy2.p1" />
           </p>
           <p className="intro-copy">
-            <FormattedMessage id="home.section2_p2" />
+            <FormattedMessage id="home.copy2.p2" />
           </p>
           <Timeline />
 

@@ -1,13 +1,17 @@
 {
-  "title": "Pension Guide",
-  "note" : "Note",
-  "important": "Important",
-  "fyi_portal": "FYB Portal",
+  "title": "Pension & Savings Guide",
+  "note": "Note",
+  "fyb_portal": "FYB Portal",
   "core_component": "Core component (all eligible employees participate):",
   "optional_components": "Optional components:",
   "header": {
     "red_button": "See the Benefits Plan guide",
     "outline_button": "Submit a question"
+  },
+  "footer": {
+    "h4": "Get support!",
+    "p1": "Call the Benefit Help",
+    "p2": "Centre at 1-866-769-8521"
   },
   "nav": {
     "item1": "What’s changing",
@@ -20,49 +24,71 @@
     "item8": "Leaving Johnson & Johnson",
     "item9": "Questions?"
   },
-  "home":{
-    "h1": "What’s <span>changing</span>",
-    "p1": "The Johnson & Johnson Pension & Savings Program is designed to support your financial wellness in the moments that matter. On January 1, 2022, we are launching a new program that offers more flexibility and balances short \/&#8212; and long-term savings goals of our employees.",
-    "callout_h3": "Want a refresher on what’s changing?",
-    "callout_p1": "Review the program comparison and change scenarios guide for details:",
-    "callout_p2": " > Forms & Documents > Pension Forms > Program comparison and change scenarios",
-    "h2": "What you <span>need to do<\/span> and when",
-    "section2_p1": "You get to decide how to make the most of the new program. This means choosing savings options that meet your unique goals and adjusting your choices over time as your needs change.",
-    "section2_p2": "But don’t worry, we’re here to help you every step of the way!" 
-  },
-  "timeline":{
-    "september" : "September",
-    "october" : "October",
-    "nov_dec" : "November/December",
-    "january": "January 2022",
-    "twice_a_year" : "Twice a year",
-    "september_p": "<p>Complete <a href=\"#\">this survey<\/a> <strong>by September 30<\/strong> to ask your pension questions. We’ll do our best to answer your questions during our information sessions in October.<\/p>",
-    "october_p1": "<p>Attend an information session to learn about the new program in detail — <a href=\"#\">sign up here<\/a>!<\/p>",
-    "october_p2": "Consider a financial advisor to better understand how the Johnson & Johnson Pension & Savings Program fits in with your other savings — <a href=\"https://fpcanada.ca/findaplanner\" target=\"_blank\">find an advisor here</a> if you don’t have one!",
-    "november_p": "Enrol — this is your opportunity to decide how you can best leverage the Pension & Savings Program to save for the moments that matter.",
-    "november_callout1_p": " Enrolling in the new program is critical; your current selections will not roll over to the new program. Optional components are only available if you enrol during the enrolment period. If you don’t enrol, you will also miss out on Johnson & Johnson matching benefits earned.",
-    "november_callout_icon": "Add the enrolment period in your calendar here!",
-    "november_callout_title": "Help Me Decide tool",
-    "november_callout_copy": "You’ll get to try out a new tool that can help you decide which savings options are the most appropriate based on your financial situation.",
-    "january_p": "Changes come into effect.",
-    "january_callout_arrow1": "All changes are applied prospectively and do not impact any benefits already earned prior to January 1, 2022.",
-    "twice_p": "As before, going forward you can join or change your participation in the optional DB and DC plans twice a year (in January and July). You can modify your investment allocations and contributions to the RRSP, OAC, TFSA and Non-registered at any time. All changes are applied prospectively and do not impact benefits already earned.",
-    "twice_callout_arrow2": "All changes are applied prospectively and do not impact any benefits already earned."
+  "home": {
+    "copy1": {
+      "title": "What’s <span>changing</span>",
+      "p": "The Johnson & Johnson Pension & Savings Program is designed to support your financial wellness in the moments that matter. On January 1, 2022, we are launching a new program that offers more flexibility and balances short- and long-term savings goals of our employees."
+    },
 
+    "callout1": {
+      "p1": "Enrolling in the new program is ",
+      "critical": "critical",
+      "p2": "; your current selections will not roll over to the new program. Optional components are only available if you enrol during the enrolment period. If you don’t enrol, you will also miss out on Johnson & Johnson matching contributions and/or additional pension benefits earned.",
+      "calendar": "Add the enrolment period in your calendar here!"
+    },
+    "callout2": {
+      "title": "Want a refresher on what’s changing?",
+      "p1": "Review the program comparison and change scenarios guide for details:",
+      "p2": " > Forms & Documents > Pension Forms > Program comparison and change scenarios"
+    },
+    "copy2": {
+      "title": "What you <span>need to do</span> and when",
+      "p1": "You get to decide how to make the most of the new program. This means choosing savings options that meet your unique goals and adjusting your choices over time as your needs change.",
+      "p2": "But don’t worry, we’re here to help you every step of the way!"
+    },
+    "timeline": {
+      "september": "September",
+      "october": "October",
+      "nov_dec": "November/December",
+      "january": "January 2022",
+      "twice_a_year": "Twice a year",
+      "september_copy": {
+        "p1": "Complete ",
+        "link": "this survey",
+        "href": "https://www.surveymonkey.com/r/jjpension",
+        "bold": "by September 30 ",
+        "p2": "to ask your pension questions. We’ll do our best to answer your questions during our information sessions in October."
+      },
+      "october_copy": {
+        "p1": "Attend an information session to learn about the new program in detail —",
+        "link1": "sign up here",
+        "href1": "",
+        "p2": "Consider consulting a financial advisor to better understand how the Pension & Savings Program fits in with your other savings —",
+        "link2": "find an advisor here",
+        "href2": "https://fpcanada.ca/findaplanner",
+        "p3": "if you don’t have one!"
+      },
+      "november_copy": {
+        "p": "Enrol — this is your opportunity to decide how you can best leverage the Johnson & Johnson Pension & Savings Program to save for the moments that matter."
+      },
+      "callout1": {
+        "title": "Help Me Decide tool",
+        "p": "You’ll get to try out a new tool that can help you decide which savings options are the most appropriate based on your financial situation."
+      },
+      "january_copy": {
+        "p": "Changes come into effect.",
+        "callout": "All changes are applied prospectively and do not impact any benefits already earned prior to January 1, 2022."
+      },
+      "twice_copy": "As before, going forward you can join or change your participation in the optional DB and DC plans twice a year (in January and July). You can modify your investment allocations and contributions to the RRSP, OAC, TFSA and Non-registered at any time. All changes are applied prospectively and do not impact benefits already earned."
+    },
 
-
-  },
-  "page02": {
-    "title": "Pension & Savings Program",
-    "h1": "How the <span>Pension & Savings Program<\/span> works",
-    "p1": "The Pension & Savings Program supports your financial wellness and savings goals — whether you’re focused on increasing your retirement income or saving for the shorter-term.",
-    "p1_black": "For a quick program overview, watch this video!",
-    "p2_black": "The program includes these key components:"
-  },
-  "footer": {
-    "h4": "Get support!",
-    "p1": "Call the Benefit Help",
-    "p2": "Centre at 1-866-769-8521"
-  },
-  "about": "About Page"
+    "page02": {
+      "title": "Pension & Savings Program",
+      "h1": "How the <span>Pension & Savings Program</span> works",
+      "p1": "The Pension & Savings Program supports your financial wellness and savings goals — whether you’re focused on increasing your retirement income or saving for the shorter-term.",
+      "p1_black": "For a quick program overview, watch this video!",
+      "p2_black": "The program includes these key components:"
+    },
+    "about": "About Page"
+  }
 }
