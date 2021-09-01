@@ -6,26 +6,31 @@ import Nextpage from "../components/NextPage"
 import { useIntl } from "react-intl"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
+import { FormattedMessage } from "gatsby-plugin-intl"
 
 export default function Enrol() {
   const intl = useIntl()
   return (
     <Layout>
       <Helmet>
-        <title>How to enrol</title>
+        <title>{intl.formatMessage({ id: "page6.title" })}</title>
       </Helmet>
       <StaticImage src="../images/banner06.jpg" alt="Banner" />
       <div id="page06">
         <div className="wrapper">
-          <h1 className="space-top-x">
-            How to <span>enrol</span>
-          </h1>
-          <h4 className="space-top-x space-bottom-2x">First enrolment</h4>
+          <h1
+            className="space-top-x"
+            dangerouslySetInnerHTML={{
+              __html: intl.formatMessage({ id: "page6.copy1.title" }),
+            }}
+          />
+          <h4 className="space-top-x space-bottom-2x">
+            <FormattedMessage id="page6.copy1.subtitle" />
+          </h4>
           <p>
-            Once you become eligible, you will receive an email with a link to
-            the enrolment tool on the{" "}
+            <FormattedMessage id="page6.copy1.p1" />{" "}
             <a href="https://jnj.hroffice.com/" target="_blank">
-              FYB Portal
+              <FormattedMessage id="fyb_portal" />
               <span className="link-icon">
                 &nbsp;
                 <FontAwesomeIcon icon={faExternalLinkAlt} />
@@ -34,36 +39,40 @@ export default function Enrol() {
             .
           </p>
           <p className="bold">
-            You will make the following decisions when you enrol:
+            <FormattedMessage id="page6.copy1.bold" />
           </p>
           <div className="box box-primary space-x">
             <div className="heading-icon-top">
               <img src="/icons/one-white.svg" alt="One" width="30" />
-              <p>
-                Will you participate in the{" "}
-                <span className="bold">Optional DB</span> component?
-              </p>
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: intl.formatMessage({ id: "page6.copy1.item1" }),
+                }}
+              />
             </div>
           </div>
           <div className="box box-accent space-x">
             <div className="heading-icon-top">
               <img src="/icons/two-white.svg" alt="One" width="30" />
-              <p>
-                Will you participate in the{" "}
-                <span className="bold">Non-DB </span> components?
-              </p>
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: intl.formatMessage({ id: "page6.copy1.item2" }),
+                }}
+              />
             </div>
           </div>
           <div className="box-content">
             <div className="col">
-              Which ones (DC, RRSP, OAC, TFSA, Non-registered)?
+              <FormattedMessage id="page6.copy1.left" />
             </div>
             <div className="divider"></div>
             <div className="col">
-              How much will you contribute to each option?
+              <FormattedMessage id="page6.copy1.middle" />
             </div>
             <div className="divider"></div>
-            <div className="col">How will you invest your Non-DB accounts?</div>
+            <div className="col">
+              <FormattedMessage id="page6.copy1.right" />
+            </div>
           </div>
           <div className="space-2x"></div>
         </div>
@@ -73,47 +82,47 @@ export default function Enrol() {
               <img src={"/icons/icon_info.svg"} alt="" width="30" />
             </div>
             <div>
-              <h3>What happens if you don’t enrol?</h3>
+              <h3>
+                <FormattedMessage id="page6.callout1.title" />
+              </h3>
               <p className="intro-copy">
-                Enrolling in the program is critical. Optional components are
-                only available if you enrol during the enrolment period. If you
-                don’t enrol, you will also miss out on Johnson & Johnson
-                matching contributions and/or additional pension benefits
-                earned.
+                <FormattedMessage id="page6.callout1.p" />
               </p>
             </div>
           </div>
         </div>
         <div className="wrapper">
-          <h2 className="space-x">Here’s how you enrol:</h2>
+          <h2 className="space-x">
+            <FormattedMessage id="page6.copy2.title" />
+          </h2>
           <StaticImage
             src="../images/enrol-01.jpg"
             alt="Enrol instructions video"
             placeholder="none"
           />
-          <h4 className="space-top-2x">Help Me Decide tool</h4>
+          <h4 className="space-top-2x">
+            <FormattedMessage id="page6.copy2.help" />
+          </h4>
           <p>
-            You will also find a Help Me Decide tool on the{" "}
+            <FormattedMessage id="page6.copy2.p1" />{" "}
             <a href="https://jnj.hroffice.com/">
-              FYB Portal
+              <FormattedMessage id="fyb_portal" />
               <span className="link-icon">
                 &nbsp;
                 <FontAwesomeIcon icon={faExternalLinkAlt} />
               </span>
             </a>{" "}
-            when you enrol. You answer a few short questions, and the tool can
-            help you choose the most tax-effective savings options for your
-            personal circumstances.
+            <FormattedMessage id="page6.copy2.p2" />
           </p>
         </div>
         <div className="callout">
           <div className="wrapper">
             <div className="heading-icon-top tip">
-              <div className="icon">Tip!</div>
+              <div className="icon">
+                <FormattedMessage id="page6.callout2.tip" />
+              </div>
               <p>
-                If you want to select the options that were recommended to you
-                in the Help Me Decide tool, you will need to enter them into the
-                enrolment tool — this does not happen automatically!
+                <FormattedMessage id="page6.callout2.p" />
               </p>
             </div>
           </div>
@@ -125,14 +134,11 @@ export default function Enrol() {
             alt="Enrol instructions video"
             placeholder="none"
           />
-          <h2 className="space-top-2x">Making changes</h2>
+          <h2 className="space-top-2x">
+            <FormattedMessage id="page6.copy3.title" />
+          </h2>
           <p>
-            The Pension & Savings Program is designed to move with you as your
-            savings goals evolve over time. That’s why you have the opportunity
-            to join or change your participation in the optional DB and DC plans
-            twice a year (in January and July). You can modify your investment
-            allocations and contributions to the RRSP, OAC, TFSA and
-            Non-registered at any time.
+            <FormattedMessage id="page6.copy3.p" />
           </p>
           <Nextpage
             title={intl.formatMessage({ id: "nav.item7" })}

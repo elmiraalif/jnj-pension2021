@@ -481,5 +481,38 @@
       "link": "ici",
       "href": "https://www.canada.ca/fr/agence-revenu/services/impot/administrateurs-regimes-enregistres/fesp/plafonds-cd-reer-rpdb-celi-mgap.html"
     }
+  },
+  "page6": {
+    "title": "Comment adhérer",
+    "copy1": {
+      "title": "Comment <span>adhérer</span>",
+      "subtitle": "Adhésion initiale",
+      "p1": "Lorsque vous devenez admissible au programme, vous recevez un courriel contenant un lien vers l’outil d’adhésion qui se trouve sur le ",
+      "bold": "Pendant votre adhésion, vous devrez prendre les décisions suivantes :",
+      "item1": "Participerez-vous au volet facultatif PD?",
+      "item2": "Participerez-vous aux volets non-PD?",
+      "left": "Si oui lesquels (CD, REER, CAO, CELI, régime non enregistré)?",
+      "middle": "Si vous décidez de participer aux volets non-PD, quel pourcentage cotiserez-vous à chaque option?",
+      "right": "Comment investirez-vous l’argent de vos comptes non-PD?"
+    },
+    "callout1": {
+      "title": "Qu’arrive-t-il si vous n’adhérez pas?",
+      "p": "L’adhésion au programme est essentielle. Les volets facultatifs ne sont offerts que pendant la période d’adhésion. Si vous n’adhérez pas au programme, vous ne bénéficierez pas non plus des cotisations de contrepartie de Johnson & Johnson ni des prestations de retraite acquises supplémentaires."
+    },
+    "copy2": {
+      "title": "Voici comment adhérer au programme :",
+      "help": "Outil « Aidez-moi à choisir »",
+      "href": "https://jnj.hroffice.com/",
+      "p1": "Vous trouverez aussi l’outil « Aidez-moi à choisir » sur le",
+      "p2": "lorsque vous adhérerez. Répondez à quelques brèves questions et l’outil pourra vous aider à choisir les options d’épargne les plus avantageuses sur le plan fiscal en fonction de votre situation personnelle."
+    },
+    "callout2": {
+      "tip": "Conseil!",
+      "p": "Si vous voulez sélectionner les options recommandées par l’outil « Aidez-moi à choisir », vous devrez les entrer dans l’outil d’adhésion — cela ne se fait pas automatiquement!"
+    },
+    "copy3": {
+      "title": "Modifications",
+      "p": "Le programme de retraite et d’épargne est conçu pour avancer avec vous à mesure que vos objectifs d’épargne évoluent. Voilà pourquoi vous avez l’occasion d’adhérer au programme et de modifier votre participation aux régimes facultatifs PD et CD deux fois par année (en janvier et en juillet). Vous pouvez modifier la répartition de vos placements et vos cotisations aux REER, CAO, CELI et régime non enregistré en tout temps."
+    }
   }
 }
