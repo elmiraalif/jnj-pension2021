@@ -77,7 +77,7 @@ export default function Page04() {
                     __html: intl.formatMessage({ id: "note" }),
                   }}
                 />
-                :{" "}
+                {" "}
                 <FormattedMessage id="page4.callout1.p2" />
               </p>
             </div>
@@ -235,7 +235,7 @@ export default function Page04() {
                         __html: intl.formatMessage({ id: "note" }),
                       }}
                     />
-                    :{" "}
+                    {" "}
                     <FormattedMessage id="page4.accordion5.note" />
                   </div>
                 </li>

@@ -1,7 +1,7 @@
 {
   "title": "Guide du retraite et d’épargne",
-  "about": "A propos!",
   "note": "Remarque :",
+  "important": "Important :",
   "fyb_portal": "Portail À votre avantage",
   "fyb_href": "",
   "core_component": "Volet de base (tous les employés admissibles y participent):",
@@ -140,10 +140,10 @@
     },
     "timeline": {
       "september": "Septembre ",
-      "october": "Octobre",
-      "nov_dec": "Novembre et décembre",
-      "january": "Janvier 2022",
-      "twice_a_year": "Deux fois par année",
+      "october": "Octobre ",
+      "nov_dec": "Novembre et décembre ",
+      "january": "Janvier 2022 ",
+      "twice_a_year": "Deux fois par année ",
       "september_copy": {
         "p1": "Répondez à ce ",
         "link": "sondage d’ici",

@@ -37,7 +37,7 @@ export default function Home() {
         <div className="gray-callout space-top-x">
           <div className="wrapper">
             <p>
-              <span>Important:</span>{" "}
+              <span><FormattedMessage id="important" /></span>{" "}
               <FormattedMessage id="home.callout1.p1" />{" "}
               <b class="italic-bold">
                 {" "}

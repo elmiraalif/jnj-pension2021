@@ -85,7 +85,7 @@ export default function Timeline() {
         </p>
         <p className="callout-pointer">
           <strong>
-            <FormattedMessage id="note" />:
+            <FormattedMessage id="note" />
           </strong>{" "}
           <c
             dangerouslySetInnerHTML={{

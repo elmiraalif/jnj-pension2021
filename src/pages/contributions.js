@@ -173,7 +173,7 @@ export default function Page03() {
               <div className="callout-pointer">
                 <span>
                   <FormattedMessage id="note" />
-                </span>:{" "}
+                </span>{" "}
                 <FormattedMessage id="page3.rrsp.callout" />
               </div>
               <div className="space-bottom-x"></div>
