@@ -1,6 +1,6 @@
 {
   "title": "Pension & Savings Guide",
-  "note": "Note",
+  "note": "Note:",
   "fyb_portal": "FYB Portal",
   "fyb_href": "https://jnj.hroffice.com/",
   "core_component": "Core component (all eligible employees participate):",
@@ -62,6 +62,58 @@
       "p": "It can be beneficial to consult a personal financial advisor if you need additional support and/or guidance for your big picture retirement savings plan. If you don’t yet have a financial advisor, you can find one ",
       "link": "here",
       "href": "https://fpcanada.ca/findaplanner"
+    }
+  },
+  "profile": {
+    "age": "Age:",
+    "family": "Family:",
+    "housing": "Housing:",
+    "goals": "Top Saving Goals:",
+    "ans": " ",
+    "priyanka": {
+      "family": "Single",
+      "housing": "Renter",
+      "goals": "Pay down student debt, Travel, Home purchase"
+    },
+    "taylor": {
+      "family": "Engaged",
+      "housing": "Renter",
+      "goals": "Retirement with flexibility"
+    },
+    "hang": {
+      "family": "Married",
+      "housing": "Home owner",
+      "goals": "Home renovations, Retirement"
+    },
+    "amir": {
+      "family": "Married, 3 kids",
+      "housing": "Home owner",
+      "goals": "Childcare, A bigger home"
+    },
+    "tony": {
+      "family": "Married, 2 kids",
+      "housing": "Home owner",
+      "goals": "Children’s education, Retirement"
+    },
+    "allison": {
+      "family": "2 kids",
+      "housing": "Renter",
+      "goals": "Children’s education, Retirement"
+    },
+    "sundeep": {
+      "family": "Married, 3 kids",
+      "housing": "Home owner",
+      "goals": "Retirement, Home renovations"
+    },
+    "aamna": {
+      "family": "Married, 2 adult children, 1 grand child",
+      "housing": "Home owner",
+      "goals": "Early retirement, Travel"
+    },
+    "scott": {
+      "family": "1 adult child",
+      "housing": "Home owner",
+      "goals": "Retirement"
     }
   },
   "home": {
@@ -291,6 +343,143 @@
     },
     "copy3": {
       "title": "Additional tools and resources to help you choose"
+    }
+  },
+  "page5": {
+    "title": "Scenarios for savings goals",
+    "copy1": {
+      "title": "Scenarios for different <br /> <span>life stages</span> & <span>savings goals</span>",
+      "p": "Let’s look at a few people in different life stages and how they made their Pension & Savings Program decisions. Who can you relate to?"
+    },
+    "buttons": {
+      "p": "Are you...",
+      "left": "Early career",
+      "middle": "Mid career",
+      "right": "Approaching retirement"
+    },
+    "priyanka": {
+      "p1": "Priyanka is at the start of her career. She is focused on paying down her student debt, but also wants to travel and enjoy new experiences. Down the road, she would like to purchase her first condo.",
+      "p2": "To meet these goals, Priyanka decides to:",
+      "box1": "RRSP",
+      "title1": "Contribute 4% to the RRSP",
+      "li1": {
+        "p1": "She will use the money for the",
+        "p2": "in a few years"
+      },
+      "li2": " Priyanka will receive a 100% Company match on these contributions",
+      "box2": "TFSA",
+      "title2": "Contribute 2% to the TFSA",
+      "li3": "She will have flexibility on how and when to use her savings, while earning investment income, tax free",
+      "li4": "Priyanka will benefit from much lower investment fees than she would from a personal TFSA",
+      "note": "because she is already receiving a 4% Company match on her RRSP contributions, Priyanka will not receive any matching contributions to the TFSA."
+    },
+    "taylor": {
+      "p1": " Taylor joined Johnson & Johnson two years ago. They are focused on saving for retirement but are not yet sure where they will be in 10 or 20 years from now, so they’re looking for flexibility.",
+      "p2": "To meet these goals, Taylor decides to:",
+      "box": "DC",
+      "title": "Contribute 4% to the DC plan",
+      "li1": "Taylor will have greater flexibility and portability of their retirement savings over time",
+      "li2": "They will receive a 100% Company match on these contributions"
+    },
+    "hang": {
+      "p1": " Hang has been with Johnson & Johnson for six years. She owns a fixer upper and is saving to do renovations, while making sure she does not lose sight of retirement savings.",
+      "p2": "To meet these goals, Hang decides to:",
+      "box1": "DB",
+      "title1": "Contribute 2.25% to the optional DB",
+      "li1": "This will boost her monthly retirement income",
+      "box2": "TFSA",
+      "title2": "Contribute 1.75% to the TFSA",
+      "li3": "Hang will save for home renovations while allowing her money to earn investment income, tax free",
+      "li4": "She will also maximize Company matching contributions; the Company will match her contributions at 50%",
+      "note": {
+        "bold": "A little bit more about Hang’s decision",
+        "p": "At this time, Hang can only spare to save 4% of her earnings. Given her short-term savings goals, she decides to put money into the TFSA even though TFSA contributions will earn only a 50% Company match. If she decided to contribute to the DC, RRSP or OACs instead, she would have received a 100% Company match."
+      }
+    },
+    "amir": {
+      "p1": "Amir has been with Johnson & Johnson for four years. His family is growing, and he is looking to buy a larger home while balancing childcare costs.",
+      "p2": "To meet these goals, Amir decides to:",
+      "box1": "RRSP",
+      "title1": "Contribute 4% to the RRSP",
+      "li1": " He will save on taxes today and will receive a 100% Company match on these contributions",
+      "box2": "TFSA",
+      "title2": "Contribute 2% to the TFSA",
+      "li2": "Amir wants to save for a down payment and childcare, while allowing his money to earn investment income, tax free",
+      "li3": " Amir will benefit from much lower fees than he would from a personal TFSA",
+      "note": "because he is already receiving a 4% Company match on his RRSP contributions, Amir will not receive any matching contributions to the TFSA."
+    },
+    "tony": {
+      "p1": " Tony joined Johnson & Johnson 11 years ago. He is focused on saving for his children’s education and increasing his retirement income.",
+      "p2": "To meet these goals, Tony decides to:",
+      "box1": "DB",
+      "title1": "Contribute 2.25% to the optional DB",
+      "li1": "This will boost his monthly retirement income",
+      "box2": "DC",
+      "title2": "Contribute 1.75% to the DC plan",
+      "li2": "This gives Tony more flexibility on how and when to withdraw his retirement savings",
+      "li3": "He will receive a 100% Company match on these contributions",
+      "box3": "TSFA",
+      "title3": "Contribute 4% to the TFSA",
+      "li4": "Tony wants to save for his children’s education, while allowing his money to earn investment income, tax free",
+      "li5": "Tony will benefit from much lower fees than he would from a personal TFSA",
+      "note": "because he is already receiving the maximum Company match on his DB/DC contributions, Tony will not receive any matching contributions to the TFSA."
+    },
+    "allison": {
+      "p1": "Allison has been with Johnson & Johnson for 17 years. Since she doesn’t own her home, she feels it is even more important to make sure she has enough money saved for retirement.",
+      "p2": "To meet these goals, Allison decides to:",
+      "box1": "DB",
+      "title1": "Contribute 2.25% to the optional DB",
+      "li1": "This will boost her monthly retirement income",
+      "box2": "DC",
+      "title2": "Contribute 1.75% to the DC plan",
+      "li2": "This gives Allison more flexibility on how and when to withdraw her retirement savings",
+      "li3": "She will receive a 100% Company match on these contributions"
+    },
+    "sundeep": {
+      "p1": "Sundeep is planning to retire in about 14 years. Before retiring, he wants to save enough to repair the roof and windows of his home.",
+      "p2": "To meet these goals, Sundeep decides to:",
+      "box1": "DC",
+      "title1": "Contribute 4% to the DC plan",
+      "li1": "This will enhance his retirement income and help him save on taxes today",
+      "li2": "He will receive a 100% Company match on these contributions",
+      "box2": "TFSA",
+      "title2": "Contribute 4% to the TFSA",
+      "li3": "Sundeep will save for home renovations, while allowing his money to earn investment income, tax free",
+      "li4": " He will benefit from much lower fees than he would from a personal TFSA",
+      "note": "because he is already receiving a 4% Company match on his DC contributions, Sundeep will not receive any matching contributions to the TFSA."
+    },
+    "aamna":{
+      "p1": "Aamna is planning to retire early, in the next three to four years. She is focused on boosting her retirement income and minimizing a reduction to her pension.",
+      "p2": "To meet these goals, Aamna decides to:",
+      "box1": "DB",
+      "title1": "Contribute 2.25% to the optional DB",
+      "li1": "This will boost her monthly retirement income",
+      "box2": "OACs",
+      "title2": "Contribute 1.75% to the OACs",
+      "li2": "She can purchase additional benefits at retirement, such as minimizing her early retirement reduction",
+      "li3": "She will receive a 100% Company match on these contributions (paid into her Non-registered account)"
+    },
+    "scott": {
+      "p1": "Scott is planning to retire within five years. He is savvy with the investment market and enjoys taking a hands-on approach to his retirement savings.",
+      "p2": "To increase his retirement savings, Scott decides to:",
+      "box1": "DC",
+      "title1": "Contribute 4% to the DC plan",
+      "li1": "This gives Scott flexibility on how and when to withdraw his retirement savings and how to invest the money",
+      "li2": "He will receive a 100% Company match on these contributions"
+    },
+    "callout1": {
+      "title": "Help Me Decide tool",
+      "help": "Help Me Decide tool",
+      "p1": "When you enrol in the Pension & Savings Program, you can use the",
+      "href": "https://jnj.hroffice.com",
+      "p2": "to help you choose the right options for you. Keep in mind that the tool will always look to maximize the Company matching contributions and tax savings for you. However, your needs and savings goals may differ from the tool’s recommendations, especially if you’re saving for the short term." 
+    },
+    "callout2": {
+      "p1": "The scenarios shown here are for illustrative purposes only, and your personal situation may differ. CRA limits how much you can contribute each year to tax-deferred savings options.",
+      "bold": "It is your responsibility to ensure you don’t exceed your limit",
+      "p2": "— and remember that Johnson & Johnson matching contributions are also deducted from your personal limit. Find the current limits",
+      "link": "here",
+      "href": "https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html"
     }
   }
 }

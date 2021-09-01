@@ -8,6 +8,7 @@ import NextPage from "../components/NextPage"
 import { useIntl } from "react-intl"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
+import { FormattedDate, FormattedMessage } from "gatsby-plugin-intl"
 
 export default function Scenarios() {
   const primary = `#da0025`
@@ -18,69 +19,73 @@ export default function Scenarios() {
   return (
     <Layout>
       <Helmet>
-        <title>Scenarios for savings goals</title>
+        <title>{intl.formatMessage({ id: "page5.title" })}</title>
       </Helmet>
       <StaticImage src="../images/banner05.jpg" alt="Banner" />
       <div id="page05">
         <div className="wrapper">
-          <h1 className="space-top-x">
-            Scenarios for different <br />
-            <span>life stages</span> & <span>savings goals</span>
-          </h1>
+          <h1
+            className="space-top-x"
+            dangerouslySetInnerHTML={{
+              __html: intl.formatMessage({ id: "page5.copy1.title" }),
+            }}
+          />
           <div className="intro-copy">
             <p>
-              Let’s look at a few people in different life stages and how they
-              made their Pension & Savings Program decisions. Who can you
-              relate to?
+              <FormattedMessage id="page5.copy1.p" />
             </p>
           </div>
         </div>
         <div className="callout-gray space-bottom-2x">
           <div className="wrapper">
-            <div className="space-x">Are you...</div>
+            <div className="space-x">
+              <FormattedMessage id="page5.buttons.p" />
+            </div>
             <div className="boxes space-x">
               <a href="#early" className="box">
-                Early career
+                <FormattedMessage id="page5.buttons.left" />
               </a>
               <a href="#mid" className="box">
-                Mid career
+                <FormattedMessage id="page5.buttons.middle" />
               </a>
               <a href="#retired" className="box">
-                Approaching retirement
+                <FormattedMessage id="page5.buttons.right" />
               </a>
             </div>
           </div>
         </div>
 
         <div className="wrapper">
-          <h3 className="space-bottom-x profile-title">Early career</h3>
+          <h3 className="space-bottom-x profile-title">
+            <FormattedMessage id="page5.buttons.left" />
+          </h3>
           <div className="profile-container" id="early">
             <Profile
               color={primary}
-              src={"/profiles/priyanka.jpg"}
+              src="/profiles/priyanka.jpg"
               name="Priyanka"
               age="24"
-              family="Single"
-              housing="Renter"
-              goals="Pay down student debt, Travel, Home purchase"
+              family={intl.formatMessage({ id: "profile.priyanka.family" })}
+              housing={intl.formatMessage({ id: "profile.priyanka.housing" })}
+              goals={intl.formatMessage({ id: "profile.priyanka.goals" })}
             />
             <Profile
               color={secondary}
-              src={"/profiles/taylor.jpg"}
+              src="/profiles/taylor.jpg"
               name="Taylor"
               age="29"
-              family="Engaged"
-              housing="Renter"
-              goals="Retirement with flexibility"
+              family={intl.formatMessage({ id: "profile.taylor.family" })}
+              housing={intl.formatMessage({ id: "profile.taylor.housing" })}
+              goals={intl.formatMessage({ id: "profile.taylor.goals" })}
             />
             <Profile
               color={accent}
-              src={"/profiles/hang.jpg"}
+              src="/profiles/hang.jpg"
               name="Hang"
               age="34"
-              family="Married"
-              housing="Home owner"
-              goals="Home renovations, Retirement"
+              family={intl.formatMessage({ id: "profile.hang.family" })}
+              housing={intl.formatMessage({ id: "profile.hang.housing" })}
+              goals={intl.formatMessage({ id: "profile.hang.goals" })}
             />
           </div>
           <Accordion
@@ -90,59 +95,60 @@ export default function Scenarios() {
             icon="/icons/icon_profile.svg"
           >
             <p>
-              Priyanka is at the start of her career. She is focused on paying
-              down her student debt, but also wants to travel and enjoy new
-              experiences. Down the road, she would like to purchase her first
-              condo.
+              <FormattedMessage id="page5.priyanka.p1" />
             </p>
-            <p>To meet these goals, Priyanka decides to:</p>
+            <p>
+              <FormattedMessage id="page5.priyanka.p2" />
+            </p>
             <div className="heading-icon">
-              <div className="box heading">RRSP</div>
+              <div className="box heading">
+                <FormattedMessage id="page5.priyanka.box1" />
+              </div>
               <h4 className="secondary-color" className="secondary-color">
-                Contribute 4% to the RRSP
+                <FormattedMessage id="page5.priyanka.title1" />
               </h4>
             </div>
             <ul className="space-x">
               <li>
-                She will use the money for the{" "}
+                <FormattedMessage id="page5.priyanka.li1.p1" />{" "}
                 <a
-                  href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/what-home-buyers-plan.html"
+                  href={intl.formatMessage({ id: "home_buyers_href" })}
                   target="_blank"
                 >
-                  Home Buyers’ Plan
+                  <FormattedMessage id="home_buyers" />
                   <span className="link-icon">
                     &nbsp;
                     <FontAwesomeIcon icon={faExternalLinkAlt} />
                   </span>
                 </a>{" "}
-                in a few years
+                <FormattedMessage id="page5.priyanka.li1.p2" />
               </li>
               <li>
-                Priyanka will receive a 100% Company match on these
-                contributions
+                <FormattedMessage id="page5.priyanka.li2" />
               </li>
             </ul>
             <div className="heading-icon">
-              <div className="box heading">TFSA</div>
+              <div className="box heading">
+                <FormattedMessage id="page5.priyanka.box2" />
+              </div>
               <h4 className="secondary-color" className="secondary-color">
-                Contribute 2% to the TFSA
+                <FormattedMessage id="page5.priyanka.title2" />
               </h4>
             </div>
             <ul className="space-x">
               <li>
-                She will have flexibility on how and when to use her savings,
-                while earning investment income, tax free
+                <FormattedMessage id="page5.priyanka.li3" />
               </li>
               <li>
-                Priyanka will benefit from much lower investment fees than she
-                would from a personal TFSA
+                <FormattedMessage id="page5.priyanka.li4" />
               </li>
             </ul>
             <div className="callout-pointer">
               <p>
-                <span className="bold">Note:</span> because she is already
-                receiving a 4% Company match on her RRSP contributions, Priyanka
-                will not receive any matching contributions to the TFSA.
+                <span className="bold">
+                  <FormattedMessage id="note" />
+                </span>{" "}
+                <FormattedMessage id="page5.priyanka.note" />
               </p>
             </div>
             <div className="space-2x"></div>
@@ -154,22 +160,25 @@ export default function Scenarios() {
             icon="/icons/icon_profile.svg"
           >
             <p>
-              Taylor joined Johnson & Johnson two years ago. They are focused on
-              saving for retirement but are not yet sure where they will be in
-              10 or 20 years from now, so they’re looking for flexibility.
+              <FormattedMessage id="page5.taylor.p1" />
             </p>
-            <p>To meet these goals, Taylor decides to:</p>
+            <p>
+              <FormattedMessage id="page5.taylor.p2" />
+            </p>
             <div className="heading-icon">
-              <div className="box heading">DC</div>
-              <h4 className="secondary-color">Contribute 4% to the DC plan</h4>
+              <div className="box heading">
+                <FormattedMessage id="page5.taylor.box" />
+              </div>
+              <h4 className="secondary-color">
+                <FormattedMessage id="page5.taylor.title" />
+              </h4>
             </div>
             <ul className="space-x">
               <li>
-                Taylor will have greater flexibility and portability of their
-                retirement savings over time
+                <FormattedMessage id="page5.taylor.li1" />
               </li>
               <li>
-                They will receive a 100% Company match on these contributions
+                <FormattedMessage id="page5.taylor.li2" />
               </li>
             </ul>
             <div className="space-2x"></div>
@@ -181,80 +190,82 @@ export default function Scenarios() {
             icon="/icons/icon_profile.svg"
           >
             <p>
-              Hang has been with Johnson & Johnson for six years. She owns a
-              fixer upper and is saving to do renovations, while making sure she
-              does not lose sight of retirement savings.
+              <FormattedMessage id="page5.hang.p1" />
             </p>
-            <p>To meet these goals, Hang decides to:</p>
+            <p>
+              <FormattedMessage id="page5.hang.p2" />
+            </p>
             <div className="heading-icon">
-              <div className="box heading">DB</div>
+              <div className="box heading">
+                <FormattedMessage id="page5.hang.box1" />
+              </div>
               <h4 className="secondary-color">
-                Contribute 2.25% to the optional DB
+                <FormattedMessage id="page5.hang.title1" />
               </h4>
             </div>
             <ul className="space-x">
-              <li>This will boost her monthly retirement income</li>
+              <li>
+                <FormattedMessage id="page5.hang.li1" />
+              </li>
             </ul>
             <div className="heading-icon">
-              <div className="box heading">TFSA</div>
-              <h4 className="secondary-color">Contribute 1.75% to the TFSA</h4>
+              <div className="box heading">
+                <FormattedMessage id="page5.hang.box2" />
+              </div>
+              <h4 className="secondary-color">
+                <FormattedMessage id="page5.hang.title2" />
+              </h4>
             </div>
             <ul className="space-x">
               <li>
-                Hang will save for home renovations while allowing her money to
-                earn investment income, tax free
+                <FormattedMessage id="page5.hang.li3" />
               </li>
               <li>
-                She will also maximize Company matching contributions; the
-                Company will match her contributions at 50%
+                <FormattedMessage id="page5.hang.li4" />
               </li>
             </ul>
             <div className="callout-pointer">
-              <p className="bold">A little bit more about Hang’s decision</p>
+              <p className="bold">
+                <FormattedMessage id="page5.hang.note.bold" />
+              </p>
               <br />
               <p>
-                At this time, Hang can only spare to save 4% of her earnings.
-                Given her short-term savings goals, she decides to put money
-                into the TFSA even though TFSA contributions will earn only a
-                50% Company match. If she decided to contribute to the DC, RRSP
-                or OACs instead, she would have received a 100% Company match.
+                <FormattedMessage id="page5.hang.note.p" />
               </p>
             </div>
             <div className="space-2x"></div>
           </Accordion>
           <div className="space-2x"></div>
           <h3 className="space-top-2x space-bottom-x profile-title">
-            Mid career
+            <FormattedMessage id="page5.buttons.middle" />
           </h3>
           <div className="profile-container" id="mid">
             <Profile
               color={primary}
-              src={"/profiles/amir.jpg"}
+              src="/profiles/amir.jpg"
               name="Amir"
               age="38"
-              family="Married, 3 kids"
-              housing="Home owner"
-              goals="Childcare, A bigger home"
+              family={intl.formatMessage({ id: "profile.amir.family" })}
+              housing={intl.formatMessage({ id: "profile.amir.housing" })}
+              goals={intl.formatMessage({ id: "profile.amir.goals" })}
             />
             <Profile
               color={secondary}
-              src={"/profiles/tony.jpg"}
+              src="/profiles/tony.jpg"
               name="Tony"
               age="40"
-              family="Married, 2 kids"
-              housing="Home owner"
-              goals="Children’s education,
-                Retirement"
+              family={intl.formatMessage({ id: "profile.tony.family" })}
+              housing={intl.formatMessage({ id: "profile.tony.housing" })}
+              goals={intl.formatMessage({ id: "profile.tony.goals" })}
             />
             <Profile
               color={accent}
-              src={"/profiles/allison.jpg"}
+              src="/profiles/allison.jpg"
               name="Allison"
               age="45"
-              family="2 kids"
-              housing="Renter"
-              goals="Children’s education,
-                Retirement"
+              family={intl.formatMessage({ id: "profile.allison.family" })}
+              housing={intl.formatMessage({ id: "profile.allison.housing" })}
+              goals={intl.formatMessage({ id: "profile.allison.goals" })}
             />
           </div>
           <Accordion
@@ -264,40 +275,46 @@ export default function Scenarios() {
             icon="/icons/icon_profile.svg"
           >
             <p>
-              Amir has been with Johnson & Johnson for four years. His family is
-              growing, and he is looking to buy a larger home while balancing
-              childcare costs.
+              <FormattedMessage id="page5.amir.p1" />
             </p>
-            <p>To meet these goals, Amir decides to:</p>
+            <p>
+              <FormattedMessage id="page5.amir.p2" />
+            </p>
             <div className="heading-icon">
-              <div className="box heading">RRSP</div>
-              <h4 className="secondary-color">Contribute 4% to the RRSP</h4>
+              <div className="box heading">
+                <FormattedMessage id="page5.amir.box1" />
+              </div>
+              <h4 className="secondary-color">
+                <FormattedMessage id="page5.amir.title1" />
+              </h4>
             </div>
             <ul className="space-x">
               <li>
-                He will save on taxes today and will receive a 100% Company
-                match on these contributions
+                <FormattedMessage id="page5.amir.li1" />
               </li>
             </ul>
             <div className="heading-icon">
-              <div className="box heading">TFSA</div>
-              <h4 className="secondary-color">Contribute 2% to the TFSA</h4>
+              <div className="box heading">
+                <FormattedMessage id="page5.amir.box2" />
+              </div>
+              <h4 className="secondary-color">
+                <FormattedMessage id="page5.amir.title2" />
+              </h4>
             </div>
             <ul className="space-x">
               <li>
-                Amir wants to save for a down payment and childcare, while
-                allowing his money to earn investment income, tax free
+                <FormattedMessage id="page5.amir.li2" />
               </li>
               <li>
-                Amir will benefit from much lower fees than he would from a
-                personal TFSA
+                <FormattedMessage id="page5.amir.li3" />
               </li>
             </ul>
             <div className="callout-pointer">
               <p>
-                <span className="bold">Note:</span> because he is already
-                receiving a 4% Company match on his RRSP contributions, Amir
-                will not receive any matching contributions to the TFSA.
+                <span className="bold">
+                  <FormattedMessage id="note" />
+                </span>{" "}
+                <FormattedMessage id="page5.amir.note" />
               </p>
             </div>
             <div className="space-2x"></div>
@@ -309,61 +326,62 @@ export default function Scenarios() {
             icon="/icons/icon_profile.svg"
           >
             <p>
-              Tony joined Johnson & Johnson 11 years ago. He is focused on
-              saving for his children’s education and increasing his retirement
-              income.
+              <FormattedMessage id="page5.tony.p1" />
             </p>
-            <p>To meet these goals, Tony decides to:</p>
+            <p>
+              <FormattedMessage id="page5.tony.p2" />
+            </p>
             <div className="heading-icon">
-              <div className="box heading">DB</div>
+              <div className="box heading">
+                <FormattedMessage id="page5.tony.box1" />
+              </div>
               <h4 className="secondary-color">
-                Contribute 2.25% to the optional DB{" "}
-              </h4>
-            </div>
-            <ul className="space-x">
-              <li>This will boost his monthly retirement income</li>
-            </ul>
-            <div className="heading-icon">
-              <div className="box heading">DC</div>
-              <h4 className="secondary-color">
-                Contribute 1.75% to the DC plan
+                <FormattedMessage id="page5.tony.title1" />{" "}
               </h4>
             </div>
             <ul className="space-x">
               <li>
-                This gives Tony more flexibility on how and when to withdraw his
-                retirement savings
-              </li>
-              <li>
-                He will receive a 100% Company match on these contributions
+                <FormattedMessage id="page5.tony.li1" />
               </li>
             </ul>
-            {/* <div className="callout-pointer">
-              <p>
-                <span className="bold">Note:</span> because he is already
-                receiving a 4% Company match on his RRSP contributions, Amir
-                will not receive any matching contributions to the TFSA.
-              </p>
-            </div> */}
             <div className="heading-icon">
-              <div className="box heading">TSFA</div>
-              <h4 className="secondary-color">Contribute 4% to the TFSA</h4>
+              <div className="box heading">
+                <FormattedMessage id="page5.tony.box2" />
+              </div>
+              <h4 className="secondary-color">
+                <FormattedMessage id="page5.tony.title2" />
+              </h4>
             </div>
             <ul className="space-x">
               <li>
-                Tony wants to save for his children’s education, while allowing
-                his money to earn investment income, tax free
+                <FormattedMessage id="page5.tony.li2" />
               </li>
               <li>
-                Tony will benefit from much lower fees than he would from a
-                personal TFSA
+                <FormattedMessage id="page5.tony.li3" />
+              </li>
+            </ul>
+            <div className="heading-icon">
+              <div className="box heading">
+                <FormattedMessage id="page5.tony.box3" />
+              </div>
+              <h4 className="secondary-color">
+                <FormattedMessage id="page5.tony.title3" />
+              </h4>
+            </div>
+            <ul className="space-x">
+              <li>
+                <FormattedMessage id="page5.tony.li4" />
+              </li>
+              <li>
+                <FormattedMessage id="page5.tony.li5" />
               </li>
             </ul>
             <div className="callout-pointer">
               <p>
-                <span className="bold">Note:</span> because he is already
-                receiving the maximum Company match on his DB/DC contributions,
-                Tony will not receive any matching contributions to the TFSA.
+                <span className="bold">
+                  <FormattedMessage id="note" />
+                </span>{" "}
+                <FormattedMessage id="page5.tony.note" />
               </p>
             </div>
             <div className="space-2x"></div>
@@ -375,47 +393,45 @@ export default function Scenarios() {
             icon="/icons/icon_profile.svg"
           >
             <p>
-              Allison has been with Johnson & Johnson for 17 years. Since she
-              doesn’t own her home, she feels it is even more important to make
-              sure she has enough money saved for retirement.
+              <FormattedMessage id="page5.allison.p1" />
             </p>
-            <p>To meet these goals, Allison decides to:</p>
+            <p>
+              <FormattedMessage id="page5.allison.p2" />
+            </p>
             <div className="heading-icon">
-              <div className="box heading">DB</div>
+              <div className="box heading">
+                <FormattedMessage id="page5.allison.box1" />
+              </div>
               <h4 className="secondary-color">
-                Contribute 2.25% to the optional DB{" "}
-              </h4>
-            </div>
-            <ul className="space-x">
-              <li>This will boost her monthly retirement income</li>
-            </ul>
-            <div className="heading-icon">
-              <div className="box heading">DC</div>
-              <h4 className="secondary-color">
-                Contribute 1.75% to the DC plan
+                <FormattedMessage id="page5.allison.title1" />{" "}
               </h4>
             </div>
             <ul className="space-x">
               <li>
-                This gives Allison more flexibility on how and when to withdraw
-                her retirement savings
-              </li>
-              <li>
-                She will receive a 100% Company match on these contributions
+                <FormattedMessage id="page5.allison.li1" />
               </li>
             </ul>
-            {/* <div className="callout-pointer">
-              <p>
-                <span className="bold">Note:</span> because he is already
-                receiving a 4% Company match on his RRSP contributions, Amir
-                will not receive any matching contributions to the TFSA.
-              </p>
-            </div> */}
+            <div className="heading-icon">
+              <div className="box heading">
+                <FormattedMessage id="page5.allison.box2" />
+              </div>
+              <h4 className="secondary-color">
+                <FormattedMessage id="page5.allison.title2" />
+              </h4>
+            </div>
+            <ul className="space-x">
+              <li>
+                <FormattedMessage id="page5.allison.li2" />
+              </li>
+              <li>
+                <FormattedMessage id="page5.allison.li3" />
+              </li>
+            </ul>
             <div className="space-2x"></div>
           </Accordion>
           <div className="space-2x"></div>
           <h3 className="space-top-2x space-bottom-x profile-title">
-            Approaching retirement
+            <FormattedMessage id="page5.buttons.right" />
           </h3>
           <div className="profile-container" id="retired">
             <Profile
@@ -423,27 +439,27 @@ export default function Scenarios() {
               src={"/profiles/sundeep.jpg"}
               name="Sundeep"
               age="51"
-              family="Married, 3 kids"
-              housing="Home owner"
-              goals="Retirement, Home renovations"
+              family={intl.formatMessage({ id: "profile.sundeep.family" })}
+              housing={intl.formatMessage({ id: "profile.sundeep.housing" })}
+              goals={intl.formatMessage({ id: "profile.sundeep.goals" })}
             />
             <Profile
               color={secondary}
               src={"/profiles/aamna.jpg"}
               name="Aamna"
               age="54"
-              family="Married, 2 adult children, 1 grand child"
-              housing="Home owner"
-              goals="Early retirement, Travel"
+              family={intl.formatMessage({ id: "profile.aamna.family" })}
+              housing={intl.formatMessage({ id: "profile.aamna.housing" })}
+              goals={intl.formatMessage({ id: "profile.aamna.goals" })}
             />
             <Profile
               color={accent}
               src={"/profiles/scott.jpg"}
               name="Scott"
               age="60"
-              family="1 adult child"
-              housing="Home owner"
-              goals="Retirement"
+              family={intl.formatMessage({ id: "profile.scott.family" })}
+              housing={intl.formatMessage({ id: "profile.scott.housing" })}
+              goals={intl.formatMessage({ id: "profile.scott.goals" })}
             />
           </div>
           <Accordion
@@ -453,43 +469,49 @@ export default function Scenarios() {
             icon="/icons/icon_profile.svg"
           >
             <p>
-              Sundeep is planning to retire in about 14 years. Before retiring,
-              he wants to save enough to repair the roof and windows of his
-              home.
+              <FormattedMessage id="page5.sundeep.p1" />
             </p>
-            <p>To meet these goals, Sundeep decides to:</p>
+            <p>
+              <FormattedMessage id="page5.sundeep.p2" />
+            </p>
             <div className="heading-icon">
-              <div className="box heading">DC</div>
-              <h4 className="secondary-color">Contribute 4% to the DC plan</h4>
+              <div className="box heading">
+                <FormattedMessage id="page5.sundeep.box1" />
+              </div>
+              <h4 className="secondary-color">
+                <FormattedMessage id="page5.sundeep.title1" />
+              </h4>
             </div>
             <ul className="space-x">
               <li>
-                This will enhance his retirement income and help him save on
-                taxes today
+                <FormattedMessage id="page5.sundeep.li1" />
               </li>
               <li>
-                He will receive a 100% Company match on these contributions
+                <FormattedMessage id="page5.sundeep.li2" />
               </li>
             </ul>
             <div className="heading-icon">
-              <div className="box heading">TFSA</div>
-              <h4 className="secondary-color">Contribute 4% to the TFSA</h4>
+              <div className="box heading">
+                <FormattedMessage id="page5.sundeep.box2" />
+              </div>
+              <h4 className="secondary-color">
+                <FormattedMessage id="page5.sundeep.title2" />
+              </h4>
             </div>
             <ul className="space-x">
               <li>
-                Sundeep will save for home renovations, while allowing his money
-                to earn investment income, tax free
+                <FormattedMessage id="page5.sundeep.li3" />
               </li>
               <li>
-                He will benefit from much lower fees than he would from a
-                personal TFSA
+                <FormattedMessage id="page5.sundeep.li4" />
               </li>
             </ul>
             <div className="callout-pointer">
               <p>
-                <span className="bold">Note:</span> because he is already
-                receiving a 4% Company match on his DC contributions, Sundeep
-                will not receive any matching contributions to the TFSA.
+                <span className="bold">
+                  <FormattedMessage id="note" />
+                </span>{" "}
+                <FormattedMessage id="page5.sundeep.note" />
               </p>
             </div>
             <div className="space-2x"></div>
@@ -501,32 +523,38 @@ export default function Scenarios() {
             icon="/icons/icon_profile.svg"
           >
             <p>
-              Aamna is planning to retire early, in the next three to four
-              years. She is focused on boosting her retirement income and
-              minimizing a reduction to her pension.
+              <FormattedMessage id="page5.aamna.p1" />
             </p>
-            <p>To meet these goals, Aamna decides to:</p>
+            <p>
+              <FormattedMessage id="page5.aamna.p2" />
+            </p>
             <div className="heading-icon">
-              <div className="box heading">DB</div>
+              <div className="box heading">
+                <FormattedMessage id="page5.aamna.box1" />
+              </div>
               <h4 className="secondary-color">
-                Contribute 2.25% to the optional DB{" "}
+                <FormattedMessage id="page5.aamna.title1" />{" "}
               </h4>
             </div>
             <ul className="space-x">
-              <li>This will boost her monthly retirement income</li>
+              <li>
+                <FormattedMessage id="page5.aamna.li1" />{" "}
+              </li>
             </ul>
             <div className="heading-icon">
-              <div className="box heading">OACs</div>
-              <h4 className="secondary-color">Contribute 1.75% to the OACs</h4>
+              <div className="box heading">
+                <FormattedMessage id="page5.aamna.box2" />{" "}
+              </div>
+              <h4 className="secondary-color">
+                <FormattedMessage id="page5.aamna.title2" />
+              </h4>
             </div>
             <ul className="space-x">
               <li>
-                She can purchase additional benefits at retirement, such as
-                minimizing her early retirement reduction
+                <FormattedMessage id="page5.aamna.li2" />
               </li>
               <li>
-                She will receive a 100% Company match on these contributions
-                (paid into her Non-registered account)
+                <FormattedMessage id="page5.aamna.li3" />
               </li>
             </ul>
             <div className="space-2x"></div>
@@ -538,22 +566,25 @@ export default function Scenarios() {
             icon="/icons/icon_profile.svg"
           >
             <p>
-              Scott is planning to retire within five years. He is savvy with
-              the investment market and enjoys taking a hands-on approach to his
-              retirement savings.
+              <FormattedMessage id="page5.scott.p1" />
             </p>
-            <p>To increase his retirement savings, Scott decides to:</p>
+            <p>
+              <FormattedMessage id="page5.scott.p2" />
+            </p>
             <div className="heading-icon">
-              <div className="box heading">DC</div>
-              <h4 className="secondary-color">Contribute 4% to the DC plan</h4>
+              <div className="box heading">
+                <FormattedMessage id="page5.scott.box1" />
+              </div>
+              <h4 className="secondary-color">
+                <FormattedMessage id="page5.scott.title1" />
+              </h4>
             </div>
             <ul className="space-x space-bottom-2x">
               <li>
-                This gives Scott flexibility on how and when to withdraw his
-                retirement savings and how to invest the money
+                <FormattedMessage id="page5.scott.li1" />
               </li>
               <li>
-                He will receive a 100% Company match on these contributions
+                <FormattedMessage id="page5.scott.li2" />
               </li>
             </ul>
           </Accordion>
@@ -561,21 +592,22 @@ export default function Scenarios() {
         <div className="callout space-top-2x">
           <div className="wrapper">
             <div>
-              <h3>Help Me Decide tool</h3>
+              <h3>
+                <FormattedMessage id="page5.callout1.title" />
+              </h3>
               <p>
-                When you enrol in the Pension & Savings Program, you can use the{" "}
-                <a href="https://jnj.hroffice.com" target="_blank">
-                  Help Me Decide tool
+                <FormattedMessage id="page5.callout1.p1" />{" "}
+                <a
+                  href={intl.formatMessage({ id: "page5.callout1.href" })}
+                  target="_blank"
+                >
+                  <FormattedMessage id="page5.callout1.help" />
                   <span className="link-icon">
                     &nbsp;
                     <FontAwesomeIcon icon={faExternalLinkAlt} />
                   </span>
                 </a>{" "}
-                to help you choose the right options for you. Keep in mind that
-                the tool will always look to maximize the Company matching
-                contributions and tax savings for you. However, your needs and
-                savings goals may differ from the tool’s recommendations,
-                especially if you’re saving for the short term.
+                <FormattedMessage id="page5.callout1.p2" />
               </p>
             </div>
           </div>
@@ -583,20 +615,17 @@ export default function Scenarios() {
         <div className="info">
           <div className="wrapper">
             <p>
-              The scenarios shown here are for illustrative purposes only, and
-              your personal situation may differ. CRA limits how much you can
-              contribute each year to tax-deferred savings options.
+              <FormattedMessage id="page5.callout2.p1" />
               <span className="bold" style={{ display: "inline" }}>
                 {" "}
-                It is your responsibility to ensure you don’t exceed your limit
+                <FormattedMessage id="page5.callout2.bold" />
               </span>{" "}
-              — and remember that Johnson & Johnson matching contributions are
-              also deducted from your personal limit. Find the current limits{" "}
+              <FormattedMessage id="page5.callout2.p2" />{" "}
               <a
-                href="https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html"
+                href={intl.formatMessage({ id: "page5.callout2.href" })}
                 target="_blank"
               >
-                here
+                <FormattedMessage id="page5.callout2.link" />
                 <span className="link-icon">
                   &nbsp;
                   <FontAwesomeIcon icon={faExternalLinkAlt} />

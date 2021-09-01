@@ -1,7 +1,7 @@
 {
   "title": "Guide du retraite et d’épargne",
   "about": "A propos!",
-  "note": "Remarque &#160;",
+  "note": "Remarque :",
   "fyb_portal": "Portail À votre avantage",
   "fyb_href": "",
   "core_component": "Volet de base (tous les employés admissibles y participent):",
@@ -63,6 +63,58 @@
       "p": "Il peut être utile de consulter un conseiller financier si vous avez besoin d’un soutien ou de conseils supplémentaires pour votre plan d’épargne-retraite global. Si vous n’avez pas de conseiller financier, vous pouvez en trouver un ",
       "link": "ici",
       "href": "https://www.iqpf.org/services-au-public/repertoire"
+    }
+  },
+  "profile": {
+    "age": "Âge :",
+    "family": "Famille :",
+    "housing": "Logement :",
+    "goals": "Principaux objectifs d’épargne :",
+    "ans": "ans",
+    "priyanka": {
+      "family": "célibataire",
+      "housing": "locataire",
+      "goals": "rembourser les dettes d’études, voyager, acheter une maison"
+    },
+    "taylor": {
+      "family": "fiancé",
+      "housing": "locataire",
+      "goals": "retraite avec flexibilité"
+    },
+    "hang": {
+      "family": "mariée",
+      "housing": "propriétaire de sa maison",
+      "goals": "rénovation de la maison, retraite"
+    },
+    "amir": {
+      "family": "marié, trois enfants",
+      "housing": "propriétaire de sa maison",
+      "goals": "garde des enfants, plus grande maison"
+    },
+    "tony": {
+      "family": "marié, deux enfants",
+      "housing": "propriétaire de sa maison",
+      "goals": "éducation des enfants, retraite"
+    },
+    "allison": {
+      "family": "deux enfants",
+      "housing": "locataire",
+      "goals": "éducation des enfants, retraite"
+    },
+    "sundeep": {
+      "family": "marié, trois enfants",
+      "housing": "propriétaire de sa maison",
+      "goals": "retraite, rénovation de la maison"
+    },
+    "aamna": {
+      "family": "mariée, deux enfants adultes et un petit-enfant",
+      "housing": "propriétaire de sa maison",
+      "goals": "retraite anticipée, voyage"
+    },
+    "scott": {
+      "family": "un enfant adulte",
+      "housing": "propriétaire de sa maison",
+      "goals": "retraite"
     }
   },
   "home": {
@@ -291,6 +343,143 @@
     },
     "copy3": {
       "title": "Autres outils et ressources pour vous aider à choisir"
+    }
+  },
+  "page5": {
+    "title": "Scénarios d’objectifs d’épargne",
+    "copy1": {
+      "title": "Scénarios pour différentes <br /> <span>étapes de la vie </span> et <span>différents objectifs d’épargne</span>",
+      "p": "Examinons la situation de quelques personnes à différentes étapes de leur vie et la façon dont elles ont pris leurs décisions en ce qui concerne le programme de retraite et d’épargne. À qui pouvez-vous vous identifier?"
+    },
+    "buttons": {
+      "p": "Êtes-vous...",
+      "left": "En début de carrière",
+      "middle": "En milieu de carrière",
+      "right": "Près de la retraite"
+    },
+    "priyanka": {
+      "p1": "Priyanka est au début de sa carrière. Elle se concentre sur le remboursement de ses dettes d’études, mais veut aussi voyager et vivre de nouvelles expériences. Plus tard, elle aimerait acheter son premier appartement.",
+      "p2": "Pour atteindre ces objectifs, Priyanka décide de :",
+      "box1": "REER",
+      "title1": "Cotiser 4 % au REER",
+      "li1": {
+        "p1": "Dans quelques années, elle utilisera l’argent pour le",
+        "p2": " "
+      },
+      "li2": "Priyanka recevra des cotisations de contrepartie de 100 % de la Société",
+      "box2": "CELI",
+      "title2": "Cotiser 2 % au CELI",
+      "li3": "Elle pourra décider comment et quand utiliser son épargne, tout en gagnant un revenu de placement à l’abri de l’impôt",
+      "li4": "Priyanka bénéficiera de frais de gestion des placements beaucoup plus bas que ceux d’un CELI personnel",
+      "note": "comme elle reçoit déjà une cotisation de contrepartie de 4 % de la Société pour ses cotisations à un REER, Priyanka ne recevra pas de cotisation de contrepartie pour le CELI"
+    },
+    "taylor": {
+      "p1": "Taylor est entré au service de Johnson & Johnson il y a deux ans. Il souhaite épargner pour sa retraite, mais comme il ne sait pas où il sera dans dix ou vingt ans, il privilégie la flexibilité.",
+      "p2": "Pour atteindre ces objectifs, Taylor décide de :",
+      "box": "CD",
+      "title": "Cotiser 4 % au régime CD",
+      "li1": "Taylor bénéficiera d’une plus grande flexibilité et d’une meilleure transférabilité de son épargne-retraite au fil du temps",
+      "li2": "Il recevra des cotisations de contrepartie de 100 % de la Société"
+    },
+    "hang": {
+      "p1": "Hang travaille pour Johnson & Johnson depuis six ans. Elle épargne en vue de rénover sa maison, tout en épargnant pour la retraite.",
+      "p2": "Pour atteindre ces objectifs, Hang décide de :",
+      "box1": "PD",
+      "title1": "Cotiser 2.25 % au volet PD facultatif",
+      "li1": "Cela augmentera son revenu de retraite mensuel ",
+      "box2": "CELI",
+      "title2": "Cotiser 1.75 % au CELI ",
+      "li3": "Hang épargnera pour les rénovations de sa maison tout en permettant à son argent de gagner un revenu de placement, libre d’impôt",
+      "li4": "De plus, elle maximisera les cotisations de la Société qui versera des cotisations de contrepartie de 50 %",
+      "note": {
+        "bold": "Parlons un peu plus de la décision de Hang",
+        "p": "À l’heure actuelle, Hang ne peut épargner que 4 % de ses gains. En raison de ses objectifs d’épargne à court terme, elle décide de cotiser au CELI, même si ces cotisations ne donnent droit qu’à une cotisation de contrepartie de 50 % de la Société. Si elle avait décidé de cotiser au volet CD, au REER ou au compte CAO, elle aurait bénéficié d’une cotisation de contrepartie de 100 %."
+      }
+    },
+    "amir": {
+      "p1": "Amir travaille pour Johnson & Johnson depuis quatre ans. Sa famille s’agrandit et il veut acheter une plus grande maison tout en équilibrant les frais de garde d’enfants.",
+      "p2": "Pour atteindre ces objectifs, Amir décide de :",
+      "box1": "REER",
+      "title1": "Cotiser 4 % au REER",
+      "li1": "Il réalisera des économies d’impôt maintenant et recevra des cotisations de contrepartie de la Société égalent à 100 % de ses cotisations",
+      "box2": "CELI",
+      "title2": "Cotiser 2 % au CELI",
+      "li2": "Amir veut épargner pour une mise de fonds sur une maison et les frais de garde de ses enfants, tout en permettant à son argent de gagner un revenu de placement, en franchise d’impôt.",
+      "li3": "Il bénéficiera de frais de gestion des placements beaucoup plus bas que ceux d’un CELI personnel.",
+      "note": "comme il reçoit déjà une cotisation de contrepartie de 4 % de la Société pour ses cotisations à un REER, Amir ne recevra pas de cotisation de contrepartie pour le CELI."
+    },
+    "tony": {
+      "p1": "Tony travaille pour Johnson & Johnson depuis onze ans. Il souhaite épargner pour l’éducation de ses enfants et augmenter son revenu de retraite.",
+      "p2": "Pour atteindre ces objectifs, Tony décide de :",
+      "box1": "PD",
+      "title1": "Cotiser 2.25 % au volet PD facultatif ",
+      "li1": "Cela augmentera son revenu de retraite mensuel ",
+      "box2": "CD",
+      "title2": "Cotiser 1.75 % au régime CD ",
+      "li2": "Cela donne à Tony plus de flexibilité sur la manière et le moment de retirer son épargne-retraite ",
+      "li3": "Il recevra des cotisations de contrepartie de la Société égalent à 100 % de ces cotisations",
+      "box3": "CELI",
+      "title3": "Cotiser 4 % au CELI",
+      "li4": "Tony veut épargner pour l’éducation de ses enfants, tout en permettant à son argent de gagner un revenu de placement, en franchise d’impôt ",
+      "li5": "Il bénéficiera de frais de gestion des placements beaucoup plus bas que ceux d’un CELI personnel",
+      "note": "comme il reçoit déjà la cotisation de contrepartie maximale de la Société pour ses cotisations aux régimes PD et CD, Tony ne recevra pas de cotisation de contrepartie pour le CELI"
+    },
+    "allison": {
+      "p1": "Allison est au service de Johnson & Johnson depuis dix-sept ans. Puisqu’elle n’est pas propriétaire d’une maison, elle estime qu’il est encore plus important de s’assurer d’avoir suffisamment d’argent de côté pour sa retraite.",
+      "p2": "Pour atteindre ces objectifs, Allison décide de :",
+      "box1": "PD",
+      "title1": "Cotiser 2.25 % au volet PD facultatif",
+      "li1": "Cela augmentera son revenu de retraite mensuel ",
+      "box2": "CD",
+      "title2": "Cotiser 1.75 % au régime CD",
+      "li2": "Cela donne à Allison plus de flexibilité sur la manière et le moment de retirer son épargne-retraite",
+      "li3": "Elle recevra des cotisations de contrepartie de la Société égalent à 100 % de ces cotisations"
+    },
+    "sundeep": {
+      "p1": "Sundeep prévoit prendre sa retraite dans environ 14 ans. Mais avant, il veut épargner suffisamment pour changer le toit et les fenêtres de sa maison.",
+      "p2": "Pour atteindre ces objectifs, Sundeep décide de :",
+      "box1": "CD",
+      "title1": "Cotiser 4 % au régime CD",
+      "li1": "Cela augmentera son revenu de retraite et lui permettra de réaliser des économies d’impôt",
+      "li2": "Il recevra des cotisations de contrepartie de la Société égalent à 100 % de ces cotisations",
+      "box2": "CELI",
+      "title2": "Cotiser 4 % au CELI",
+      "li3": "Sundeep épargnera pour les rénovations de sa maison tout en permettant à son argent de gagner un revenu de placement, libre d’impôt",
+      "li4": "Il bénéficiera de frais de gestion des placements beaucoup plus bas que ceux d’un CELI personnel",
+      "note": "comme il reçoit déjà une cotisation de contrepartie de 4 % de la Société pour ses cotisations au régime CD, Sundeep ne recevra pas de cotisation de contrepartie pour le CELI"
+    },
+    "aamna": {
+      "p1": "Aamna prévoit prendre une retraite anticipée, d’ici trois ou quatre ans. Elle cherche à augmenter son revenu de retraite et à minimiser la réduction de sa rente.",
+      "p2": "Pour atteindre ces objectifs, Aamna décide de :",
+      "box1": "PD",
+      "title1": "Cotiser 2.25 % au volet PD facultatif ",
+      "li1": "Cela augmentera son revenu de retraite mensuel ",
+      "box2": "CAO",
+      "title2": "Cotiser 1.75 % au compte CAO ",
+      "li2": "Elle peut acheter des prestations additionnelles à la retraite afin de minimiser la réduction de sa rente pour retraite anticipée",
+      "li3": "Elle recevra des cotisations de contrepartie de la Société égalent à 100 % de ces cotisations (qui seront versées dans un compte non enregistré)"
+    },
+    "scott": {
+      "p1": "Scott prévoit prendre sa retraite dans cinq ans. Il connaît bien le marché des placements et préfère gérer activement son épargne-retraite.",
+      "p2": "Afin d’augmenter son épargne-retraite, Scott décide de :",
+      "box1": "CD",
+      "title1": "Cotiser 4 % au régime CD",
+      "li1": "Cela donne à Scott la flexibilité de choisir comment et quand retirer son épargne-retraite et comment investir son argent ",
+      "li2": "Il recevra des cotisations de contrepartie de la Société égalent à 100 % de ces cotisations"
+    },
+    "callout1": {
+      "title": "Outil « Aidez-moi à choisir »",
+      "help": "« Aidez-moi à choisir »",
+      "p1": "Lorsque vous adhérez au programme de retraite et d’épargne, vous pouvez utiliser l’outil ",
+      "href": "https://jnj.hroffice.com/",
+      "p2": " pour choisir les options qui vous conviennent le mieux. N’oubliez pas que l’outil cherchera toujours à maximiser les cotisations de contrepartie de la Société et vos économies d’impôt. Toutefois, vos besoins et vos objectifs d’épargne peuvent différer des recommandations de l’outil, surtout si vous épargnez à court terme."
+    },
+    "callout2": {
+      "p1": "Les scénarios présentés ici ne sont fournis qu’à titre d’exemple. Votre situation personnelle peut être différente. L’ARC limite le montant que vous pouvez cotiser chaque année aux options d’épargne à imposition différée.",
+      "bold": "Vous êtes responsable de vous assurer que vous ne dépassez pas vos limites ",
+      "p2": "et n’oubliez pas que les cotisations de contrepartie de Johnson & Johnson sont aussi déduites de votre limite personnelle. Trouvez les limites actuelles ",
+      "link": "ici",
+      "href": "https://www.canada.ca/fr/agence-revenu/services/impot/administrateurs-regimes-enregistres/fesp/plafonds-cd-reer-rpdb-celi-mgap.html"
     }
   }
 }
