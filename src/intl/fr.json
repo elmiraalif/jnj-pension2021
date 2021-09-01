@@ -1,7 +1,7 @@
 {
   "title": "Guide du retraite et d’épargne",
   "about": "A propos!",
-  "note": "Remarque ",
+  "note": "Remarque &#160;",
   "fyb_portal": "Portail À votre avantage",
   "fyb_href": "",
   "core_component": "Volet de base (tous les employés admissibles y participent):",
@@ -40,6 +40,30 @@
     "item7": "Gestion de votre épargne",
     "item8": "Départ de Johnson & Johnson",
     "item9": "Questions?"
+  },
+  "portal": {
+    "item1": {
+      "title": "Outil « Aidez-moi à choisir » — <span class=\"italic-bold\">à venir en novembre</span> :",
+      "p": "Répondez à quelques brèves questions et obtenez des informations importantes pouvant vous aider à atteindre vos objectifs d’épargne de la façon la plus avantageux sur le plan fiscal."
+    },
+    "item2": {
+      "title": "Outil de projection de la rente :",
+      "p": "Voyez à combien pourrait s’élever votre rente PD à différentes dates de retraite. Vous pouvez exécuter trois dates de retraite simultanément pour comparer votre revenu de retraite à différents âges. Vous pouvez également voir l’impact d’un changement de salaire sur votre revenu de retraite. Sauvegardez ou imprimez facilement vos résultats pour les examiner avec votre conjoint(e) ou votre partenaire et/ou un conseiller financier."
+    },
+    "item3": {
+      "title": "Calculatrice du revenu de retraite :",
+      "p": "Examinez votre revenu de retraite estimatif du régime, avec la possibilité d’ajouter l’épargne personnelle que vous avez dans un REER ou un CELI, par exemple. Vous pouvez vous fixer un objectif de revenu de retraite et déterminer quel sera votre revenu annuel à la retraite."
+    },
+    "item4": {
+      "title": "Questionnaire sur le profil d’investisseur :",
+      "p": "Répondez aux questions sur vos objectifs d’épargne et votre tolérance au risque de placement afin de déterminer quelles options de placement vous conviennent le mieux."
+    },
+    "copy": {
+      "title": "Un conseiller financier",
+      "p": "Il peut être utile de consulter un conseiller financier si vous avez besoin d’un soutien ou de conseils supplémentaires pour votre plan d’épargne-retraite global. Si vous n’avez pas de conseiller financier, vous pouvez en trouver un ",
+      "link": "ici",
+      "href": "https://www.iqpf.org/services-au-public/repertoire"
+    }
   },
   "home": {
     "copy1": {
@@ -177,6 +201,96 @@
     "callout2": {
       "title": "Pourquoi la cotisation de contrepartie maximale de la Société est-elle différente pour chaque volet facultatif?",
       "p": "Le montant maximal global que Johnson & Johnson peut verser à un participant pour les options non-PD est de 1.75 % si le volet PD facultatif est choisi ou de 4 % si le volet PD facultatif n’est pas choisi. Le montant de la cotisation de Johnson & Johnson dépend aussi des options non-PD que vous choisissez (CD, REER, CAO, CELI ou régime non enregistré), comme l’indique le tableau ci-dessus. Les cotisations de contrepartie sont plus élevées pour les volets CD, REER et CAO, car la Société veut vous encourager à épargner pour le long terme."
+    }
+  },
+  "page4": {
+    "title": "Choisir les bonnes options",
+    "copy1": {
+      "title": "Comment <span>choisir</span> entre les <span>options</span>",
+      "p1": "Nous avons créé un programme qui répond à différents besoins et objectifs d’épargne et c’est à vous de décider quels volets vous permettront d’atteindre vos objectifs. ",
+      "bold1": "Vous avez deux grandes décisions à prendre :",
+      "item1": "Participerez-vous aux volets facultatifs PD, non-PD, ou aux deux?",
+      "item2": "Si vous choisirez des volets non-PD, lesquels? Chaque option (CD, REER, CAO, CELI et régime non enregistré) comporte des caractéristiques et des avantages différents.",
+      "bold2": "Pour vous aider à prendre la première décision, regardez cette vidéo!"
+    },
+    "callout1": {
+      "p1": "Le programme de retraite et d’épargne vous soutient à chaque étape de la vie pour que vos choix continuent à répondre à vos objectifs au fil du temps. Vous pouvez adhérer ou modifier votre participation aux régimes facultatifs PD et CD deux fois par année (en janvier et en juillet). Vous pouvez modifier la répartition de vos placements et vos cotisations aux REER, CAO, CELI et régime non enregistré en tout temps. ",
+      "p2": "tous les changements seront appliqués de manière prospective et n’auront aucune incidence sur les prestations déjà acquises. "
+    },
+    "copy2": {
+      "title": "Choisir parmi les <span> <br /> volets facultatifs </span>",
+      "p1": "Le choix de vos options des régimes de retraite et d’épargne est une décision personnelle, mais certaines considérations communes s’appliquent à chaque option."
+    },
+    "accordion1": {
+      "title": "Épargnez-vous à court terme ou à long terme?",
+      "li1": "Les volets PD, CD et CAO ne peuvent être utilisés que pour le revenu de retraite.",
+      "li2": "Le REER, le CELI et le régime non enregistré offrent plus de flexibilité et peuvent être utilisés pour l’épargne à long terme ou à plus court terme, par exemple pour l’achat d’une maison ou d’une voiture, ou le remboursement de dettes d’études.",
+      "image": {
+        "src": "/icons/option1.gif",
+        "alt": "Volet 1"
+      }
+    },
+    "accordion2": {
+      "title": "Est-ce important pour vous d’avoir une rente prévisible?",
+      "li1": "Le régime PD (volets de base et facultatif) vous fournit une rente prévisible qui vous est versée en prestations égales chaque mois pendant votre retraite, pour le reste de votre vie.",
+      "li2": "Les options non-PD sont moins prévisibles, puisque le solde final de votre compte dépendra du taux de cotisation et du rendement des placements.",
+      "image": {
+        "src": "/icons/option2.gif",
+        "alt": "Volet 2"
+      }
+    },
+    "accordion3": {
+      "title": "Voulez-vous la flexibilité de décider comment et quand utiliser votre épargne?",
+      "li1": "Le volet PD est l’option la moins flexible, car les cotisations et la rente mensuelle que vous recevrez à la retraite sont fixes — vous ne pouvez pas les modifier.",
+      "li2": "Le régime CD est un peu plus flexible, car vous pouvez décider du montant que vous retirerez chaque année à la retraite (sous réserve des minimums et des maximums), tandis que les CAO vous permettent de choisir comment augmenter votre rente PD.",
+      "li3": "Le CELI et le régime non enregistré sont les plus flexibles, car il n’y a pas de règles concernant les retraits. Vous pouvez utiliser l’argent comme vous le voulez, quand vous en avez besoin.",
+      "li4": {
+        "p1": "Le REER se situe entre les deux – son objectif principal est de fournir un revenu de retraite, mais vous pouvez également retirer de l’argent de votre REER, en franchise d’impôt (jusqu’à 35 000 $), pour le",
+        "and": "et le",
+        "p2": ". Si vous retirez de l’argent de votre REER à toute autre fin, vous devrez payer de l’impôt sur ce retrait."
+      },
+      "image": {
+        "src": "/icons/option3.gif",
+        "alt": "Volet 3"
+      }
+    },
+    "accordion4": {
+      "title": "Êtes-vous à l’aise de prendre des décisions de placement?",
+      "li1": "Si vous n’avez pas peur de prendre des décisions de placement et d’assumer un risque de placement, les options non-PD vous donnent la liberté de décider comment investir vos cotisations (et la possibilité d’obtenir des rendements plus élevés).",
+      "li2": "Si les placements sont hors de votre zone de confort, l’option PD vous procure une rente mensuelle qui ne dépend pas du rendement du marché.",
+      "image": {
+        "src": "/icons/option4.gif",
+        "alt": "Volet 4"
+      }
+    },
+    "accordion5": {
+      "title": "Voulez-vous une approche active ou passive?",
+      "li1": "Les options non-PD ont une approche plus active : vous prenez vos décisions de placement en fonction de votre tolérance au risque et de vos objectifs de retraite. Vous décidez aussi du niveau de revenu à retirer selon vos besoins, et non une formule.",
+      "note": "vous pourriez devoir retirer un montant minimum chaque année en fonction de la réglementation en vigueur après votre 71e anniversaire.",
+      "li2": "Les options PD vous offrent une approche passive. Johnson & Johnson gère le régime et vous verse une rente de retraite sous forme de prestations mensuelles égales, déterminées selon une formule établie; vous n’avez rien à faire.",
+      "image": {
+        "src": "/icons/option5.gif",
+        "alt": "Volet 5"
+      }
+    },
+    "accordion6": {
+      "title": "Cherchez-vous à maximiser vos économies d’impôt maintenant?",
+      "li1": "Les cotisations aux régimes PD, CD, CAO et REER sont toutes versées avant impôt, ce qui signifie que vous ne payez de l’impôt que sur le montant que vous recevrez ou retirerez de ces régimes plus tard.",
+      "li2": "Les cotisations au CELI sont versées avec des dollars après impôt, mais votre épargne croît à l’abri de l’impôt, c’est-à-dire que vous ne payez pas d’impôt sur les revenus de placement (gains en capital et dividendes).",
+      "li3": "Le régime non enregistré est l’option la moins avantageuse sur le plan fiscal, puisque les cotisations sont versées après impôt et que les revenus de placement sont imposables.",
+      "image": {
+        "src": "/icons/option6.gif",
+        "alt": "Volet 6"
+      }
+    },
+    "callout2": {
+      "p1": "L’Agence du revenu du Canada (ARC) limite le montant que vous pouvez cotiser chaque année aux options d’épargne à imposition différée. <span>Vous êtes responsable de vous assurer que vous ne dépassez pas vos limites</span> et n’oubliez pas que les cotisations de contrepartie de Johnson & Johnson sont aussi déduites de votre limite personnelle. Trouvez les limites actuelles  ",
+      "p2": "Autres outils et ressources pour vous aider à choisir",
+      "link": "ici",
+      "href": "https://www.canada.ca/fr/agence-revenu/services/impot/administrateurs-regimes-enregistres/fesp/plafonds-cd-reer-rpdb-celi-mgap.html"
+    },
+    "copy3": {
+      "title": "Autres outils et ressources pour vous aider à choisir"
     }
   }
 }

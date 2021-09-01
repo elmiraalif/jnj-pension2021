@@ -8,6 +8,7 @@ import Portal from "../components/Portal"
 import NextPage from "../components/NextPage"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
+import { FormattedMessage } from "gatsby-plugin-intl"
 
 export default function Page04() {
   const secondary = "#0800a0"
@@ -15,7 +16,7 @@ export default function Page04() {
   return (
     <Layout>
       <Helmet>
-        <title>Choosing the right options</title>
+        <title>{intl.formatMessage({ id: "page4.title" })}</title>
       </Helmet>
       <StaticImage
         placeholder="none"
@@ -24,41 +25,35 @@ export default function Page04() {
       />
       <div id="page04">
         <div className="wrapper">
-          <h1 className="space-top-x">
-            How to <span>choose</span> between <span>options</span>
-          </h1>
+          <h1
+            className="space-top-x"
+            dangerouslySetInnerHTML={{
+              __html: intl.formatMessage({ id: "page4.copy1.title" }),
+            }}
+          />
           <p className="intro-copy">
-            We have created a program that fits various needs and savings goals
-            — and you get to decide which components will best allow you to meet
-            your goals.
+            <FormattedMessage id="page4.copy1.p1" />
           </p>
-          <p class="bold">There are two main decisions you need to make:</p>
+          <p class="bold">
+            <FormattedMessage id="page4.copy1.bold1" />
+          </p>
           <div className="heading-icon-top">
             <img src={"/icons/one-red.svg"} alt="One" width="30" />
             <p>
-              Will you participate in the Optional DB, Non-DB components, or
-              both?
+              <FormattedMessage id="page4.copy1.item1" />
             </p>
           </div>
           <div className="components wrapper-center">
-            {/* <StaticImage
-              placeholder="none"
-              src="../images/red_pink_boxes.png"
-              width={250}
-              placeholder="none"
-            /> */}
             <img src="/icons/boxes.png" alt="" width="220" />
           </div>
           <div className="heading-icon-top">
             <img src={"/icons/two-red.svg"} alt="two" width="30" />
             <p>
-              If you choose Non-DB components, which ones? Each option (DC,
-              RRSP, OAC, TFSA and Non-registered) comes with different features
-              and benefits.
+              <FormattedMessage id="page4.copy1.item2" />
             </p>
           </div>
           <p class="bold space-x">
-            To help you make the first decision, watch this video!
+            <FormattedMessage id="page4.copy1.bold2" />
           </p>
           <div className="space-2x">
             <StaticImage
@@ -73,243 +68,214 @@ export default function Page04() {
             <img src={"/icons/icon_info.svg"} alt="" width="35" />
             <div>
               <p>
-                The Pension & Savings Program supports you as you move forward
-                in life to make sure your selections continue to meet your goals
-                over time. You can can join or change your participation in the
-                optional DB and DC plans twice a year (in January and July). You
-                can modify your investment allocations and contributions to the
-                RRSP, OAC, TFSA and Non-registered at any time.
+                <FormattedMessage id="page4.callout1.p1" />
               </p>
               <p>
-                <div className="bold">Note:</div> All changes are applied
-                prospectively and do not impact any benefits already earned.
+                <span
+                  className="bold"
+                  dangerouslySetInnerHTML={{
+                    __html: intl.formatMessage({ id: "note" }),
+                  }}
+                />
+                :{" "}
+                <FormattedMessage id="page4.callout1.p2" />
               </p>
             </div>
           </div>
         </div>
         <div className="wrapper">
-          <h2 className="space-top-x">
-            Choosing between
-            <span>
-              <br /> optional components
-            </span>
-          </h2>
+          <h2
+            className="space-top-x"
+            dangerouslySetInnerHTML={{
+              __html: intl.formatMessage({ id: "page4.copy2.title" }),
+            }}
+          />
           <p className="intro-copy">
-            Choosing your pension and savings options is a personal decision,
-            but there are some common considerations for each option.
+            <FormattedMessage id="page4.copy2.p1" />
           </p>
           <Accordion
             border={secondary}
-            title="Are you saving for the short term or the long term?"
+            title={intl.formatMessage({ id: "page4.accordion1.title" })}
             icon="../icons/one_pink.svg"
             color={secondary}
           >
             <div>
               <ul>
-                <li>DB, DC and OAC can only be used for retirement income.</li>
                 <li>
-                  RRSP, TFSA and Non-registered provide more flexibility and can
-                  be used for long-term savings or in the shorter term, such as
-                  saving for a house, a car, or paying down student debt.
+                  <FormattedMessage id="page4.accordion1.li1" />
+                </li>
+                <li>
+                  <FormattedMessage id="page4.accordion1.li2" />
                 </li>
               </ul>
               <div className="space-2x">
-                {/* <StaticImage
-                  placeholder="none"
-                  src="../images/optional_item01.png"
-                /> */}
-                {/* <StaticImage
-                  placeholder="none"
-                  src="../images/test.webp"
-                /> */}
-                <img src={"/icons/option1.gif"} alt="Option 1" width="100%" />
+                <img
+                  src={intl.formatMessage({ id: "page4.accordion1.image.src" })}
+                  alt={intl.formatMessage({ id: "page4.accordion1.image.alt" })}
+                  width="100%"
+                />
               </div>
             </div>
           </Accordion>
           <Accordion
             border={secondary}
-            title="Do you value a predictable pension?"
+            title={intl.formatMessage({ id: "page4.accordion2.title" })}
             icon="../icons/two_pink.svg"
             color={secondary}
             svg="none"
           >
             <ul>
               <li>
-                DB (Core and Optional) provides you with a predictable pension
-                that will be paid to you in equal installments each month once
-                you retire for the rest of your life.
+                <FormattedMessage id="page4.accordion2.li1" />
               </li>
               <li>
-                The Non-DB options are less predictable, since your final
-                account balance will depend on the level of contributions and
-                their investment performance.
+                <FormattedMessage id="page4.accordion2.li2" />
               </li>
             </ul>
             <div className="space-2x">
-              {/* <StaticImage
-                placeholder="none"
-                src="../images/optional_item02.png"
-                placeholder="none"
-              /> */}
-              <img src={"/icons/option2.gif"} alt="Option 2" width="100%" />
+              <img
+                src={intl.formatMessage({ id: "page4.accordion2.image.src" })}
+                alt={intl.formatMessage({ id: "page4.accordion2.image.alt" })}
+                width="100%"
+              />
             </div>
           </Accordion>
           <Accordion
             border={secondary}
-            title="Do you want flexibility with how and when to use your savings?"
+            title={intl.formatMessage({ id: "page4.accordion3.title" })}
             icon="../icons/three_pink.svg"
             color={secondary}
           >
             <ul>
               <li>
-                DB is the least flexible option, since contributions and the
-                monthly pension you will receive in retirement are set — you
-                can’t change them.
+                <FormattedMessage id="page4.accordion3.li1" />
               </li>
               <li>
-                DC is a bit more flexible, as you get to decide how much to
-                withdraw each year at retirement (based on minimum and maximum
-                limits), while OACs let you choose how to enhance your DB
-                pension.
+                <FormattedMessage id="page4.accordion3.li2" />
               </li>
               <li>
-                TFSA and Non-registered are the most flexible, since there are
-                no rules around withdrawals: you can use the money as you need
-                it, whenever you need it.
+                <FormattedMessage id="page4.accordion3.li3" />
               </li>
               <li>
-                RRSP falls in the middle — the main purpose is to provide
-                retirement income, but you can also withdraw money from your
-                RRSP, tax-free (up to $35,000), for the{" "}
+                <FormattedMessage id="page4.accordion3.li4.p1" />{" "}
                 <a
-                  href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/what-home-buyers-plan.html"
+                  href={intl.formatMessage({ id: "home_buyers_href" })}
                   target="_blank"
                 >
-                  Home Buyers’ Plan
+                  <FormattedMessage id="home_buyers" />
                   <span className="link-icon">
                     &nbsp;
                     <FontAwesomeIcon icon={faExternalLinkAlt} />
                   </span>
                 </a>{" "}
-                and the{" "}
+                <FormattedMessage id="page4.accordion3.li4.and" />{" "}
                 <a
-                  href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/lifelong-learning-plan.html"
+                  href={intl.formatMessage({ id: "lifelong_learning_href" })}
                   target="_blank"
+                  style={{display: "inline"}}
                 >
-                  Lifelong Learning Plan
+                  <FormattedMessage id="lifelong_learning" />
+
                   <span className="link-icon">
                     &nbsp;
                     <FontAwesomeIcon icon={faExternalLinkAlt} />
                   </span>
                 </a>
-                . If you withdraw money from your RRSP for any other purpose,
-                you will need to pay tax on the withdrawal.
+                <FormattedMessage id="page4.accordion3.li4.p2" />
               </li>
             </ul>
             <div className="space-2x">
-              {/* <StaticImage
-                placeholder="none"
-                src="../images/optional_item03.png"
-                placeholder="none"
-              /> */}
-              <img src={"/icons/option3.gif"} alt="Option 3" width="100%" />
+              <img
+                src={intl.formatMessage({ id: "page4.accordion3.image.src" })}
+                alt={intl.formatMessage({ id: "page4.accordion3.image.alt" })}
+                width="100%"
+              />
             </div>
           </Accordion>
           <Accordion
             border={secondary}
-            title="How comfortable are you with making investment decisions?"
+            title={intl.formatMessage({ id: "page4.accordion4.title" })}
             icon="../icons/four_pink.svg"
             color={secondary}
           >
             <div>
               <ul>
                 <li>
-                  If you’re comfortable with making investment decisions and
-                  taking on investment risk, the Non-DB options give you the
-                  freedom to decide how to invest your contributions (and the
-                  potential to earn higher returns).
+                  <FormattedMessage id="page4.accordion4.li1" />
                 </li>
                 <li>
-                  If investing is out of your comfort zone, DB provides you with
-                  a monthly pension benefit that is not affected by market
-                  performance.
+                  <FormattedMessage id="page4.accordion4.li2" />
                 </li>
               </ul>
               <div className="space-2x">
-                {/* <StaticImage
-                  placeholder="none"
-                  src="../images/optional_item04.png"
-                /> */}
-                <img src={"/icons/option4.gif"} alt="Option 4" width="100%" />
+                <img
+                  src={intl.formatMessage({ id: "page4.accordion4.image.src" })}
+                  alt={intl.formatMessage({ id: "page4.accordion3.image.alt" })}
+                  width="100%"
+                />
               </div>
             </div>
           </Accordion>
 
           <Accordion
             border={secondary}
-            title="Do you want a hands-on or a hands-off approach?"
+            title={intl.formatMessage({ id: "page4.accordion5.title" })}
             icon="../icons/five_pink.svg"
             color={secondary}
           >
             <div>
               <ul>
                 <li>
-                  The Non-DB options are more hands-on: you make the investment
-                  decisions based on your risk tolerance and retirement goals.
-                  You also get to decide the level of retirement income you
-                  withdraw based on your needs — not on a formula. <br />
+                  <FormattedMessage id="page4.accordion5.li1" />
+                  <br />
                   <div className="space-x">
-                    <span className="bold">Note</span>: you may be required to
-                    withdraw a minimum amount each year based on current
-                    regulations after you reach the age of 71.
+                    <span
+                      className="bold"
+                      dangerouslySetInnerHTML={{
+                        __html: intl.formatMessage({ id: "note" }),
+                      }}
+                    />
+                    :{" "}
+                    <FormattedMessage id="page4.accordion5.note" />
                   </div>
                 </li>
                 <li>
-                  DB offers you a hands-off option. Johnson & Johnson manages
-                  and delivers your pension at retirement in equal monthly
-                  payments, based on a set formula; you don’t need to do
-                  anything.
+                  <FormattedMessage id="page4.accordion5.li2" />
                 </li>
               </ul>
               <div className="space-2x">
-                {/* <StaticImage
-                  placeholder="none"
-                  src="../images/optional_item05.png"
-                /> */}
-                <img src={"/icons/option5.gif"} alt="Option 5" width="100%" />
+                <img
+                  src={intl.formatMessage({ id: "page4.accordion5.image.src" })}
+                  alt={intl.formatMessage({ id: "page4.accordion4.image.alt" })}
+                  width="100%"
+                />
               </div>
             </div>
           </Accordion>
           <Accordion
             border={secondary}
-            title="Are you looking to maximize tax savings today?"
+            title={intl.formatMessage({ id: "page4.accordion6.title" })}
             icon="../icons/six_pink.svg"
             color={secondary}
           >
             <div>
               <ul>
                 <li>
-                  Contributions to DB, DC, OAC and RRSP are all made pre-tax —
-                  meaning you only pay tax on the amount you will receive or
-                  withdraw from these plans later on.
+                  <FormattedMessage id="page4.accordion6.li1" />
                 </li>
                 <li>
-                  Contributions to the TFSA are made with after-tax dollars, but
-                  your savings get to grow tax-free, so you don’t need to pay
-                  tax on any investment earnings (capital gains and dividends).
+                  <FormattedMessage id="page4.accordion6.li2" />
                 </li>
                 <li>
-                  Non-registered is the least tax-effective option, since
-                  contributions are made after-tax, and you also need to pay tax
-                  on any investment earnings.
+                  <FormattedMessage id="page4.accordion6.li3" />
                 </li>
               </ul>
               <div className="space-2x">
-                {/* <StaticImage
-                  placeholder="none"
-                  src="../images/optional_item06.png"
-                /> */}
-                <img src={"/icons/option6.gif"} alt="Option 6" width="100%" />
+                <img
+                  src={intl.formatMessage({ id: "page4.accordion6.image.src" })}
+                  alt={intl.formatMessage({ id: "page4.accordion5.image.alt" })}
+                  width="100%"
+                />
               </div>
             </div>
           </Accordion>
@@ -318,23 +284,22 @@ export default function Page04() {
           <div className="wrapper">
             <img src={"/icons/icon_info.svg"} alt="" width="35" />
             <div>
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: intl.formatMessage({ id: "page4.callout2.p1" }),
+                }}
+              />
               <p>
-                Canada Revenue Agency (CRA) limits how much you can contribute
-                each year to tax-deferred savings options.{" "}
-                <span>
-                  It is your responsibility to ensure you don’t exceed your
-                  limit
-                </span>{" "}
-                — and remember that Johnson & Johnson matching contributions are
-                also deducted from your personal limit.
-              </p>
-              <p>
-                Find the current limits{" "}
+                <FormattedMessage id="page4.callout2.p2" />{" "}
                 <a
-                  href="https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html"
+                  href={intl.formatMessage({
+                    id: "page4.callout2.href",
+                  })}
                   target="_blank"
                 >
-                  here
+                  {intl.formatMessage({
+                    id: "page4.callout2.link",
+                  })}
                   <span className="link-icon">
                     &nbsp;
                     <FontAwesomeIcon icon={faExternalLinkAlt} />
@@ -347,7 +312,7 @@ export default function Page04() {
         </div>
         <div className="wrapper">
           <span className="intro-copy bold space-x">
-            Additional tools and resources to help you choose
+            <FormattedMessage id="page4.copy3.title" />
           </span>
           <Portal />
           <NextPage

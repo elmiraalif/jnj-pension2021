@@ -120,6 +120,7 @@ export default function Page02() {
                   <a
                     href={intl.formatMessage({ id: "lifelong_learning_href" })}
                     target="_blank"
+                    style={{display: "inline"}}
                   >
                     <FormattedMessage id="lifelong_learning" />
                     <span className="link-icon">

@@ -2,6 +2,7 @@
   "title": "Pension & Savings Guide",
   "note": "Note",
   "fyb_portal": "FYB Portal",
+  "fyb_href": "https://jnj.hroffice.com/",
   "core_component": "Core component (all eligible employees participate):",
   "core_db": "Core DB",
   "db_option": "DB Option",
@@ -38,6 +39,30 @@
     "item7": "Managing your savings",
     "item8": "Leaving Johnson & Johnson",
     "item9": "Questions?"
+  },
+  "portal": {
+    "item1": {
+      "title": "Help Me Decide tool — <span class=\"italic-bold\">Coming in November</span>:",
+      "p": "Answer a few short questions and get important information that can help you meet your savings goals in the most tax effective way."
+    },
+    "item2": {
+      "title": "Pension Projection tool:",
+      "p": "See how much DB pension you could earn at different retirement dates. You can run three retirement dates simultaneously to compare your retirement income at different ages. You can also see how a change in salary would impact your retirement income. Easily save or print your results to review with your spouse/partner and/or a financial advisor."
+    },
+    "item3": {
+      "title": "Retirement Income Calculator (RIC):",
+      "p": "Review your estimated retirement income from the program, with the option to add in any personal savings you have in accounts like an RRSP or TFSA. You can set a retirement income goal and determine what your annual income in retirement will be."
+    },
+    "item4": {
+      "title": "Investor Questionnaire:",
+      "p": "Answer questions related to your savings goals and tolerance with investment risk to determine the right investment options for you."
+    },
+    "copy": {
+      "title": "A financial advisor",
+      "p": "It can be beneficial to consult a personal financial advisor if you need additional support and/or guidance for your big picture retirement savings plan. If you don’t yet have a financial advisor, you can find one ",
+      "link": "here",
+      "href": "https://fpcanada.ca/findaplanner"
+    }
   },
   "home": {
     "copy1": {
@@ -173,10 +198,99 @@
       "p2": "to meet your savings goals.",
       "p3": "<span class=\"bold\">Example</span>: you could contribute 4% to the RRSP, and an additional 4% to the TFSA. The Company will match your 4% RRSP contribution at 100%. There will be no Company match on your TFSA contributions, but you’ll benefit from additional savings and low investment management fees. The choice is yours!"
     },
-    "callout2":{
+    "callout2": {
       "title": "Why is the maximum Company match different for each optional component?",
       "p": "The aggregate maximum amount that a member can have matched by Johnson & Johnson for Non-DB options is either 1.75% if Optional DB is selected or 4% if Optional DB is not selected. How much Johnson & Johnson matches also depends on your selection of Non-DB options (i.e., DC, RRSP, OAC, TFSA or Non-registered) — as shown in the table above. The Company match is higher for DC, RRSP and OAC since the Company wants to encourage you to save for the long-term."
     }
-
+  },
+  "page4": {
+    "title": "Choosing the right options",
+    "copy1": {
+      "title": "How to <span>choose</span> between <span>options</span>",
+      "p1": "We have created a program that fits various needs and savings goals — and you get to decide which components will best allow you to meet your goals.",
+      "bold1": "There are two main decisions you need to make:",
+      "item1": "Will you participate in the Optional DB, Non-DB components, or both?",
+      "item2": "If you choose Non-DB components, which ones? Each option (DC, RRSP, OAC, TFSA and Non-registered) comes with different features and benefits.",
+      "bold2": "To help you make the first decision, watch this video!"
+    },
+    "callout1": {
+      "p1": "The Pension & Savings Program supports you as you move forward in life to make sure your selections continue to meet your goals over time. You can can join or change your participation in the optional DB and DC plans twice a year (in January and July). You can modify your investment allocations and contributions to the RRSP, OAC, TFSA and Non-registered at any time.",
+      "p2": "All changes are applied prospectively and do not impact any benefits already earned."
+    },
+    "copy2": {
+      "title": "Choosing between <span> <br /> optional components </span>",
+      "p1": "Choosing your pension and savings options is a personal decision, but there are some common considerations for each option."
+    },
+    "accordion1": {
+      "title": "Are you saving for the short term or the long term?",
+      "li1": "DB, DC and OAC can only be used for retirement income.",
+      "li2": "RRSP, TFSA and Non-registered provide more flexibility and can be used for long-term savings or in the shorter term, such as saving for a house, a car, or paying down student debt.",
+      "image": {
+        "src": "/icons/option1.gif",
+        "alt": "Option 1"
+      }
+    },
+    "accordion2": {
+      "title": "Do you value a predictable pension?",
+      "li1": "DB (Core and Optional) provides you with a predictable pension that will be paid to you in equal installments each month once you retire for the rest of your life.",
+      "li2": "The Non-DB options are less predictable, since your final account balance will depend on the level of contributions and their investment performance.",
+      "image": {
+        "src": "/icons/option2.gif",
+        "alt": "Option 2"
+      }
+    },
+    "accordion3": {
+      "title": "Do you want flexibility with how and when to use your savings?",
+      "li1": "DB is the least flexible option, since contributions and the monthly pension you will receive in retirement are set — you can’t change them.",
+      "li2": "DC is a bit more flexible, as you get to decide how much to withdraw each year at retirement (based on minimum and maximum limits), while OACs let you choose how to enhance your DB pension.",
+      "li3": "TFSA and Non-registered are the most flexible, since there are no rules around withdrawals: you can use the money as you need it, whenever you need it.",
+      "li4": {
+        "p1": "RRSP falls in the middle — the main purpose is to provide retirement income, but you can also withdraw money from your RRSP, tax-free (up to $35,000), for the",
+        "and": "and the",
+        "p2": ". If you withdraw money from your RRSP for any other purpose, you will need to pay tax on the withdrawal."
+      },
+      "image": {
+        "src": "/icons/option3.gif",
+        "alt": "Option 3"
+      }
+    },
+    "accordion4": {
+      "title": "How comfortable are you with making investment decisions?",
+      "li1": "If you’re comfortable with making investment decisions and taking on investment risk, the Non-DB options give you the freedom to decide how to invest your contributions (and the potential to earn higher returns).",
+      "li2": "If investing is out of your comfort zone, DB provides you with a monthly pension benefit that is not affected by market performance.",
+      "image": {
+        "src": "/icons/option4.gif",
+        "alt": "Option 4"
+      }
+    },
+    "accordion5": {
+      "title": "Do you want a hands-on or a hands-off approach?",
+      "li1": "The Non-DB options are more hands-on: you make the investment decisions based on your risk tolerance and retirement goals. You also get to decide the level of retirement income you withdraw based on your needs — not on a formula. ",
+      "note": "you may be required to withdraw a minimum amount each year based on current regulations after you reach the age of 71.",
+      "li2": "DB offers you a hands-off option. Johnson & Johnson manages and delivers your pension at retirement in equal monthly payments, based on a set formula; you don’t need to do anything.",
+      "image": {
+        "src": "/icons/option5.gif",
+        "alt": "Option 5"
+      }
+    },
+    "accordion6": {
+      "title": "Are you looking to maximize tax savings today?",
+      "li1": "Contributions to DB, DC, OAC and RRSP are all made pre-tax — meaning you only pay tax on the amount you will receive or withdraw from these plans later on.",
+      "li2": "Contributions to the TFSA are made with after-tax dollars, but your savings get to grow tax-free, so you don’t need to pay tax on any investment earnings (capital gains and dividends).",
+      "li3": "Non-registered is the least tax-effective option, since contributions are made after-tax, and you also need to pay tax on any investment earnings.",
+      "image": {
+        "src": "/icons/option6.gif",
+        "alt": "Option 6"
+      }
+    },
+    "callout2": {
+      "p1": "Canada Revenue Agency (CRA) limits how much you can contribute each year to tax-deferred savings options. <span>It is your responsibility to ensure you don’t exceed your limit</span> — and remember that Johnson & Johnson matching contributions are also deducted from your personal limit.",
+      "p2": "Find the current limits",
+      "link": "here",
+      "href": "https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html"
+    },
+    "copy3": {
+      "title": "Additional tools and resources to help you choose"
+    }
   }
 }
