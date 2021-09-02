@@ -1,5 +1,6 @@
 import React from "react"
 import { IntlContextConsumer, changeLocale } from "gatsby-plugin-intl"
+import "../styles/global.scss"
 
 const languageName = {
   en: "EN",
@@ -7,13 +8,14 @@ const languageName = {
 }
 
 export default function Language() {
+  
   return (
-    <div style={{marginTop: '10%'}}>
+    <div className="switcher_landing">
       <IntlContextConsumer>
         {({ languages, language: currentLocale }) =>
           languages.map(language => (
             <span
-              className="switcher switcher-landing"
+              className="switcher locales"
               key={language}
               onClick={() => changeLocale(language)}
               style={{
