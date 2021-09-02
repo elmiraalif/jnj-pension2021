@@ -8,7 +8,7 @@ import Portal from "../components/Portal"
 import Nextpage from "../components/NextPage"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
-import { Link } from "gatsby-plugin-intl"
+import { FormattedMessage, Link } from "gatsby-plugin-intl"
 
 export default function Managing() {
   const intl = useIntl()
@@ -17,98 +17,87 @@ export default function Managing() {
   return (
     <Layout>
       <Helmet>
-        <title>Managing your savings</title>
+        <title>{intl.formatMessage({ id: "page7.title" })}</title>
       </Helmet>
       <StaticImage src="../images/banner07.jpg" alt="Banner" />
       <div id="page07">
         <div className="wrapper">
-          <h1 className="space-top-x">
-            <span>Managing </span>your savings{" "}
-            <span>
-              {" "}
-              <br />
-              over time
-            </span>
-          </h1>
+          <h1
+            className="space-top-x"
+            dangerouslySetInnerHTML={{
+              __html: intl.formatMessage({ id: "page7.copy1.title" }),
+            }}
+          />
           <p className="intro-copy space-bottom-2x">
-            It is your responsibility to monitor and manage your savings over
-            time, and make changes, if needed. The decisions you need to make
-            depend on whether you are managing the DB or Non-DB options.
+            <FormattedMessage id="page7.copy1.p1" />
           </p>
-          <Accordion title="Optional DB" color="#fff" bg={primary}>
+          <Accordion
+            title={intl.formatMessage({ id: "optional_db" })}
+            color="#fff"
+            bg={primary}
+          >
             <p className="space-2x">
-              The Optional DB is more hands-off, since Johnson & Johnson makes
-              all investment decisions, and you contribute a set percentage. The
-              only decision you make is whether to participate or not — the rest
-              is taken care of.
+              <FormattedMessage id="page7.accordion1.p" />
             </p>
           </Accordion>
           <div className="space-x"></div>
-          <Accordion title="Non-DB Options" color="#fff" bg={accent}>
+          <Accordion
+            title={intl.formatMessage({ id: "non_db_options" })}
+            color="#fff"
+            bg={accent}
+          >
             <p>
-              You have more decisions to make when it comes to your Non-DB
-              options. You choose which options to participate in, how much to
-              contribute, and how to invest your accounts. Since your final
-              account balances will depend on investment earnings, it is
-              important to monitor your savings regularly and make adjustments,
-              if needed.
+              <FormattedMessage id="page7.accordion2.p" />
             </p>
             <div className="wrapper-center">
               <Accordion
-                title="Options"
+                title={intl.formatMessage({ id: "page7.accordion2.acc1.title" })}
                 color={accent}
                 icon={"/icons/component_icon.svg"}
               >
                 <p>
-                  You can choose from different Non-DB options: DC, RRSP, OAC,
-                  TFSA and Non-registered. Each plan comes with different
-                  features and benefits. You can change the options you
-                  participate in as your needs change — for example, you might
-                  be more focused on shorter-term savings options early on in
-                  your career, and more focused on saving for retirement later
-                  on.
+                  <FormattedMessage id="page7.accordion2.acc1.p1" />
                 </p>
                 <p>
-                  For a comparison of the plans,{" "}
-                  <Link to="/choose-right-options">click here</Link>.
+                  <FormattedMessage id="page7.accordion2.acc1.p2" />{" "}
+                  <Link to="/choose-right-options">
+                    <FormattedMessage id="page7.accordion2.acc1.link" />{" "}
+                  </Link>
+                  .
                 </p>
               </Accordion>
               <Accordion
-                title="Contributions"
+                title={intl.formatMessage({ id: "page7.accordion2.acc2.title" })}
                 color={accent}
                 icon={"/icons/contribution_icon.svg"}
               >
                 <p>
-                  You choose how much to contribute to the Non-DB options, and
-                  you can change your contributions as your financial situation
-                  changes.
+                  <FormattedMessage id="page7.accordion2.acc2.p1" />
                 </p>
                 <div className="space-2x">
                   <div className="box">
-                    When deciding how much to contribute, remember that:
+                    <FormattedMessage id="page7.accordion2.acc2.box_title" />
                   </div>
                   <div className="wrapper-center border-box">
                     <p>
-                      Johnson & Johnson matching contributions are tied to your
-                      contributions, up to a maximum: this means that the more
-                      you contribute, the more Johnson & Johnson also
-                      contributes (up to a maximum). Make sure to take full
-                      advantage of matching contributions — it’s like free
-                      money!
+                      <FormattedMessage id="page7.accordion2.acc2.box_p" />
                     </p>
                     <div className="space-2x"></div>
                     <div className="callout-pointer">
-                      <div className="bold">Note:</div> CRA sets maximums on how
-                      much you can contribute to tax-deferred options (DC, RRSP,
-                      OAC, TFSA) —{" "}
+                      <div className="bold">
+                        <FormattedMessage id="note" />
+                      </div>{" "}
+                      <FormattedMessage id="page7.accordion2.acc2.note" />{" "}
                       <span className="bold">
-                        it is your responsibility to ensure you don’t exceed{" "}
+                        <FormattedMessage id="page7.accordion2.acc2.bold" />{" "}
                         <a
-                          href="https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html"
+                          href={intl.formatMessage({
+                            id: "page7.accordion2.acc2.href",
+                          })}
                           target="_blank"
                           className="bold"
                         >
-                          CRA limits
+                          <FormattedMessage id="page7.accordion2.acc2.link" />
                           <span style={{ display: "inline-block" }}>
                             &nbsp;
                             <FontAwesomeIcon icon={faExternalLinkAlt} />
@@ -121,51 +110,55 @@ export default function Managing() {
                 </div>
               </Accordion>
               <Accordion
-                title="Investment decisions"
+                title={intl.formatMessage({
+                  id: "page7.accordion2.acc3.title",
+                })}
                 color={accent}
                 icon={"/icons/investment_icon.svg"}
               >
                 <p>
-                  You decide how to invest your Non-DB accounts. Investment
-                  options include:
+                  <FormattedMessage id="page7.accordion2.acc3.p1" />
                 </p>
                 <div className="heading-icon-top">
                   <img src="/icons/one_pink.svg" alt="One" width="25" />
-                  <p>
-                    <div className="bold">Equity and fixed income funds</div>{" "}
-                    for those who wish to build their own portfolio and more
-                    actively manage their investments.
-                  </p>
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: intl.formatMessage({
+                        id: "page7.accordion2.acc3.item1",
+                      }),
+                    }}
+                  />
                 </div>
                 <div className="heading-icon-top">
                   <img src="/icons/two_pink.svg" alt="Two" width="25" />
-                  <p>
-                    <span className="bold"> A balanced fund</span> that is
-                    designed to include both Equities (Canadian and global) and
-                    Fixed Income components.
-                  </p>
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: intl.formatMessage({
+                        id: "page7.accordion2.acc3.item2",
+                      }),
+                    }}
+                  />
                 </div>
                 <p>
-                  See a full list of investment options on the{" "}
+                  <FormattedMessage id="page7.accordion2.acc3.p2" />{" "}
                   <a href="https://jnj.hroffice.com/" target="_blank">
-                    FYB Portal
+                    <FormattedMessage id="fyb_portal" />
                     <span className="link-icon">
                       &nbsp;
                       <FontAwesomeIcon icon={faExternalLinkAlt} />
                     </span>
                   </a>{" "}
-                  &gt; Pension & Savings &gt; Manage Investments &gt; Change
-                  Investments
+                  <FormattedMessage id="page7.accordion2.acc3.path" />
                 </p>
                 <div className="divider"></div>
               </Accordion>
             </div>
           </Accordion>
-          <h2 className="space-top-x">Retirement planning tools</h2>
+          <h2 className="space-top-x">
+            <FormattedMessage id="page7.copy2.title" />
+          </h2>
           <p>
-            There are many tools available to you to help you make the most of
-            the Pension & Savings Program — be sure to take advantage of them to
-            maximize your savings!
+            <FormattedMessage id="page7.copy2.p" />
           </p>
           <div className="space-x">&nbsp;</div>
           <Portal />

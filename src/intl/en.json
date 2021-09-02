@@ -515,5 +515,46 @@
       "title": "Making changes",
       "p": "The Pension & Savings Program is designed to move with you as your savings goals evolve over time. That’s why you have the opportunity to join or change your participation in the optional DB and DC plans twice a year (in January and July). You can modify your investment allocations and contributions to the RRSP, OAC, TFSA and Non-registered at any time."
     }
+  },
+  "page7": {
+    "title": "Managing your savings",
+    "copy1": {
+      "title": "<span>Managing </span>your savings<br /><span>over time</span>",
+      "p1": "It is your responsibility to monitor and manage your savings over time, and make changes, if needed. The decisions you need to make depend on whether you are managing the DB or Non-DB options."
+    },
+    "accordion1": {
+      "p": "The Optional DB is more hands-off, since Johnson & Johnson makes all investment decisions, and you contribute a set percentage. The only decision you make is whether to participate or not — the rest is taken care of."
+    },
+    "accordion2": {
+      "p": "You have more decisions to make when it comes to your Non-DB options. You choose which options to participate in, how much to contribute, and how to invest your accounts. Since your final account balances will depend on investment earnings, it is important to monitor your savings regularly and make adjustments, if needed.",
+      "acc1": {
+        "title": "Options",
+        "p1": "You can choose from different Non-DB options: DC, RRSP, OAC, TFSA and Non-registered. Each plan comes with different features and benefits. You can change the options you participate in as your needs change — for example, you might be more focused on shorter-term savings options early on in your career, and more focused on saving for retirement later on.",
+        "p2": "For a comparison of the plans,",
+        "link": "click here"
+      },
+      "acc2": {
+        "title": "Contributions",
+        "p1": "You choose how much to contribute to the Non-DB options, and you can change your contributions as your financial situation changes.",
+        "box_title": "When deciding how much to contribute, remember that:",
+        "box_p": "Johnson & Johnson matching contributions are tied to your contributions, up to a maximum: this means that the more you contribute, the more Johnson & Johnson also contributes (up to a maximum). Make sure to take full advantage of matching contributions — it’s like free money!",
+        "note": "CRA sets maximums on how much you can contribute to tax-deferred options (DC, RRSP, OAC, TFSA) —",
+        "bold": "it is your responsibility to ensure you don’t exceed",
+        "link": "CRA limits",
+        "href": "https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html"
+      },
+      "acc3": {
+        "title": "Investment decisions",
+        "p1": "You decide how to invest your Non-DB accounts. Investment options include:",
+        "item1": "<div class=\"bold\">Equity and fixed income funds</div> for those who wish to build their own portfolio and more actively manage their investments.",
+        "item2": "<span class=\"bold\"> A balanced fund</span> that is designed to include both Equities (Canadian and global) and Fixed Income components.",
+        "p2": "See a full list of investment options on the",
+        "path": " > Pension & Savings > Manage Investments > Change                  Investments"
+      }
+    },
+    "copy2": {
+      "title": "Retirement planning tools",
+      "p": "There are many tools available to you to help you make the most of the Pension & Savings Program — be sure to take advantage of them to maximize your savings!"
+    }
   }
 }

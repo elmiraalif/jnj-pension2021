@@ -514,5 +514,46 @@
       "title": "Modifications",
       "p": "Le programme de retraite et d’épargne est conçu pour avancer avec vous à mesure que vos objectifs d’épargne évoluent. Voilà pourquoi vous avez l’occasion d’adhérer au programme et de modifier votre participation aux régimes facultatifs PD et CD deux fois par année (en janvier et en juillet). Vous pouvez modifier la répartition de vos placements et vos cotisations aux REER, CAO, CELI et régime non enregistré en tout temps."
     }
+  },
+  "page7": {
+    "title": "Gestion de votre épargne",
+    "copy1": {
+      "title": "<span>Gestion </span>de votre épargne <br />au fil <span>du temps</span>",
+      "p1": "Vous êtes responsable de surveiller et de gérer votre épargne au fil du temps et d’apporter des changements, si nécessaire. Les décisions que vous devez prendre dépendent des options que vous gérez; PD ou non-PD."
+    },
+    "accordion1": {
+      "p": "Le volet PD facultatif offre l’approche la plus passive, puisque Johnson & Johnson prend toutes les décisions de placement et que vous cotisez un pourcentage fixe. La seule décision que vous devez prendre est celle de participer ou non à ce volet — le reste est pris en charge."
+    },
+    "accordion2": {
+      "p": "Vous avez plus de décisions à prendre en ce qui concerne vos options non-PD. Vous choisissez les options auxquelles vous voulez participer, votre taux de cotisation et la façon d’investir vos comptes. Puisque le solde final de vos comptes dépendra des revenus de placement, il est important de surveiller régulièrement votre épargne et d’apporter les ajustements nécessaires.",
+      "acc1": {
+        "title": "Options",
+        "p1": "Vous avez le choix entre différentes options non-PD : CD, REER, CAO, CELI et régime non enregistré. Chaque régime comporte différentes caractéristiques et différents avantages. Vous pouvez modifier votre participation aux options à mesure que vos besoins évoluent. Par exemple, vous pourriez privilégier les options d’épargne à court terme au début de votre carrière, et vous concentrer davantage sur l’épargne-retraite plus tard.",
+        "p2": "Pour une comparaison des régimes,",
+        "link": "cliquez ici"
+      },
+      "acc2": {
+        "title": "Cotisations",
+        "p1": "Vous choisissez votre taux de cotisation aux options non-PD, et vous pouvez les modifier selon l’évolution de votre situation financière.",
+        "box_title": "Lorsque vous déterminez votre taux de cotisation, n’oubliez pas que :",
+        "box_p": "Les cotisations de contrepartie de Johnson & Johnson sont liées à vos cotisations, jusqu’à un maximum : ce qui signifie que plus vous cotisez, plus Johnson & Johnson cotise (sous réserve d’un maximum). Assurez-vous de profiter pleinement des cotisations de contrepartie — c’est comme de l’argent gratuit!",
+        "note": "L’ARC fixe des plafonds quant au montant que vous pouvez cotiser aux options à imposition différée (CD, REER, CAO, CELI). ",
+        "bold": "Vous êtes responsable de vous assurer de ne pas dépasser les ",
+        "link": "plafonds établis par l’ARC",
+        "href": "https://www.canada.ca/fr/agence-revenu/services/impot/administrateurs-regimes-enregistres/fesp/plafonds-cd-reer-rpdb-celi-mgap.html"
+      },
+      "acc3": {
+        "title": "Décisions de placement",
+        "p1": "Vous décidez comment investir vos comptes non-PD. Les options de placement incluent :",
+        "item1": "<div class=\"bold\">Fonds d’actions et de titres à revenu fixe</div> pour les gens qui souhaitent constituer leur propre portefeuille et gérer leurs placements plus activement.",
+        "item2": "<span class=\"bold\">Fonds équilibrés</span>  conçus pour inclure des actions (canadiennes et mondiales) et des titres à revenu fixe.",
+        "p2": "Voir la liste complète des options de placement sur le",
+        "path": " > Retraite et épargne > Gestion des placements > Modification des placements."
+      }
+    },
+    "copy2": {
+      "title": "Outils de planification de la retraite",
+      "p": "De nombreux outils sont à votre disposition pour vous aider à profiter au maximum des programmes de retraite et d’épargne — assurez-vous de les utiliser afin de maximiser votre épargne!"
+    }
   }
 }
