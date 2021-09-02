@@ -3,7 +3,6 @@
   "note": "Remarque :",
   "important": "Important :",
   "fyb_portal": "Portail À votre avantage",
-  "fyb_href": "",
   "core_component": "Volet de base (tous les employés admissibles y participent):",
   "core_db": "PD de base",
   "db_option": "Option PD",
@@ -23,7 +22,9 @@
   "optional_components": "Volets facultatifs:",
   "header": {
     "red_button": "Voir le guide d’assurance collective",
-    "outline_button": "Envoyer une question"
+    "outline_button": "Envoyer une question",
+    "href_red": "",
+    "href_outline": "https://fr.surveymonkey.com/r/JJpensionfr"
   },
   "footer": {
     "h4": "Obtenez de l’aide",
@@ -268,7 +269,8 @@
       "bold1": "Vous avez deux grandes décisions à prendre :",
       "item1": "Participerez-vous aux volets facultatifs PD, non-PD, ou aux deux?",
       "item2": "Si vous choisirez des volets non-PD, lesquels? Chaque option (CD, REER, CAO, CELI et régime non enregistré) comporte des caractéristiques et des avantages différents.",
-      "bold2": "Pour vous aider à prendre la première décision, regardez cette vidéo!"
+      "bold2": "Pour vous aider à prendre la première décision, regardez cette vidéo!",
+      "image": "/icons/boxes_fr.jpg"
     },
     "callout1": {
       "p1": "Le programme de retraite et d’épargne vous soutient à chaque étape de la vie pour que vos choix continuent à répondre à vos objectifs au fil du temps. Vous pouvez adhérer ou modifier votre participation aux régimes facultatifs PD et CD deux fois par année (en janvier et en juillet). Vous pouvez modifier la répartition de vos placements et vos cotisations aux REER, CAO, CELI et régime non enregistré en tout temps. ",
@@ -283,7 +285,7 @@
       "li1": "Les volets PD, CD et CAO ne peuvent être utilisés que pour le revenu de retraite.",
       "li2": "Le REER, le CELI et le régime non enregistré offrent plus de flexibilité et peuvent être utilisés pour l’épargne à long terme ou à plus court terme, par exemple pour l’achat d’une maison ou d’une voiture, ou le remboursement de dettes d’études.",
       "image": {
-        "src": "/icons/option1.gif",
+        "src": "/icons/option1_fr.gif",
         "alt": "Volet 1"
       }
     },
@@ -292,7 +294,7 @@
       "li1": "Le régime PD (volets de base et facultatif) vous fournit une rente prévisible qui vous est versée en prestations égales chaque mois pendant votre retraite, pour le reste de votre vie.",
       "li2": "Les options non-PD sont moins prévisibles, puisque le solde final de votre compte dépendra du taux de cotisation et du rendement des placements.",
       "image": {
-        "src": "/icons/option2.gif",
+        "src": "/icons/option2_fr.gif",
         "alt": "Volet 2"
       }
     },
@@ -307,7 +309,7 @@
         "p2": ". Si vous retirez de l’argent de votre REER à toute autre fin, vous devrez payer de l’impôt sur ce retrait."
       },
       "image": {
-        "src": "/icons/option3.gif",
+        "src": "/icons/option3_fr.gif",
         "alt": "Volet 3"
       }
     },
@@ -316,7 +318,7 @@
       "li1": "Si vous n’avez pas peur de prendre des décisions de placement et d’assumer un risque de placement, les options non-PD vous donnent la liberté de décider comment investir vos cotisations (et la possibilité d’obtenir des rendements plus élevés).",
       "li2": "Si les placements sont hors de votre zone de confort, l’option PD vous procure une rente mensuelle qui ne dépend pas du rendement du marché.",
       "image": {
-        "src": "/icons/option4.gif",
+        "src": "/icons/option4_fr.gif",
         "alt": "Volet 4"
       }
     },
@@ -326,7 +328,7 @@
       "note": "vous pourriez devoir retirer un montant minimum chaque année en fonction de la réglementation en vigueur après votre 71e anniversaire.",
       "li2": "Les options PD vous offrent une approche passive. Johnson & Johnson gère le régime et vous verse une rente de retraite sous forme de prestations mensuelles égales, déterminées selon une formule établie; vous n’avez rien à faire.",
       "image": {
-        "src": "/icons/option5.gif",
+        "src": "/icons/option5_fr.gif",
         "alt": "Volet 5"
       }
     },
@@ -336,7 +338,7 @@
       "li2": "Les cotisations au CELI sont versées avec des dollars après impôt, mais votre épargne croît à l’abri de l’impôt, c’est-à-dire que vous ne payez pas d’impôt sur les revenus de placement (gains en capital et dividendes).",
       "li3": "Le régime non enregistré est l’option la moins avantageuse sur le plan fiscal, puisque les cotisations sont versées après impôt et que les revenus de placement sont imposables.",
       "image": {
-        "src": "/icons/option6.gif",
+        "src": "/icons/option6_fr.gif",
         "alt": "Volet 6"
       }
     },

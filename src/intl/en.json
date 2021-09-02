@@ -3,7 +3,6 @@
   "note": "Note:",
   "important": "Important:",
   "fyb_portal": "FYB Portal",
-  "fyb_href": "https://jnj.hroffice.com/",
   "core_component": "Core component (all eligible employees participate):",
   "core_db": "Core DB",
   "db_option": "DB Option",
@@ -23,7 +22,9 @@
   "optional_components": "Optional components:",
   "header": {
     "red_button": "See the Benefits Plan guide",
-    "outline_button": "Submit a question"
+    "outline_button": "Submit a question",
+    "href_red": "",
+    "href_outline": "https://www.surveymonkey.com/r/jjpension"
   },
   "footer": {
     "h4": "Get support!",
@@ -269,7 +270,8 @@
       "bold1": "There are two main decisions you need to make:",
       "item1": "Will you participate in the Optional DB, Non-DB components, or both?",
       "item2": "If you choose Non-DB components, which ones? Each option (DC, RRSP, OAC, TFSA and Non-registered) comes with different features and benefits.",
-      "bold2": "To help you make the first decision, watch this video!"
+      "bold2": "To help you make the first decision, watch this video!",
+      "image": "/icons/boxes.png"
     },
     "callout1": {
       "p1": "The Pension & Savings Program supports you as you move forward in life to make sure your selections continue to meet your goals over time. You can can join or change your participation in the optional DB and DC plans twice a year (in January and July). You can modify your investment allocations and contributions to the RRSP, OAC, TFSA and Non-registered at any time.",

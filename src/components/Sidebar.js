@@ -27,7 +27,7 @@ export default function Sidebar() {
               {intl.formatMessage({ id: "header.red_button" })}
             </Link>
             <a
-              to="https://www.surveymonkey.com/r/jjpension"
+              href={intl.formatMessage({ id: "header.href_outline" })}
               target="_blank"
               className="btn btn-outline"
             >

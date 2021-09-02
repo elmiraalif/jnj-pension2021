@@ -9,7 +9,7 @@ export default function Portal() {
   return (
     <div className="portal">
       <div className="title space-2x">
-        <a href={intl.formatMessage({ id: "fyb_href" })} target="_blank">
+        <a href="https://jnj.hroffice.com/" target="_blank">
           <FormattedMessage id="fyb_portal" />{" "}
           <FontAwesomeIcon
             icon={faExternalLinkAlt}
@@ -69,7 +69,10 @@ export default function Portal() {
       </h3>
       <p>
         <FormattedMessage id="portal.copy.p" />{" "}
-        <a href={intl.formatMessage({id: "portal.copy.href"})} target="_blank">
+        <a
+          href={intl.formatMessage({ id: "portal.copy.href" })}
+          target="_blank"
+        >
           <FormattedMessage id="portal.copy.link" />
           <span className="link-icon">
             &nbsp;

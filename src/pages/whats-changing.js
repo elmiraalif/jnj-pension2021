@@ -64,7 +64,7 @@ export default function Home() {
                 <FormattedMessage id="home.callout2.p1" />
               </p>
               <p>
-                <a to="https://jnj.hroffice.com/" target="_blank">
+                <a href="https://jnj.hroffice.com/" target="_blank">
                   <FormattedMessage id="fyb_portal" />
                   <span class="link-icon">
                     &nbsp;

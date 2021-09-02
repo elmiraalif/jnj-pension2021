@@ -44,7 +44,7 @@ export default function Page04() {
             </p>
           </div>
           <div className="components wrapper-center">
-            <img src="/icons/boxes.png" alt="" width="220" />
+            <img src={intl.formatMessage({id: "page4.copy1.image"})} alt="" width="220" />
           </div>
           <div className="heading-icon-top">
             <img src={"/icons/two-red.svg"} alt="two" width="30" />
