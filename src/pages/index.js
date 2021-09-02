@@ -13,29 +13,37 @@ import {
 } from "../styles/index.module.scss"
 import Logo from "../images/logo.svg"
 import Language from "../components/LandingLanguage"
+import { useIntl } from "gatsby-plugin-intl"
+import { Helmet } from "react-helmet"
 
 
 export default function Home() {
+  const intl = useIntl()
   return (
-    <div className={home}>
-      <div className={`${header} ${wrapper}`}>
-        <img src={Logo} alt="Logo" />
-      </div>
-      <main className={content}>
-        <div className={`${content_body} ${wrapper}`}>
-          <h1>Supporting you in the moments that matter</h1>
-          <div className={buttons}>
-            <Link to="/whats-changing" className={btn}>
-              Explore the Pension & Savings Program
-            </Link>
-            <a to="http://jnjbenefitsguide.ca/" className={btn}>
-              Explore the Benefits Plan
-            </a>
-          </div>
-          <Language />
+    <>
+      <Helmet>
+        <title>Johnson & Johnson </title>
+      </Helmet>
+      <div className={home}>
+        <div className={`${header} ${wrapper}`}>
+          <img src={Logo} alt="Logo" />
         </div>
-        <div className={content_image}></div>
-      </main>
-    </div>
+        <main className={content}>
+          <div className={`${content_body} ${wrapper}`}>
+            <h1>{intl.formatMessage({ id: "index.title" })}</h1>
+            <div className={buttons}>
+              <Link to="/whats-changing" className={btn}>
+                {intl.formatMessage({ id: "index.btn_pension" })}
+              </Link>
+              <a href="http://jnjbenefitsguide.ca/" className={btn}>
+                {intl.formatMessage({ id: "index.btn_benefit" })}
+              </a>
+            </div>
+            <Language />
+          </div>
+          <div className={content_image}></div>
+        </main>
+      </div>
+    </>
   )
 }

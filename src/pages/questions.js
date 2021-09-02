@@ -5,21 +5,27 @@ import Layout from "../components/Layout"
 import Submit from "../components/Submit"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
+import { FormattedMessage, useIntl } from "gatsby-plugin-intl"
 
 export default function Questions() {
+  const intl = useIntl()
   return (
     <Layout>
       <Helmet>
-        <title>Questions?</title>
+        <title>{intl.formatMessage({ id: "page9.title" })}</title>
       </Helmet>
       <StaticImage src="../images/banner09.jpg" alt="Banner" />
       <div id="page09">
         <div className="wrapper">
-          <h1 className="space-x">Questions?</h1>
+          <h1 className="space-x">
+            {intl.formatMessage({ id: "page9.title" })}
+          </h1>
           <Submit />
           <div className="content-container space-2x">
             <div className="col">
-              <h3 className="space-x">Contact the Benefit Help Centre</h3>
+              <h3 className="space-x" style={{ lineHeight: "140%" }}>
+                <FormattedMessage id="page9.left_col.title" />
+              </h3>
               <div className="heading-icon">
                 <img src={"/icons/mail.png"} alt="" width="20" />
                 <a href="mailto:fyb@hroffice.com">fyb@hroffice.com</a>
@@ -27,26 +33,27 @@ export default function Questions() {
               <div className=" space-2x heading-icon">
                 <img src={"/icons/phone.png"} alt="" width="20" />
 
-                <div className="phone">
-                  1-866-769-8521 <br /> Monday to Friday <br /> 8:30 AM to 5 PM
-                  ET
-                </div>
+                <div
+                  className="phone"
+                  dangerouslySetInnerHTML={{
+                    __html: intl.formatMessage({ id: "page9.left_col.phone" }),
+                  }}
+                />
               </div>
             </div>
             <div className="col">
-              <h3 className="space-x">Ask AVA</h3>
+              <h3 className="space-x" style={{ lineHeight: "140%" }}>
+                <FormattedMessage id="page9.right_col.title" />
+              </h3>
               <p>
-                AVA is a digital assistant that can answer your questions 24/7.
-                AVA can help you access information about your benefits
-                coverage, your retirement & savings program contributions, and
-                account balances.
+                <FormattedMessage id="page9.right_col.p1" />
               </p>
               <p>
-                Launch AVA from the{" "}
+                <FormattedMessage id="page9.right_col.p2" />{" "}
                 <a href="https://jnj.hroffice.com/" target="_blank">
-                  FYB Portal
+                  <FormattedMessage id="fyb_portal" />
                   <span className="link-icon">
-                    &nbsp; 
+                    &nbsp;
                     <FontAwesomeIcon icon={faExternalLinkAlt} />
                   </span>
                 </a>

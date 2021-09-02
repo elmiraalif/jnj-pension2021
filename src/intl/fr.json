@@ -117,6 +117,11 @@
       "goals": "retraite"
     }
   },
+  "index": {
+    "title": "Pour vous soutenir dans les moments importants",
+    "btn_pension": "Explorez le programme de retraite et d’épargne",
+    "btn_benefit": "Explorez le régime d’assurance collective"
+  },
   "home": {
     "copy1": {
       "title": "Ce qui <span>change</span>",
@@ -636,6 +641,22 @@
       "acc6": {
         "p": "Vous recevrez la valeur totale de votre compte (c’est-à-dire vos cotisations et celles de Johnson & Johnson, en plus des revenus de placement) sous forme de versement en espèces sans aucune retenue d’impôt, puisque les cotisations ont été versées avec des dollars après impôt (c’est-à-dire que l’impôt a déjà été retenu)."
       }
+    }
+  },
+  "page9": {
+    "title": "Questions?",
+    "callout": {
+      "p": "Envoyez une question à propos du nouveau programme de retraite et d’épargne d’ici le <span class=\"bold\">30 septembre</span>. Nous répondrons à vos questions lors des séances d’information en octobre.",
+      "btn": "Envoyer une question"
+    },
+    "left_col": {
+      "title": "Communiquez avec le Centre d’appels des avantages sociaux",
+      "phone": "1-866-769-8521, <br />du lundi au vendredi, <br /> de 8 h 30 à 17 h, HE"
+    },
+    "right_col": {
+      "title": "Demandez à AVA",
+      "p1": "AVA est un assistant numérique qui peut répondre à vos questions 24/7. AVA peut vous renseigner sur votre couverture d’assurance collective, vos cotisations au programme de retraite et d’épargne et le solde de vos comptes.",
+      "p2": "Lancez AVA à partir du"
     }
   }
 }

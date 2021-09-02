@@ -117,6 +117,11 @@
       "goals": "Retirement"
     }
   },
+  "index":{
+    "title": "Supporting you in the moments that matter",
+    "btn_pension": "Explore the Pension & Savings Program",
+    "btn_benefit": "Explore the Benefits Plan"
+  },
   "home": {
     "copy1": {
       "title": "What’s <span>changing</span>",
@@ -637,6 +642,22 @@
       "acc6": {
         "p": "You will receive the total value of your account (including your own and Johnson & Johnson’s contributions, plus investment returns) as a cash payment without any tax deductions, since contributions were made with after-tax dollars (i.e., tax was already withheld)."
       }
+    }
+  },
+  "page9": {
+    "title": "Questions?",
+    "callout": {
+      "p": "Submit a question about our new Pension & Savings Program by<span class=\"bold\">September 30</span>. We will answer your questions during the information sessions in October.",
+      "btn": "Submit a question"
+    },
+    "left_col":{
+      "title": "Contact the Benefit Help Centre",
+      "phone": "1-866-769-8521 <br /> Monday to Friday <br /> 8:30 AM to 5 PM ET"
+    },
+    "right_col":{
+      "title": "Ask AVA",
+      "p1": "AVA is a digital assistant that can answer your questions 24/7. AVA can help you access information about your benefits coverage, your retirement & savings program contributions, and account balances.",
+      "p2": "Launch AVA from the"
     }
   }
 }
