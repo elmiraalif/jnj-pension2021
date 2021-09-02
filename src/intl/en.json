@@ -449,7 +449,7 @@
       "li4": " He will benefit from much lower fees than he would from a personal TFSA",
       "note": "because he is already receiving a 4% Company match on his DC contributions, Sundeep will not receive any matching contributions to the TFSA."
     },
-    "aamna":{
+    "aamna": {
       "p1": "Aamna is planning to retire early, in the next three to four years. She is focused on boosting her retirement income and minimizing a reduction to her pension.",
       "p2": "To meet these goals, Aamna decides to:",
       "box1": "DB",
@@ -473,7 +473,7 @@
       "help": "Help Me Decide tool",
       "p1": "When you enrol in the Pension & Savings Program, you can use the",
       "href": "https://jnj.hroffice.com",
-      "p2": "to help you choose the right options for you. Keep in mind that the tool will always look to maximize the Company matching contributions and tax savings for you. However, your needs and savings goals may differ from the tool’s recommendations, especially if you’re saving for the short term." 
+      "p2": "to help you choose the right options for you. Keep in mind that the tool will always look to maximize the Company matching contributions and tax savings for you. However, your needs and savings goals may differ from the tool’s recommendations, especially if you’re saving for the short term."
     },
     "callout2": {
       "p1": "The scenarios shown here are for illustrative purposes only, and your personal situation may differ. CRA limits how much you can contribute each year to tax-deferred savings options.",
@@ -507,7 +507,7 @@
       "p1": "You will also find a Help Me Decide tool on the",
       "p2": "when you enrol. You answer a few short questions, and the tool can help you choose the most tax-effective savings options for your personal circumstances."
     },
-    "callout2":{
+    "callout2": {
       "tip": "Tip!",
       "p": "If you want to select the options that were recommended to you in the Help Me Decide tool, you will need to enter them into the enrolment tool — this does not happen automatically!"
     },
@@ -555,6 +555,88 @@
     "copy2": {
       "title": "Retirement planning tools",
       "p": "There are many tools available to you to help you make the most of the Pension & Savings Program — be sure to take advantage of them to maximize your savings!"
+    }
+  },
+  "page8": {
+    "title": "Leaving Johnson & Johnson",
+    "copy1": {
+      "title": "What happens when <span><br />you retire</span>"
+    },
+    "accordion1": {
+      "p": "Pays an annual pension for as long as you live — 0.50% of your final average earnings (FAE) multiplied by your credited service earned.",
+      "bold": "Want to see how much your monthly pension could be?",
+      "note": "Try out the Pension Projection Tool on the"
+    },
+    "accordion2": {
+      "acc1": {
+        "p": "Pays an annual pension for as long as you live, on top of the core DB component — 0.70% of your final average earnings (FAE) multiplied by your credited service earned.",
+        "bold": "Want to see how much your monthly pension could be?",
+        "note": "Try out the Pension Projection Tool on the"
+      },
+      "acc2": {
+        "p1": " Your DC account balance is locked-in to provide retirement income. When you retire, you can convert your account balance into a locked-in retirement account (LIRA) to keep your money invested, or into a life income fund (LIF) that you can use to withdraw money. You choose how much to withdraw each year (within set minimum/maximum limits).",
+        "p2": "Alternatively, you can purchase an annuity with your DC account balance. An annuity pays a monthly pension for as long as you live, similar to the DB option."
+      },
+      "acc3": {
+        "p1": "You will receive an account balance that you can use to boost your retirement income. The account balance is based on contributions and investment earnings. You can withdraw as much or as little as you need. Note that you will need to pay tax on the money you withdraw from your RRSP. You must convert your RRSP into a Registered Retirement Income Fund (RRIF) by age 71.",
+        "p2": "You can also use the RRSP for the",
+        "and": "and the",
+        "p3": "Plan before you retire."
+      },
+      "acc4": {
+        "p1": "You can use your OAC account to purchase additional DB benefits (i.e., to increase your monthly pension or improve benefits to your spouse or beneficiary), up to the",
+        "p2": " The unused balance of your OAC account will be paid in cash (less tax deductions)."
+      },
+      "acc5": {
+        "p": "You will receive an account balance that you can use to boost your retirement income. The account balance is based on contributions and investment earnings. You can withdraw as much or as little as you need."
+      },
+      "acc6": {
+        "p": "You will receive an account balance that you can use to boost your retirement income. The account balance is based on contributions and investment earnings. You can withdraw as much or as little as you need."
+      }
+    },
+    "callout": {
+      "title": "Government Benefits",
+      "p1": "Government benefits like Canada Pension Plan (CPP), Quebec Pension Plan (QPP), and Old Age Security (OAS) are separate from the Pension & Savings Program. Due the recent enhancements to CPP/QPP, you will likely receive more from CPP/QPP than you would have previously.",
+      "p2": "Here’s more information on",
+      "link": "government benefits",
+      "href": "https://www.canada.ca/en/services/benefits/publicpensions.html"
+    },
+    "copy2": {
+      "title": "What happens if you <br /><span>leave before retirement</span>",
+      "you_can": "You can:",
+      "either": "You can either:"
+    },
+    "accordion3": {
+      "li1": "Leave your money in the pension plan and draw a pension at age 55 or later (this is called a deferred pension), or",
+      "li2": "If you are younger than 55, you may transfer the lump-sum value of your pension to a locked-in plan (e.g., your next employer’s pension plan (if allowed) or a personal locked-in retirement account, LIRA)."
+    },
+    "accordion4": {
+      "acc1": {
+        "li1": "Leave your money in the pension plan and draw a pension at age 55 or later (this is called a deferred pension), or",
+        "li2": "If you are younger than 55, you may transfer the lump-sum value of your pension to a locked-in plan (e.g., your next employer’s pension plan (if allowed) or a personal locked-in retirement account, LIRA)."
+      },
+      "acc2": {
+        "p": "You will receive the total value of your account (including your own and Johnson & Johnson’s contributions, plus investment returns). ",
+        "li1": "Transfer the money to a locked-in plan (e.g., your next employer’s pension plan (if allowed) or a personal locked-in retirement account, LIRA), or",
+        "li2": "Purchase a deferred annuity."
+      },
+      "acc3": {
+        "p1": "You will receive the total value of your account (including your own and Johnson & Johnson’s contributions, plus investment returns). ",
+        "li1": "Transfer the money to a personal RRSP, or",
+        "li2": "Take a cash payment less tax deductions."
+      },
+      "acc4": {
+        "li1": "If you choose a deferred pension for your DB benefits, your OACs will also stay in the plan until retirement, at which point OACs will be used to improve your DB benefits.",
+        "li2": "If you choose a lump-sum payout for the DB benefits, your OACs will also be paid out."
+      },
+      "acc5": {
+        "p": "You will receive the total value of your account (including your own and Johnson & Johnson’s contributions, plus investment returns). ",
+        "li1": "Transfer the money to a personal TFSA, or",
+        "li2": "Take a cash payment without any tax deductions, since contributions were made with after-tax dollars (i.e., tax was already withheld)."
+      },
+      "acc6": {
+        "p": "You will receive the total value of your account (including your own and Johnson & Johnson’s contributions, plus investment returns) as a cash payment without any tax deductions, since contributions were made with after-tax dollars (i.e., tax was already withheld)."
+      }
     }
   }
 }

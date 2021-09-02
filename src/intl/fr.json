@@ -555,5 +555,87 @@
       "title": "Outils de planification de la retraite",
       "p": "De nombreux outils sont à votre disposition pour vous aider à profiter au maximum des programmes de retraite et d’épargne — assurez-vous de les utiliser afin de maximiser votre épargne!"
     }
+  },
+  "page8": {
+    "title": "Départ de Johnson & Johnson",
+    "copy1": {
+      "title": "Qu’arrive-t-il lorsque vous prenez <span><br />votre retraite?</span>"
+    },
+    "accordion1": {
+      "p": "Vous verse une rente mensuelle pendant le reste de votre vie — 0.50 % de votre salaire moyen de fin de carrière.",
+      "bold": "Vous voulez savoir à combien pourrait s’élever votre rente mensuelle?",
+      "note": "projection de la rente sur le"
+    },
+    "accordion2": {
+      "acc1": {
+        "p": "Vous verse une rente mensuelle pendant le reste de votre vie — 0.70 % de votre salaire moyen de fin de carrière en plus du régime PD de base. ",
+        "bold": "Vous voulez savoir à combien pourrait s’élever votre rente mensuelle?",
+        "note": "Utilisez l’outil de projection de la rente sur"
+      },
+      "acc2": {
+        "p1": "Votre compte CD est immobilisé jusqu’à la retraite afin de vous fournir un revenu. Lorsque vous prenez votre retraite, vous pouvez transférer le solde de votre compte CD à un compte de retraite immobilisé (CRI) pour garder votre argent investi, ou à un fonds de revenu viager (FRV) qui vous permet d’effectuer des retraits. Vous décidez du montant à retirer chaque année (sous réserve des minimums et des maximums établis).",
+        "p2": "Vous pouvez aussi utiliser le solde de votre compte CD pour souscrire une rente qui vous verse une prestation mensuelle pendant le reste de votre vie, comme dans le cas de l’option PD."
+      },
+      "acc3": {
+        "p1": "Vous recevrez le solde de votre compte que vous pourrez utiliser pour augmenter votre revenu de retraite. Le solde de votre compte est fonction des cotisations et des revenus de placement. Vous pouvez retirer autant ou aussi peu que vous le souhaitez. Notez que vous devrez payer l’impôt sur les retraits que vous effectuez de votre REER. Vous devez transformer votre REER en fonds enregistré de revenu de retraite (FERR) au plus tard à 71 ans.",
+        "p2": "Avant votre retraite, vous pouvez aussi utiliser le REER pour le",
+        "and": "et le",
+        "p3": " "
+      },
+      "acc4": {
+        "p1": "Vous pouvez utiliser votre compte CAO pour acheter des prestations PD additionnelles (afin d’augmenter votre rente mensuelle ou de bonifier les prestations de votre conjoint ou bénéficiaire) sous réserve du",
+        "p2": " Le solde inutilisé de votre compte CAO vous sera versé au comptant (moins les retenues d’impôt)."
+      },
+      "acc5": {
+        "p": "Vous recevrez le solde de votre compte que vous pourrez utiliser pour augmenter votre revenu de retraite. Le solde de votre compte est fonction des cotisations et des revenus de placement. Vous pouvez retirer autant ou aussi peu que vous le souhaitez."
+      },
+      "acc6": {
+        "p": "Vous recevrez le solde de votre compte que vous pourrez utiliser pour augmenter votre revenu de retraite. Le solde de votre compte est fonction des cotisations et des revenus de placement. Vous pouvez retirer autant ou aussi peu que vous le souhaitez."
+      }
+    },
+    "callout": {
+      "title": "Prestations d’État",
+      "p1": "Les prestations d’État comme le Régime de pensions du Canada (RPC), le Régime de rentes du Québec (RRQ) et la Sécurité de la vieillesse (SV) sont distinctes du Programme de retraite et d’épargne. En raison des récentes bonifications apportées au RPC/RRQ, vous recevrez probablement des prestations plus élevées du RPC/RRQ que vous ne l’auriez fait auparavant.",
+      "p2": "Voici plus d’informations sur les",
+      "link": "prestations d’État",
+      "href": "https://www.canada.ca/fr/services/prestations/pensionspubliques.html"
+    },
+    "copy2": {
+      "title": "Ce qui se passe si vous <br /><span>quittez votre emploi avant la retraite</span>",
+      "you_can": "Vous pouvez :",
+      "either": "Vous pouvez :"
+    },
+    "accordion3": {
+      "li1": "laisser votre argent dans le régime de retraite et toucher une rente à partir de 55 ans ou après (ce qu’on appelle une rente différée), ou",
+      "li2": "si vous avez moins de 55 ans, vous pouvez transférer la valeur forfaitaire de votre rente à un régime immobilisé (p. ex. le régime de retraite de votre prochain employeur (si cela est autorisé) ou à un compte de retraite immobilisé (CRI) personnel) "
+    },
+    "accordion4": {
+      "acc1": {
+        "li1": "laisser votre argent dans le régime de retraite et toucher une rente à partir de 55 ans ou après (ce qu’on appelle une rente différée), ou",
+        "li2": "si vous avez moins de 55 ans, vous pouvez transférer la valeur forfaitaire de votre rente à un régime immobilisé (p. ex. le régime de retraite de votre prochain employeur (si cela est autorisé) ou à un compte de retraite immobilisé (CRI) personnel) "
+      },
+      "acc2": {
+        "p": "Vous recevrez la valeur totale de votre compte (c’est-à-dire vos cotisations et celles de Johnson & Johnson, en plus des revenus de placement).",
+        "li1": "transférer l’argent à un régime immobilisé (p. ex., le régime de retraite de votre prochain employeur (si cela est autorisé) ou à un compte de retraite immobilisé (CRI) personnel); ou ",
+        "li2": "souscrire une rente différée"
+      },
+      "acc3": {
+        "p1": "Vous recevrez la valeur totale de votre compte (c’est-à-dire vos cotisations et celles de Johnson & Johnson, en plus des revenus de placement).",
+        "li1": "transférer l’argent à un REER personnel; ou",
+        "li2": "opter pour un versement en espèces moins les retenues d’impôt"
+      },
+      "acc4": {
+        "li1": "Si vous choisissez une rente différée pour vos prestations PD, vos CAO resteront également dans le régime jusqu’à la retraite, moment où elles seront utilisées pour augmenter vos prestations PD.",
+        "li2": "Si vous choisissez un paiement forfaitaire pour vos prestations PD, vos CAO vous seront également versées. "
+      },
+      "acc5": {
+        "p": "Vous recevrez la valeur totale de votre compte (c’est-à-dire vos cotisations et celles de Johnson & Johnson, en plus des revenus de placement).",
+        "li1": "transférer l’argent à un CELI personnel; ou",
+        "li2": "opter pour un versement en espèces sans retenue d’impôt, puisque les cotisations ont été versées avec des dollars après impôt (c’est-à-dire que l’impôt a déjà été retenu) "
+      },
+      "acc6": {
+        "p": "Vous recevrez la valeur totale de votre compte (c’est-à-dire vos cotisations et celles de Johnson & Johnson, en plus des revenus de placement) sous forme de versement en espèces sans aucune retenue d’impôt, puisque les cotisations ont été versées avec des dollars après impôt (c’est-à-dire que l’impôt a déjà été retenu)."
+      }
+    }
   }
 }

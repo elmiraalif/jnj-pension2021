@@ -7,6 +7,7 @@ import Accordion from "../components/Accordion"
 import NextPage from "../components/NextPage"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
+import { FormattedMessage } from "gatsby-plugin-intl"
 
 export default function Leaving() {
   const intl = useIntl()
@@ -16,37 +17,37 @@ export default function Leaving() {
   return (
     <Layout>
       <Helmet>
-        <title>What happens when you retire</title>
+        <title>{intl.formatMessage({ id: "page8.title" })}</title>
       </Helmet>
       <div id="page08">
         <StaticImage src="../images/banner08.jpg" alt="banner" />
         <div className="wrapper">
-          <h1 className="space-x">
-            What happens when{" "}
-            <span>
-              <br /> you retire
-            </span>
-          </h1>
+          <h1
+            className="space-x"
+            dangerouslySetInnerHTML={{
+              __html: intl.formatMessage({ id: "page8.copy1.title" }),
+            }}
+          />
           <Accordion
             border={secondary}
             title={intl.formatMessage({ id: "core_component" })}
             icon={Icon}
             color={secondary}
           >
-            <div className="acc-box secondary">Core DB</div>
+            <div className="acc-box secondary">
+              {intl.formatMessage({ id: "core_db" })}
+            </div>
             <p className="space-top-2x space-bottom-x">
-              Pays an annual pension for as long as you live — 0.50% of your
-              final average earnings (FAE) multiplied by your credited service
-              earned.
+              <FormattedMessage id="page8.accordion1.p" />
             </p>
             <div className="callout-pointer">
               <p className="bold">
-                Want to see how much your monthly pension could be?
+                <FormattedMessage id="page8.accordion1.bold" />
               </p>
               <p>
-                Try out the Pension Projection Tool on the{" "}
+                <FormattedMessage id="page8.accordion1.note" />{" "}
                 <a href="https://jnj.hroffice.com/" target="_blank">
-                  FYB Portal
+                  <FormattedMessage id="fyb_portal" />
                   <span className="link-icon">
                     &nbsp;
                     <FontAwesomeIcon icon={faExternalLinkAlt} />
@@ -62,27 +63,27 @@ export default function Leaving() {
             icon={Icon}
             color={secondary}
           >
-            <div className="acc-box primary">DB Option</div>
+            <div className="acc-box primary">
+              {intl.formatMessage({ id: "db_option" })}
+            </div>
             <div className="wrapper-center">
               <Accordion
                 border={secondary}
-                title="Optional DB"
+                title={intl.formatMessage({ id: "optional_db" })}
                 icon={Icon}
                 color={accent}
               >
                 <p>
-                  Pays an annual pension for as long as you live, on top of the
-                  core DB component — 0.70% of your final average earnings (FAE)
-                  multiplied by your credited service earned.
+                  <FormattedMessage id="page8.accordion2.acc1.p" />
                 </p>
                 <div className="callout-pointer">
                   <p className="bold">
-                    Want to see how much your monthly pension could be?
+                    <FormattedMessage id="page8.accordion2.acc1.bold" />
                   </p>
                   <p>
-                    Try out the Pension Projection Tool on the{" "}
+                    <FormattedMessage id="page8.accordion2.acc1.note" />{" "}
                     <a href="https://jnj.hroffice.com/" target="_blank">
-                      FYB Portal
+                      <FormattedMessage id="fyb_portal" />
                       <span className="link-icon">
                         &nbsp;
                         <FontAwesomeIcon icon={faExternalLinkAlt} />
@@ -92,114 +93,99 @@ export default function Leaving() {
                 </div>
               </Accordion>
             </div>
-            <div className="acc-box accent">Non-DB Options</div>
+            <div className="acc-box accent">
+              {intl.formatMessage({ id: "non_db_options" })}
+            </div>
             <div className="wrapper-center">
               <Accordion
                 border={secondary}
                 icon={Icon}
                 color={accent}
-                title="Defined Contribution (DC)"
+                title={intl.formatMessage({ id: "dc" })}
               >
                 <p>
-                  Your DC account balance is locked-in to provide retirement
-                  income. When you retire, you can convert your account balance
-                  into a locked-in retirement account (LIRA) to keep your money
-                  invested, or into a life income fund (LIF) that you can use to
-                  withdraw money. You choose how much to withdraw each year
-                  (within set minimum/maximum limits).
+                  <FormattedMessage id="page8.accordion2.acc2.p1" />
                 </p>
                 <p>
-                  Alternatively, you can purchase an annuity with your DC
-                  account balance. An annuity pays a monthly pension for as long
-                  as you live, similar to the DB option.
+                  <FormattedMessage id="page8.accordion2.acc2.p2" />
                 </p>
               </Accordion>
               <Accordion
                 border={secondary}
                 icon={Icon}
                 color={accent}
-                title="Registered Retirement Savings Plan (RRSP)"
+                title={intl.formatMessage({ id: "rrsp" })}
               >
                 <p>
-                  You will receive an account balance that you can use to boost
-                  your retirement income. The account balance is based on
-                  contributions and investment earnings. You can withdraw as
-                  much or as little as you need. Note that you will need to pay
-                  tax on the money you withdraw from your RRSP. You must convert
-                  your RRSP into a Registered Retirement Income Fund (RRIF) by
-                  age 71.
+                  <FormattedMessage id="page8.accordion2.acc3.p1" />
                 </p>
                 <p>
-                  You can also use the RRSP for the{" "}
+                  <FormattedMessage id="page8.accordion2.acc3.p2" />{" "}
                   <a
-                    href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/what-home-buyers-plan.html"
+                    href={intl.formatMessage({ id: "home_buyers_href" })}
                     target="_blank"
                   >
-                    Homebuyers’ Plan
+                    <FormattedMessage id="home_buyers" />
                     <span className="link-icon">
                       &nbsp;
                       <FontAwesomeIcon icon={faExternalLinkAlt} />
                     </span>
                   </a>{" "}
-                  and the{" "}
+                  <FormattedMessage id="page8.accordion2.acc3.and" />{" "}
                   <a
-                    href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/lifelong-learning-plan.html"
+                    href={intl.formatMessage({ id: "lifelong_learning_href" })}
                     target="_blank"
+                    style={{ display: "inline" }}
                   >
-                    Lifelong Learning
+                    <FormattedMessage id="lifelong_learning" />
+
                     <span className="link-icon">
                       &nbsp;
                       <FontAwesomeIcon icon={faExternalLinkAlt} />
                     </span>
                   </a>{" "}
-                  Plan before you retire.
+                  <FormattedMessage id="page8.accordion2.acc3.p3" />{" "}
                 </p>
               </Accordion>
               <Accordion
                 border={secondary}
                 icon={Icon}
                 color={accent}
-                title="Optional Ancillary Contributions (OAC)"
+                title={intl.formatMessage({ id: "oac" })}
               >
                 <p>
-                  You can use your OAC account to purchase additional DB
-                  benefits (i.e., to increase your monthly pension or improve
-                  benefits to your spouse or beneficiary), up to the{" "}
-                  <a href="https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html" target="_blank">
-                    CRA maximum
+                  <FormattedMessage id="page8.accordion2.acc4.p1" />{" "}
+                  <a
+                    href={intl.formatMessage({ id: "cra_maximum_href" })}
+                    target="_blank"
+                  >
+                    <FormattedMessage id="cra_maximum" />
                     <span className="link-icon">
                       &nbsp;
                       <FontAwesomeIcon icon={faExternalLinkAlt} />
-                    </span>{" "}
+                    </span>
                   </a>
-                  . The unused balance of your OAC account will be paid in cash
-                  (less tax deductions).
+                  . <FormattedMessage id="page8.accordion2.acc4.p2" />
                 </p>
               </Accordion>
               <Accordion
                 border={secondary}
                 icon={Icon}
                 color={accent}
-                title="Tax-Free Savings Account (TFSA)"
+                title={intl.formatMessage({ id: "tfsa" })}
               >
                 <p>
-                  You will receive an account balance that you can use to boost
-                  your retirement income. The account balance is based on
-                  contributions and investment earnings. You can withdraw as
-                  much or as little as you need.
+                  <FormattedMessage id="page8.accordion2.acc5.p" />
                 </p>
               </Accordion>
               <Accordion
                 border={secondary}
                 icon={Icon}
                 color={accent}
-                title="Non-registered"
+                title={intl.formatMessage({ id: "non_registered" })}
               >
                 <p>
-                  You will receive an account balance that you can use to boost
-                  your retirement income. The account balance is based on
-                  contributions and investment earnings. You can withdraw as
-                  much or as little as you need.
+                  <FormattedMessage id="page8.accordion2.acc6.p" />
                 </p>
               </Accordion>
             </div>
@@ -209,21 +195,19 @@ export default function Leaving() {
           <div className="wrapper">
             <img src={"/icons/icon_info.svg"} alt="" width="30" />
             <div>
-              <h3>Government Benefits</h3>
+              <h3>
+                <FormattedMessage id="page8.callout.title" />
+              </h3>
               <p>
-                Government benefits like Canada Pension Plan (CPP), Quebec
-                Pension Plan (QPP), and Old Age Security (OAS) are separate from
-                the Pension & Savings Program. Due the recent enhancements to
-                CPP/QPP, you will likely receive more from CPP/QPP than you
-                would have previously.
+                <FormattedMessage id="page8.callout.p1" />
               </p>
               <p>
-                Here’s more information on{" "}
+                <FormattedMessage id="page8.callout.p2" />{" "}
                 <a
-                  href="https://www.canada.ca/en/services/benefits/publicpensions.html"
+                  href={intl.formatMessage({ id: "page8.callout.href" })}
                   target="_blank"
                 >
-                  government benefits
+                  <FormattedMessage id="page8.callout.link" />
                   <span className="link-icon">
                     &nbsp;
                     <FontAwesomeIcon icon={faExternalLinkAlt} />
@@ -235,27 +219,30 @@ export default function Leaving() {
           </div>
         </div>
         <div className="wrapper">
-          <h2 className="space-bottom-x">
-            What happens if you <br /> <span>leave before retirement</span>
-          </h2>
+          <h2
+            className="space-bottom-x"
+            dangerouslySetInnerHTML={{
+              __html: intl.formatMessage({ id: "page8.copy2.title" }),
+            }}
+          />
           <Accordion
             border={secondary}
             title={intl.formatMessage({ id: "core_component" })}
             icon={Icon}
             color={secondary}
           >
-            <div className="acc-box secondary">Core DB</div>
-            <div className="bold space-2x">You can either:</div>
+            <div className="acc-box secondary">
+              {intl.formatMessage({ id: "core_db" })}
+            </div>
+            <div className="bold space-2x">
+              <FormattedMessage id="page8.copy2.either" />
+            </div>
             <ul>
               <li>
-                Leave your money in the pension plan and draw a pension at age
-                55 or later (this is called a deferred pension), or
+                <FormattedMessage id="page8.accordion3.li1" />
               </li>
               <li>
-                If you are younger than 55, you may transfer the lump-sum value
-                of your pension to a locked-in plan (e.g., your next employer’s
-                pension plan (if allowed) or a personal locked-in retirement
-                account, LIRA).
+                <FormattedMessage id="page8.accordion3.li2" />
               </li>
             </ul>
           </Accordion>
@@ -265,82 +252,51 @@ export default function Leaving() {
             icon={Icon}
             color={secondary}
           >
-            <div className="acc-box primary">DB Option</div>
+            <div className="acc-box primary">
+              {intl.formatMessage({ id: "db_option" })}
+            </div>
             <div className="wrapper-center">
               <Accordion
                 border={secondary}
-                title="Optional DB"
+                title={intl.formatMessage({ id: "optional_db" })}
                 icon={Icon}
                 color={accent}
               >
-                <div className="bold space-bottom-2x">You can either:</div>
+                <div className="bold space-bottom-2x">
+                  <FormattedMessage id="page8.copy2.either" />
+                </div>
                 <ul>
                   <li>
-                    Leave your money in the pension plan and draw a pension at
-                    age 55 or later (this is called a deferred pension), or
+                    <FormattedMessage id="page8.accordion4.acc1.li1" />
                   </li>
                   <li>
-                    If you are younger than 55, you may transfer the lump-sum
-                    value of your pension to a locked-in plan (e.g., your next
-                    employer’s pension plan (if allowed) or a personal locked-in
-                    retirement account, LIRA).
+                    <FormattedMessage id="page8.accordion4.acc1.li2" />
                   </li>
                 </ul>
               </Accordion>
             </div>
-            <div className="acc-box accent">Non-DB Options</div>
+            <div className="acc-box accent">
+              {intl.formatMessage({ id: "non_db_options" })}
+            </div>
             <div className="wrapper-center">
               <Accordion
                 border={secondary}
                 icon={Icon}
                 color={accent}
-                title="Defined Contribution (DC)"
+                title={intl.formatMessage({ id: "dc" })}
               >
                 <p>
-                  You will receive the total value of your account (including
-                  your own and Johnson & Johnson’s contributions, plus
-                  investment returns). <span className="bold"> You can:</span>
+                  <FormattedMessage id="page8.accordion4.acc2.p" />{" "}
+                  <span className="bold">
+                    <FormattedMessage id="page8.copy2.you_can" />
+                  </span>
                 </p>
                 <ul>
                   <li>
-                    Transfer the money to a locked-in plan (e.g., your next
-                    employer’s pension plan (if allowed) or a personal locked-in
-                    retirement account, LIRA), or
-                  </li>
-                  <li>Purchase a deferred annuity.</li>
-                </ul>
-              </Accordion>
-              <Accordion
-                border={secondary}
-                icon={Icon}
-                color={accent}
-                title="Registered Retirement Savings Plan (RRSP)"
-              >
-                <p>
-                  You will receive the total value of your account (including
-                  your own and Johnson & Johnson’s contributions, plus
-                  investment returns). <span className="bold"> You can:</span>
-                </p>
-                <ul>
-                  <li>Transfer the money to a personal RRSP, or</li>
-                  <li>Take a cash payment less tax deductions.</li>
-                </ul>
-              </Accordion>
-              <Accordion
-                border={secondary}
-                icon={Icon}
-                color={accent}
-                title="Optional Ancillary Contributions (OAC)"
-              >
-                <ul>
-                  <li>
-                    If you choose a deferred pension for your DB benefits, your
-                    OACs will also stay in the plan until retirement, at which
-                    point OACs will be used to improve your DB benefits.
+                    <FormattedMessage id="page8.accordion4.acc2.li1" />
                   </li>
                   <li>
-                    If you choose a lump-sum payout for the DB benefits, your
-                    OACs will also be paid out.
+                    <FormattedMessage id="page8.accordion4.acc2.li2" />
                   </li>
                 </ul>
               </Accordion>
@@ -348,20 +304,57 @@ export default function Leaving() {
                 border={secondary}
                 icon={Icon}
                 color={accent}
-                title="Tax-Free Savings Account (TFSA)"
+                title={intl.formatMessage({ id: "rrsp" })}
               >
                 <p>
-                  You will receive the total value of your account (including
-                  your own and Johnson & Johnson’s contributions, plus
-                  investment returns). <span className="bold"> You can:</span>
+                  <FormattedMessage id="page8.accordion4.acc3.p1" />{" "}
+                  <span className="bold">
+                    <FormattedMessage id="page8.copy2.you_can" />
+                  </span>
                 </p>
                 <ul>
-                  <li>Transfer the money to a personal TFSA, or</li>
+                  <li>
+                    <FormattedMessage id="page8.accordion4.acc3.li1" />
+                  </li>
+                  <li>
+                    <FormattedMessage id="page8.accordion4.acc3.li2" />
+                  </li>
+                </ul>
+              </Accordion>
+              <Accordion
+                border={secondary}
+                icon={Icon}
+                color={accent}
+                title={intl.formatMessage({ id: "oac" })}
+              >
+                <ul>
+                  <li>
+                    <FormattedMessage id="page8.accordion4.acc4.li1" />
+                  </li>
+                  <li>
+                    <FormattedMessage id="page8.accordion4.acc4.li2" />
+                  </li>
+                </ul>
+              </Accordion>
+              <Accordion
+                border={secondary}
+                icon={Icon}
+                color={accent}
+                title={intl.formatMessage({ id: "tfsa" })}
+              >
+                <p>
+                  <FormattedMessage id="page8.accordion4.acc5.p" />{" "}
+                  <span className="bold">
+                    <FormattedMessage id="page8.copy2.you_can" />
+                  </span>
+                </p>
+                <ul>
+                  <li>
+                    <FormattedMessage id="page8.accordion4.acc5.li1" />
+                  </li>
 
                   <li className="space-top-x">
-                    Take a cash payment without any tax deductions, since
-                    contributions were made with after-tax dollars (i.e., tax
-                    was already withheld).
+                    <FormattedMessage id="page8.accordion4.acc5.li2" />
                   </li>
                 </ul>
               </Accordion>
@@ -369,14 +362,10 @@ export default function Leaving() {
                 border={secondary}
                 icon={Icon}
                 color={accent}
-                title="Non-registered"
+                title={intl.formatMessage({ id: "non_registered" })}
               >
                 <p>
-                  You will receive the total value of your account (including
-                  your own and Johnson & Johnson’s contributions, plus
-                  investment returns) as a cash payment without any tax
-                  deductions, since contributions were made with after-tax
-                  dollars (i.e., tax was already withheld).
+                  <FormattedMessage id="page8.accordion4.acc6.p" />
                 </p>
               </Accordion>
             </div>
