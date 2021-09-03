@@ -598,6 +598,7 @@ export default function Scenarios() {
                 <a
                   href={intl.formatMessage({ id: "page5.callout1.href" })}
                   target="_blank"
+                  style={{display: "inline-block"}}
                 >
                   <FormattedMessage id="page5.callout1.help" />
                   <span className="link-icon">
