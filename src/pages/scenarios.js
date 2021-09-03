@@ -8,7 +8,7 @@ import NextPage from "../components/NextPage"
 import { useIntl } from "react-intl"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
-import { FormattedDate, FormattedMessage } from "gatsby-plugin-intl"
+import { FormattedMessage } from "gatsby-plugin-intl"
 
 export default function Scenarios() {
   const primary = `#da0025`
@@ -30,11 +30,9 @@ export default function Scenarios() {
               __html: intl.formatMessage({ id: "page5.copy1.title" }),
             }}
           />
-          <div className="intro-copy">
-            <p>
-              <FormattedMessage id="page5.copy1.p" />
-            </p>
-          </div>
+          <p className="intro-copy">
+            <FormattedMessage id="page5.copy1.p" />
+          </p>
         </div>
         <div className="callout-gray space-bottom-2x">
           <div className="wrapper">

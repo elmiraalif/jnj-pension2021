@@ -566,7 +566,7 @@
   "page8": {
     "title": "Départ de Johnson & Johnson",
     "copy1": {
-      "title": "Qu’arrive-t-il lorsque vous prenez <span><br />votre retraite?</span>"
+      "title": "Qu’arrive-t-il lorsque vous prenez<span> votre retraite?</span>"
     },
     "accordion1": {
       "p": "Vous verse une rente mensuelle pendant le reste de votre vie — 0,50 % de votre salaire moyen de fin de carrière.",
@@ -653,7 +653,7 @@
     },
     "left_col": {
       "title": "Communiquez avec le Centre d’appels des avantages sociaux",
-      "phone": "1-866-769-8521, <br />du lundi au vendredi, <br /> de 8 h 30 à 17 h, HE"
+      "phone": "1 866 769 8521, <br />du lundi au vendredi, <br /> de 8 h 30 à 17 h, HE"
     },
     "right_col": {
       "title": "Demandez à AVA",
