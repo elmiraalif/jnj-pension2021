@@ -343,8 +343,8 @@
       }
     },
     "callout2": {
-      "p1": "L’Agence du revenu du Canada (ARC) limite le montant que vous pouvez cotiser chaque année aux options d’épargne à imposition différée. <span>Vous êtes responsable de vous assurer que vous ne dépassez pas vos limites</span> et n’oubliez pas que les cotisations de contrepartie de Johnson & Johnson sont aussi déduites de votre limite personnelle. Trouvez les limites actuelles  ",
-      "p2": "Autres outils et ressources pour vous aider à choisir",
+      "p1": "L’Agence du revenu du Canada (ARC) limite le montant que vous pouvez cotiser chaque année aux options d’épargne à imposition différée. <span>Vous êtes responsable de vous assurer que vous ne dépassez pas vos limites</span> et n’oubliez pas que les cotisations de contrepartie de Johnson & Johnson sont aussi déduites de votre limite personnelle.",
+      "p2": "Trouvez les limites actuelles",
       "link": "ici",
       "href": "https://www.canada.ca/fr/agence-revenu/services/impot/administrateurs-regimes-enregistres/fesp/plafonds-cd-reer-rpdb-celi-mgap.html"
     },
