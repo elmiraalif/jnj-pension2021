@@ -196,7 +196,7 @@
       "bold": "principaux volets :"
     },
     "accordion1": "Vous verse une rente annuelle pendant le reste de votre vie — 0,50 % de votre salaire moyen de fin de carrière multiplié par vos années de service reconnu. Toutes les cotisations sont entièrement financées par Johnson & Johnson en votre nom; vous ne cotisez pas à ce régime.",
-    "accordion2": "Vous verse une rente annuelle pendant le reste de votre vie — 0.70 % de votre salaire moyen de fin de carrière multiplié par vos années de service reconnu, en plus du régime PD de base. Les cotisations sont versées avant impôt (ce qui signifie que vous ne payez l’impôt que lorsque vous commencez à recevoir une rente mensuelle).",
+    "accordion2": "Vous verse une rente annuelle pendant le reste de votre vie — 0,70 % de votre salaire moyen de fin de carrière multiplié par vos années de service reconnu, en plus du régime PD de base. Les cotisations sont versées avant impôt (ce qui signifie que vous ne payez l’impôt que lorsque vous commencez à recevoir une rente mensuelle).",
     "accordion3": "À votre retraite, vous recevrez le solde de votre compte que vous pourrez utiliser pour augmenter votre revenu de retraite. Le solde de votre compte est fonction des cotisations et des revenus de placement. Vous décidez du montant à retirer chaque année (sous réserve des minimums et des maximums établis). Les cotisations sont versées avant impôt (vous ne payez l’impôt que lorsque vous retirez votre argent).",
     "accordion4": {
       "p1": "Vous recevrez le solde de votre compte que vous pourrez utiliser pour augmenter votre revenu de retraite. Le solde de votre compte est fonction des cotisations et des revenus de placement. Avant votre retraite, vous pouvez aussi utiliser le REER pour le",
@@ -575,7 +575,7 @@
     },
     "accordion2": {
       "acc1": {
-        "p": "Vous verse une rente mensuelle pendant le reste de votre vie — 0.70 % de votre salaire moyen de fin de carrière en plus du régime PD de base. ",
+        "p": "Vous verse une rente mensuelle pendant le reste de votre vie — 0,70 % de votre salaire moyen de fin de carrière en plus du régime PD de base. ",
         "bold": "Vous voulez savoir à combien pourrait s’élever votre rente mensuelle?",
         "note": "Utilisez l’outil de projection de la rente sur"
       },
