@@ -270,7 +270,7 @@
       "item1": "Participerez-vous aux volets facultatifs PD, non-PD, ou aux deux?",
       "item2": "Si vous choisirez des volets non-PD, lesquels? Chaque option (CD, REER, CAO, CELI et régime non enregistré) comporte des caractéristiques et des avantages différents.",
       "bold2": "Pour vous aider à prendre la première décision, regardez cette vidéo!",
-      "image": "/icons/boxes_fr.jpg"
+      "image": "/icons/boxes_fr.png"
     },
     "callout1": {
       "p1": "Le programme de retraite et d’épargne vous soutient à chaque étape de la vie pour que vos choix continuent à répondre à vos objectifs au fil du temps. Vous pouvez adhérer ou modifier votre participation aux régimes facultatifs PD et CD deux fois par année (en janvier et en juillet). Vous pouvez modifier la répartition de vos placements et vos cotisations aux REER, CAO, CELI et régime non enregistré en tout temps. ",
@@ -514,7 +514,8 @@
       "p2": "lorsque vous adhérerez. Répondez à quelques brèves questions et l’outil pourra vous aider à choisir les options d’épargne les plus avantageuses sur le plan fiscal en fonction de votre situation personnelle."
     },
     "callout2": {
-      "tip": "Conseil!",
+      "tip_src": "/icons/conseil.png",
+      "tip_alt": "Conseil",
       "p": "Si vous voulez sélectionner les options recommandées par l’outil « Aidez-moi à choisir », vous devrez les entrer dans l’outil d’adhésion — cela ne se fait pas automatiquement!"
     },
     "copy3": {

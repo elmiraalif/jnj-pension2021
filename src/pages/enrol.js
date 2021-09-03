@@ -119,7 +119,13 @@ export default function Enrol() {
           <div className="wrapper">
             <div className="heading-icon-top tip">
               <div className="icon">
-                <FormattedMessage id="page6.callout2.tip" />
+                <img
+                  src={intl.formatMessage({ id: "page6.callout2.tip_src" })}
+                  alt={intl.formatMessage({ id: "page6.callout2.tip_alt" })}
+                  width="100"
+                  style={{ margin: "0", marginTop: "-10px" }}
+                />
+                {/* <FormattedMessage id="page6.callout2.tip" /> */}
               </div>
               <p>
                 <FormattedMessage id="page6.callout2.p" />

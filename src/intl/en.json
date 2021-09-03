@@ -515,7 +515,8 @@
       "p2": "when you enrol. You answer a few short questions, and the tool can help you choose the most tax-effective savings options for your personal circumstances."
     },
     "callout2": {
-      "tip": "Tip!",
+      "tip_src": "/icons/tip.png",
+      "tip_alt": "Tip",
       "p": "If you want to select the options that were recommended to you in the Help Me Decide tool, you will need to enter them into the enrolment tool — this does not happen automatically!"
     },
     "copy3": {
