@@ -40,7 +40,7 @@
     "item6": "Comment adhérer",
     "item7": "Gestion de votre épargne",
     "item8": "Départ de Johnson & Johnson",
-    "item9": "Questions?"
+    "item9": "Questions"
   },
   "portal": {
     "item1": {
@@ -224,8 +224,8 @@
       "left": "2,25 % des gains",
       "right": "Les cotisations de Johnson & Johnson sont déterminées sur la base d’une évaluation actuarielle"
     },
-    "match_100": "Contrepartie de 100 %:",
-    "match_50": "Contrepartie de 50 %",
+    "match_100": "Contrepartie de 100 % :",
+    "match_50": "Contrepartie de 50 % :",
     "dc": {
       "dc": "CD",
       "left1": "Jusqu’à 1,75 % si vous participez au volet PD facultatif",
@@ -304,7 +304,7 @@
       "li2": "Le régime CD est un peu plus flexible, car vous pouvez décider du montant que vous retirerez chaque année à la retraite (sous réserve des minimums et des maximums), tandis que les CAO vous permettent de choisir comment augmenter votre rente PD.",
       "li3": "Le CELI et le régime non enregistré sont les plus flexibles, car il n’y a pas de règles concernant les retraits. Vous pouvez utiliser l’argent comme vous le voulez, quand vous en avez besoin.",
       "li4": {
-        "p1": "Le REER se situe entre les deux – son objectif principal est de fournir un revenu de retraite, mais vous pouvez également retirer de l’argent de votre REER, en franchise d’impôt (jusqu’à 35 000 $), pour le",
+        "p1": "Le REER se situe entre les deux — son objectif principal est de fournir un revenu de retraite, mais vous pouvez également retirer de l’argent de votre REER, en franchise d’impôt (jusqu’à 35 000 $), pour le",
         "and": "et le",
         "p2": ". Si vous retirez de l’argent de votre REER à toute autre fin, vous devrez payer de l’impôt sur ce retrait."
       },
@@ -325,7 +325,7 @@
     "accordion5": {
       "title": "Voulez-vous une approche active ou passive?",
       "li1": "Les options non-PD ont une approche plus active : vous prenez vos décisions de placement en fonction de votre tolérance au risque et de vos objectifs de retraite. Vous décidez aussi du niveau de revenu à retirer selon vos besoins, et non une formule.",
-      "note": "vous pourriez devoir retirer un montant minimum chaque année en fonction de la réglementation en vigueur après votre 71e anniversaire.",
+      "note": "vous pourriez devoir retirer un montant minimum chaque année en fonction de la réglementation en vigueur après votre 71<sup>e</sup> anniversaire.",
       "li2": "Les options PD vous offrent une approche passive. Johnson & Johnson gère le régime et vous verse une rente de retraite sous forme de prestations mensuelles égales, déterminées selon une formule établie; vous n’avez rien à faire.",
       "image": {
         "src": "/icons/option5_fr.gif",

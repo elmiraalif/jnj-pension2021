@@ -44,7 +44,11 @@ export default function Page04() {
             </p>
           </div>
           <div className="components wrapper-center">
-            <img src={intl.formatMessage({id: "page4.copy1.image"})} alt="" width="220" />
+            <img
+              src={intl.formatMessage({ id: "page4.copy1.image" })}
+              alt=""
+              width="220"
+            />
           </div>
           <div className="heading-icon-top">
             <img src={"/icons/two-red.svg"} alt="two" width="30" />
@@ -76,8 +80,7 @@ export default function Page04() {
                   dangerouslySetInnerHTML={{
                     __html: intl.formatMessage({ id: "note" }),
                   }}
-                />
-                {" "}
+                />{" "}
                 <FormattedMessage id="page4.callout1.p2" />
               </p>
             </div>
@@ -172,7 +175,7 @@ export default function Page04() {
                 <a
                   href={intl.formatMessage({ id: "lifelong_learning_href" })}
                   target="_blank"
-                  style={{display: "inline"}}
+                  style={{ display: "inline" }}
                 >
                   <FormattedMessage id="lifelong_learning" />
 
@@ -234,9 +237,14 @@ export default function Page04() {
                       dangerouslySetInnerHTML={{
                         __html: intl.formatMessage({ id: "note" }),
                       }}
+                    />{" "}
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: intl.formatMessage({
+                          id: "page4.accordion5.note",
+                        }),
+                      }}
                     />
-                    {" "}
-                    <FormattedMessage id="page4.accordion5.note" />
                   </div>
                 </li>
                 <li>
