@@ -514,6 +514,7 @@
       "p2": "lorsque vous adhérerez. Répondez à quelques brèves questions et l’outil pourra vous aider à choisir les options d’épargne les plus avantageuses sur le plan fiscal en fonction de votre situation personnelle."
     },
     "callout2": {
+      "style": "margin-top: -10px",
       "tip_src": "/icons/conseil.png",
       "tip_alt": "Conseil",
       "p": "Si vous voulez sélectionner les options recommandées par l’outil « Aidez-moi à choisir », vous devrez les entrer dans l’outil d’adhésion — cela ne se fait pas automatiquement!"

@@ -123,9 +123,8 @@ export default function Enrol() {
                   src={intl.formatMessage({ id: "page6.callout2.tip_src" })}
                   alt={intl.formatMessage({ id: "page6.callout2.tip_alt" })}
                   width="100"
-                  style={{ margin: "0", marginTop: "-10px" }}
+                  style={{ margin: "0", verticalAlign: "text-top" }}
                 />
-                {/* <FormattedMessage id="page6.callout2.tip" /> */}
               </div>
               <p>
                 <FormattedMessage id="page6.callout2.p" />
