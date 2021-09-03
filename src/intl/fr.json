@@ -3,7 +3,7 @@
   "note": "Remarque :",
   "important": "Important :",
   "fyb_portal": "Portail À votre avantage",
-  "core_component": "Volet de base (tous les employés admissibles y participent):",
+  "core_component": "Volet de base (tous les employés admissibles y participent) :",
   "core_db": "PD de base",
   "db_option": "Option PD",
   "optional_db": "PD facultatif",
@@ -19,7 +19,7 @@
   "lifelong_learning_href": "https://www.canada.ca/fr/agence-revenu/services/impot/particuliers/sujets/reer-regimes-connexes/regime-encouragement-a-education-permanente.html",
   "cra_maximum": "plafond établi par l’ARC",
   "cra_maximum_href": "https://www.canada.ca/fr/agence-revenu/services/impot/administrateurs-regimes-enregistres/fesp/plafonds-cd-reer-rpdb-celi-mgap.html",
-  "optional_components": "Volets facultatifs:",
+  "optional_components": "Volets facultatifs :",
   "header": {
     "red_button": "Voir le guide d’assurance collective",
     "outline_button": "Envoyer une question",
@@ -136,7 +136,7 @@
     },
     "callout2": {
       "title": "Vous voulez un rappel de ce qui change?",
-      "p1": "Passez en revue le guide sur la comparaison des régimes et les scénarios de modifications: ",
+      "p1": "Passez en revue le guide sur la comparaison des régimes et les scénarios de modifications : ",
       "p2": " > Formulaires et documents > Formulaires retraite et épargne > Comparaison des régimes et scénarios des modifications "
     },
     "copy2": {
@@ -193,7 +193,7 @@
     },
     "copy2": {
       "p": "Le programme comprend ces ",
-      "bold": "principaux volets:"
+      "bold": "principaux volets :"
     },
     "accordion1": "Vous verse une rente annuelle pendant le reste de votre vie — 0.50 % de votre salaire moyen de fin de carrière multiplié par vos années de service reconnu. Toutes les cotisations sont entièrement financées par Johnson & Johnson en votre nom; vous ne cotisez pas à ce régime.",
     "accordion2": "Vous verse une rente annuelle pendant le reste de votre vie — 0.70 % de votre salaire moyen de fin de carrière multiplié par vos années de service reconnu, en plus du régime PD de base. Les cotisations sont versées avant impôt (ce qui signifie que vous ne payez l’impôt que lorsque vous commencez à recevoir une rente mensuelle).",
