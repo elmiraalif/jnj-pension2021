@@ -40,7 +40,7 @@ export default function Accordion({ title, icon, color, bg, border, children }) 
       <div
         className="body"
         style={{
-          maxHeight: content === false ? `0` : `250vh`,
+          maxHeight: content === false ? `0` : `300vh`,
           borderBottom: content === false && `1px solid ${border}`,
         }}
       >
