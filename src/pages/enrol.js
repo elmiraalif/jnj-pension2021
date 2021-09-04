@@ -124,6 +124,7 @@ export default function Enrol() {
                   alt={intl.formatMessage({ id: "page6.callout2.tip_alt" })}
                   width="100"
                   style={{ margin: "0", verticalAlign: "text-top" }}
+                  className="visible"
                 />
               </div>
               <p>
