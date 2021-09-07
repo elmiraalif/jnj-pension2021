@@ -147,7 +147,7 @@ export default function Leaving() {
                       &nbsp;
                       <FontAwesomeIcon icon={faExternalLinkAlt} />
                     </span>
-                  </a>{" "}
+                  </a>
                   <FormattedMessage id="page8.accordion2.acc3.p3" />{" "}
                 </p>
               </Accordion>

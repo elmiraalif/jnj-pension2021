@@ -61,7 +61,7 @@ export default function Managing() {
                 <p>
                   <FormattedMessage id="page7.accordion2.acc1.p2" />{" "}
                   <Link to="/choose-right-options">
-                    <FormattedMessage id="page7.accordion2.acc1.link" />{" "}
+                    <FormattedMessage id="page7.accordion2.acc1.link" />
                   </Link>
                   .
                 </p>
