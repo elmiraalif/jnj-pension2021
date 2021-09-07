@@ -15,7 +15,7 @@
   "tfsa": "Tax-Free Savings Account (TFSA)",
   "non_registered": "Non-registered",
   "home_buyers_1": "Homebuyers’",
-  "home_buyers_2": " Plan",
+  "home_buyers_2": "Plan",
   "home_buyers_href": "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/what-home-buyers-plan.html",
   "lifelong_learning_1": "Lifelong Learning",
   "lifelong_learning_2": " Plan",
@@ -204,8 +204,8 @@
     "accordion3": "When you retire, you will receive an account balance that you can use to boost your retirement income. The account balance is based on contributions and investment earnings. You choose how much to withdraw each year (within set minimum/maximum limits). Contributions are pre-tax (you only pay tax when you withdraw the money).",
     "accordion4": {
       "p1": "You will receive an account balance that you can use to boost your retirement income. The account balance is based on contributions and investment earnings. You can also use the RRSP for the",
-      "p2": "and the",
-      "p3": "before you retire. Contributions are pre-tax (you only pay tax when you withdraw the money)."
+      "p2": " and the",
+      "p3": " before you retire. Contributions are pre-tax (you only pay tax when you withdraw the money)."
     },
     "accordion5": {
       "p1": "You can use your OAC account to purchase additional DB benefits (i.e., to increase your monthly pension or improve benefits to your spouse/beneficiary), up to the ",
@@ -309,7 +309,7 @@
       "li3": "TFSA and Non-registered are the most flexible, since there are no rules around withdrawals: you can use the money as you need it, whenever you need it.",
       "li4": {
         "p1": "RRSP falls in the middle — the main purpose is to provide retirement income, but you can also withdraw money from your RRSP, tax-free (up to $35,000), for the",
-        "and": "and the",
+        "and": " and the",
         "p2": ". If you withdraw money from your RRSP for any other purpose, you will need to pay tax on the withdrawal."
       },
       "image": {
@@ -592,7 +592,7 @@
       "acc3": {
         "p1": "You will receive an account balance that you can use to boost your retirement income. The account balance is based on contributions and investment earnings. You can withdraw as much or as little as you need. Note that you will need to pay tax on the money you withdraw from your RRSP. You must convert your RRSP into a Registered Retirement Income Fund (RRIF) by age 71.",
         "p2": "You can also use the RRSP for the",
-        "and": "and the",
+        "and": " and the",
         "p3": "Plan before you retire."
       },
       "acc4": {

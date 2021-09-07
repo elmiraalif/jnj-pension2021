@@ -125,9 +125,11 @@ export default function Leaving() {
                     href={intl.formatMessage({ id: "home_buyers_href" })}
                     target="_blank"
                   >
-                    <FormattedMessage id="home_buyers_1" />
-                    <span className="link-icon" style={{ display: "inline-block" }}>
-                      <FormattedMessage id="home_buyers_2" />
+                    <FormattedMessage id="home_buyers_1" />{" "}
+                    <span className="link-icon">
+                      <span style={{ textDecoration: "underline" }}>
+                        <FormattedMessage id="home_buyers_2" />
+                      </span>
                       &nbsp;
                       <FontAwesomeIcon icon={faExternalLinkAlt} />
                     </span>
@@ -137,13 +139,11 @@ export default function Leaving() {
                     href={intl.formatMessage({ id: "lifelong_learning_href" })}
                     target="_blank"
                   >
-                    <FormattedMessage id="lifelong_learning_1" />
-
-                    <span
-                      className="link-icon"
-                      style={{ display: "inline-block" }}
-                    >
-                      <FormattedMessage id="lifelong_learning_2" />
+                    <FormattedMessage id="lifelong_learning_1" />{" "}
+                    <span className="link-icon">
+                      <span style={{ textDecoration: "underline" }}>
+                        <FormattedMessage id="lifelong_learning_2" />
+                      </span>
                       &nbsp;
                       <FontAwesomeIcon icon={faExternalLinkAlt} />
                     </span>

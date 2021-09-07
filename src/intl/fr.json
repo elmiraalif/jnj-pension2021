@@ -15,10 +15,10 @@
   "tfsa": "Compte d’épargne libre d’impôt (CELI)",
   "non_registered": "Régime non enregistré",
   "home_buyers_1": "Régime d’accession à la propriété",
-  "home_buyers_2": " la propriété",
+  "home_buyers_2": "la propriété",
   "home_buyers_href": "https://www.canada.ca/fr/agence-revenu/services/impot/particuliers/sujets/reer-regimes-connexes/est-regime-accession-a-propriete.html",
-  "lifelong_learning_1": "Régime d’encouragement à ",
-  "lifelong_learning_2": "l’éducation permanente",
+  "lifelong_learning_1": "Régime d’encouragement à l’éducation",
+  "lifelong_learning_2": " permanente",
   "lifelong_learning_href": "https://www.canada.ca/fr/agence-revenu/services/impot/particuliers/sujets/reer-regimes-connexes/regime-encouragement-a-education-permanente.html",
   "cra_maximum": "plafond établi par l’ARC",
   "cra_maximum_href": "https://www.canada.ca/fr/agence-revenu/services/impot/administrateurs-regimes-enregistres/fesp/plafonds-cd-reer-rpdb-celi-mgap.html",
@@ -203,7 +203,7 @@
     "accordion3": "À votre retraite, vous recevrez le solde de votre compte que vous pourrez utiliser pour augmenter votre revenu de retraite. Le solde de votre compte est établi en fonction des cotisations et des revenus de placement. Vous décidez du montant à retirer chaque année (sous réserve des minimums et des maximums établis). Les cotisations sont versées avant impôt (vous ne payez l’impôt que lorsque vous retirez votre argent).",
     "accordion4": {
       "p1": "Vous recevrez le solde de votre compte que vous pourrez utiliser pour augmenter votre revenu de retraite. Le solde de votre compte est établi en fonction des cotisations et des revenus de placement. Avant votre retraite, vous pouvez aussi utiliser le REER pour le",
-      "p2": "et le",
+      "p2": " et le",
       "p3": ". Les cotisations sont versées avant impôt (vous ne payez l’impôt que lorsque vous retirez votre argent)."
     },
     "accordion5": {
@@ -308,7 +308,7 @@
       "li3": "Le CELI et le régime non enregistré sont les plus flexibles, car il n’y a pas de règles concernant les retraits. Vous pouvez utiliser l’argent comme vous le voulez, quand vous en avez besoin.",
       "li4": {
         "p1": "Le REER se situe entre les deux — son objectif principal est de fournir un revenu de retraite, mais vous pouvez également retirer de l’argent de votre REER, en franchise d’impôt (jusqu’à 35 000 $), pour le",
-        "and": "et le",
+        "and": " et le",
         "p2": ". Si vous retirez de l’argent de votre REER à toute autre fin, vous devrez payer de l’impôt sur ce retrait."
       },
       "image": {
@@ -591,7 +591,7 @@
       "acc3": {
         "p1": "Vous recevrez le solde de votre compte que vous pourrez utiliser pour augmenter votre revenu de retraite. Le solde de votre compte est fonction des cotisations et des revenus de placement. Vous pouvez retirer autant ou aussi peu que vous le souhaitez. Notez que vous devrez payer l’impôt sur les retraits que vous effectuez de votre REER. Vous devez transformer votre REER en fonds enregistré de revenu de retraite (FERR) au plus tard à 71 ans.",
         "p2": "Avant votre retraite, vous pouvez aussi utiliser le REER pour le",
-        "and": "et le",
+        "and": " et le",
         "p3": " "
       },
       "acc4": {
