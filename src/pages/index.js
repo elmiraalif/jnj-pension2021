@@ -35,7 +35,7 @@ export default function Home() {
               <Link to="/whats-changing" className={btn}>
                 {intl.formatMessage({ id: "index.btn_pension" })}
               </Link>
-              <a href="http://jnjbenefitsguide.ca/" className={btn}>
+              <a href={intl.formatMessage({id: "benefit_site"})} className={btn}>
                 {intl.formatMessage({ id: "index.btn_benefit" })}
               </a>
             </div>
