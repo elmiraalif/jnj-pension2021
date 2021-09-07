@@ -165,8 +165,12 @@ export default function Page04() {
                   href={intl.formatMessage({ id: "home_buyers_href" })}
                   target="_blank"
                 >
-                  <FormattedMessage id="home_buyers" />
-                  <span className="link-icon">
+                  <FormattedMessage id="home_buyers_1" />
+                  <span
+                    className="link-icon"
+                    style={{ display: "inline-block" }}
+                  >
+                    <FormattedMessage id="home_buyers_2" />
                     &nbsp;
                     <FontAwesomeIcon icon={faExternalLinkAlt} />
                   </span>
@@ -175,11 +179,14 @@ export default function Page04() {
                 <a
                   href={intl.formatMessage({ id: "lifelong_learning_href" })}
                   target="_blank"
-                  style={{ display: "inline" }}
                 >
-                  <FormattedMessage id="lifelong_learning" />
+                  <FormattedMessage id="lifelong_learning_1" />
 
-                  <span className="link-icon">
+                  <span
+                    className="link-icon"
+                    style={{ display: "inline-block" }}
+                  >
+                    <FormattedMessage id="lifelong_learning_2" />
                     &nbsp;
                     <FontAwesomeIcon icon={faExternalLinkAlt} />
                   </span>

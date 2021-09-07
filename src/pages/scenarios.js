@@ -113,8 +113,9 @@ export default function Scenarios() {
                   href={intl.formatMessage({ id: "home_buyers_href" })}
                   target="_blank"
                 >
-                  <FormattedMessage id="home_buyers" />
-                  <span className="link-icon">
+                  <FormattedMessage id="home_buyers_1" />
+                  <span className="link-icon" style={{ display: "inline-block" }}>
+                    <FormattedMessage id="home_buyers_2" />
                     &nbsp;
                     <FontAwesomeIcon icon={faExternalLinkAlt} />
                   </span>
@@ -598,7 +599,7 @@ export default function Scenarios() {
                 <a
                   href={intl.formatMessage({ id: "page5.callout1.href" })}
                   target="_blank"
-                  style={{display: "inline-block"}}
+                  style={{ display: "inline-block" }}
                 >
                   <FormattedMessage id="page5.callout1.help" />
                   <span className="link-icon">
