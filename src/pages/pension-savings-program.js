@@ -115,7 +115,7 @@ export default function Page02() {
                       &nbsp;
                       <FontAwesomeIcon icon={faExternalLinkAlt} />
                     </span>
-                  </a>{" "}
+                  </a>
                   <FormattedMessage id="page2.accordion4.p2" />{" "}
                   <a
                     href={intl.formatMessage({ id: "lifelong_learning_href" })}

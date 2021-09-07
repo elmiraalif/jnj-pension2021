@@ -45,12 +45,12 @@ export default function Home() {
               </b>
               <FormattedMessage id="home.callout1.p2" />
             </p>
-            <div className="heading-icon space-top-2x space-bottom-x">
+            {/* <div className="heading-icon space-top-2x space-bottom-x">
               <img src={"/icons/home-icon-check.svg"} alt="" width="30" />
               <Link to="#">
                 <FormattedMessage id="home.callout1.calendar" />
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="callout">

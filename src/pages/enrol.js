@@ -91,7 +91,7 @@ export default function Enrol() {
             </div>
           </div>
         </div>
-        <div className="wrapper">
+        {/* <div className="wrapper">
           <h2 className="space-x">
             <FormattedMessage id="page6.copy2.title" />
           </h2>
@@ -132,14 +132,14 @@ export default function Enrol() {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="wrapper">
           <div className="space-2x"></div>
-          <StaticImage
+          {/* <StaticImage
             src="../images/enrol-01.jpg"
             alt="Enrol instructions video"
             placeholder="none"
-          />
+          /> */}
           <h2 className="space-top-2x">
             <FormattedMessage id="page6.copy3.title" />
           </h2>
