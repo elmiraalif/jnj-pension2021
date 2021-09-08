@@ -17,7 +17,7 @@ export default function Portal() {
           />
         </a>
       </div>
-      <div className="heading-icon">
+      {/* <div className="heading-icon">
         <img src={Arrow} alt="" width="20" />
         <div>
           <h4
@@ -29,7 +29,7 @@ export default function Portal() {
             <FormattedMessage id="portal.item1.p" />
           </p>
         </div>
-      </div>
+      </div> */}
       <div className="heading-icon">
         <img src={Arrow} alt="" width="20" />
         <div>

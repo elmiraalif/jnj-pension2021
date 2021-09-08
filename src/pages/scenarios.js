@@ -590,7 +590,7 @@ export default function Scenarios() {
             </ul>
           </Accordion>
         </div>
-        <div className="callout space-top-2x">
+        {/* <div className="callout">
           <div className="wrapper">
             <div>
               <h3>
@@ -613,8 +613,8 @@ export default function Scenarios() {
               </p>
             </div>
           </div>
-        </div>
-        <div className="info">
+        </div> */}
+        <div className="info space-top-2x">
           <div className="wrapper">
             <p>
               <FormattedMessage id="page5.callout2.p1" />

@@ -67,14 +67,14 @@ export default function Timeline() {
         <p>
           <FormattedMessage id="home.timeline.november_copy.p" />
         </p>
-        <div className={styles.blue}>
+        {/* <div className={styles.blue}>
           <h3>
             <FormattedMessage id="home.timeline.callout1.title" />
           </h3>
           <p>
             <FormattedMessage id="home.timeline.callout1.p" />
           </p>
-        </div>
+        </div> */}
       </div>
       <div className={styles.container}>
         <h4 className={styles.title}>
