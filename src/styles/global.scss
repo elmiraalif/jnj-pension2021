@@ -34,15 +34,15 @@ body {
     font-size: 12px;
   }
 }
-@media (max-height: 800px) and (min-width: 900px) {
-  .wrapper {
-    width: 650px;
-  }
-  html,
-  body {
-    font-size: 15px;
-  }
-}
+// @media (max-height: 800px) and (min-width: 900px) {
+//   .wrapper {
+//     width: 650px;
+//   }
+//   html,
+//   body {
+//     font-size: 15px;
+//   }
+// }
 
 main {
   min-height: 100vh;
