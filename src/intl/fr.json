@@ -275,6 +275,10 @@
       "bold2": "Pour vous aider à prendre la première décision, regardez cette vidéo!",
       "image": "/icons/boxes_fr.png"
     },
+    "video": {
+      "src": "https://player.vimeo.com/video/596626024?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;h=3456cefbd8",
+      "title": "Les options de retraite"
+    },
     "callout1": {
       "p1": "Le programme de retraite et d’épargne vous soutient à chaque étape de la vie pour que vos choix continuent à répondre à vos objectifs au fil du temps. Vous pouvez adhérer ou modifier votre participation aux régimes facultatifs PD et CD deux fois par année (en janvier et en juillet). Vous pouvez modifier la répartition de vos placements et vos cotisations aux REER, CAO, CELI et régime non enregistré en tout temps. ",
       "p2": "tous les changements seront appliqués de manière prospective et n’auront aucune incidence sur les prestations déjà acquises. "

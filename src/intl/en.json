@@ -276,6 +276,10 @@
       "bold2": "To help you make the first decision, watch this video!",
       "image": "/icons/boxes.png"
     },
+    "video": {
+      "src": "https://player.vimeo.com/video/596626024?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;h=3456cefbd8",
+      "title": "Pension Options"
+    },
     "callout1": {
       "p1": "The Pension & Savings Program supports you as you move forward in life to make sure your selections continue to meet your goals over time. You can can join or change your participation in the optional DB and DC plans twice a year (in January and July). You can modify your investment allocations and contributions to the RRSP, OAC, TFSA and Non-registered at any time.",
       "p2": "All changes are applied prospectively and do not impact any benefits already earned."

@@ -60,11 +60,21 @@ export default function Page04() {
             <FormattedMessage id="page4.copy1.bold2" />
           </p>
           <div className="space-2x">
-            <StaticImage
+            <iframe
+              width="100%"
+              height="365"
+              src={intl.formatMessage({ id: "page4.video.src" })}
+              title={intl.formatMessage({ id: "page4.video.title" })}
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+
+            {/* <StaticImage
               placeholder="none"
               src="../images/db-nondb-video.png"
               width="700"
-            />
+            /> */}
           </div>
         </div>
         <div className="callout">
@@ -179,8 +189,7 @@ export default function Page04() {
                   href={intl.formatMessage({ id: "lifelong_learning_href" })}
                   target="_blank"
                 >
-                  <FormattedMessage id="lifelong_learning_1" />
-                  {" "}
+                  <FormattedMessage id="lifelong_learning_1" />{" "}
                   <span className="link-icon">
                     <span style={{ textDecoration: "underline" }}>
                       <FormattedMessage id="lifelong_learning_2" />
