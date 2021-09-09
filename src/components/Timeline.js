@@ -38,7 +38,12 @@ export default function Timeline() {
         </h4>
         <p>
           <FormattedMessage id="home.timeline.october_copy.p1" />{" "}
-          <a href="home.timeline.october_copy.href1" target="_blank">
+          <a
+            href={intl.formatMessage({
+              id: "home.timeline.october_copy.href1",
+            })}
+            target="_blank"
+          >
             <FormattedMessage id="home.timeline.october_copy.link1" />
           </a>
           !
