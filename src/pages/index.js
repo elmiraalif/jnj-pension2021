@@ -16,7 +16,7 @@ export default function Home() {
         <title>Johnson & Johnson</title>
       </Helmet>
       <StaticImage src="../images/test-banner.jpg" alt="Banner" width="1920" />
-      <div id="home">
+      <div id="home" class="main-content">
         <div className="wrapper">
           <h1
             className="space-top-x"

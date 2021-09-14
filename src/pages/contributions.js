@@ -16,12 +16,10 @@ export default function Page03() {
   return (
     <Layout>
       <Helmet>
-        <title>
-          {intl.formatMessage({id: "page3.title"})}
-        </title>
+        <title>{intl.formatMessage({ id: "page3.title" })}</title>
       </Helmet>
       <StaticImage src="../images/banner03.jpg" alt="Banner" />
-      <div id="page03">
+      <div id="page03" class="main-content">
         <div className="wrapper">
           <h1 className="space-x">
             <FormattedMessage id="nav.item3" />

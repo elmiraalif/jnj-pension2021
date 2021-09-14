@@ -16,7 +16,7 @@ export default function Enrol() {
         <title>{intl.formatMessage({ id: "page6.title" })}</title>
       </Helmet>
       <StaticImage src="../images/banner06.jpg" alt="Banner" />
-      <div id="page06">
+      <div id="page06" class="main-content">
         <div className="wrapper">
           <h1
             className="space-top-x"

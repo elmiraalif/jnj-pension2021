@@ -23,7 +23,7 @@ export default function Page04() {
         src="../images/banner04.jpg"
         alt="Banner"
       />
-      <div id="page04">
+      <div id="page04" class="main-content">
         <div className="wrapper">
           <h1
             className="space-top-x"

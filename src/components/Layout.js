@@ -8,7 +8,7 @@ export default function Layout({ children }) {
   return (
     <>
       <Sidebar />
-      <main style={{marginLeft: "330px"}}>{children}</main>
+      <main>{children}</main>
       <Copyright />
     </>
   )

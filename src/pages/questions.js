@@ -15,7 +15,7 @@ export default function Questions() {
         <title>{intl.formatMessage({ id: "page9.title" })}</title>
       </Helmet>
       <StaticImage src="../images/banner09.jpg" alt="Banner" />
-      <div id="page09">
+      <div id="page09" class="main-content">
         <div className="wrapper">
           <h1 className="space-x">
             {intl.formatMessage({ id: "page9.title" })}

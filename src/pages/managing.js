@@ -20,7 +20,7 @@ export default function Managing() {
         <title>{intl.formatMessage({ id: "page7.title" })}</title>
       </Helmet>
       <StaticImage src="../images/banner07.jpg" alt="Banner" />
-      <div id="page07">
+      <div id="page07" class="main-content">
         <div className="wrapper">
           <h1
             className="space-top-x"
@@ -51,7 +51,9 @@ export default function Managing() {
             </p>
             <div className="wrapper-center">
               <Accordion
-                title={intl.formatMessage({ id: "page7.accordion2.acc1.title" })}
+                title={intl.formatMessage({
+                  id: "page7.accordion2.acc1.title",
+                })}
                 color={accent}
                 icon={"/icons/component_icon.svg"}
               >
@@ -67,7 +69,9 @@ export default function Managing() {
                 </p>
               </Accordion>
               <Accordion
-                title={intl.formatMessage({ id: "page7.accordion2.acc2.title" })}
+                title={intl.formatMessage({
+                  id: "page7.accordion2.acc2.title",
+                })}
                 color={accent}
                 icon={"/icons/contribution_icon.svg"}
               >

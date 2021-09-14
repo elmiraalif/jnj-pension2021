@@ -19,7 +19,7 @@ export default function Page02() {
         <title>{intl.formatMessage({ id: "page2.title" })}</title>
       </Helmet>
       <StaticImage src="../images/banner02.jpg" alt="Banner" />
-      <div id="page02">
+      <div id="page02" class="main-content">
         <div className="wrapper">
           <h1
             className="space-top-x"
@@ -124,8 +124,7 @@ export default function Page02() {
                     href={intl.formatMessage({ id: "lifelong_learning_href" })}
                     target="_blank"
                   >
-                    <FormattedMessage id="lifelong_learning_1" />
-                    {" "}
+                    <FormattedMessage id="lifelong_learning_1" />{" "}
                     <span className="link-icon">
                       <span style={{ textDecoration: "underline" }}>
                         <FormattedMessage id="lifelong_learning_2" />
