@@ -15,8 +15,12 @@ export default function Home() {
       <Helmet>
         <title>Johnson & Johnson</title>
       </Helmet>
-      <StaticImage src="../images/test-banner.jpg" alt="Banner" width="1920" />
       <div id="home" class="main-content">
+        <StaticImage
+          src="../images/test-banner.jpg"
+          alt="Banner"
+          width="1920"
+        />
         <div className="wrapper">
           <h1
             className="space-top-x"
@@ -31,13 +35,14 @@ export default function Home() {
               __html: intl.formatMessage({ id: "home.copy1.p" }),
             }}
           />
-            
         </div>
 
         <div className="gray-callout space-top-x">
           <div className="wrapper">
             <p>
-              <span><FormattedMessage id="important" /></span>{" "}
+              <span>
+                <FormattedMessage id="important" />
+              </span>{" "}
               <FormattedMessage id="home.callout1.p1" />{" "}
               <b class="italic-bold">
                 {" "}

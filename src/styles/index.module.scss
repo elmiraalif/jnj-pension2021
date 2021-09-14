@@ -80,7 +80,7 @@
     }
     .content {
       height: calc(100vh - 60px - 4em);
-      display: grid;
+      display: grid; display: -ms-grid;
       place-content: center;
       place-items: center;
       grid-template-columns: 1fr 1fr 1fr;

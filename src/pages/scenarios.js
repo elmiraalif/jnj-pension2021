@@ -21,8 +21,8 @@ export default function Scenarios() {
       <Helmet>
         <title>{intl.formatMessage({ id: "page5.title" })}</title>
       </Helmet>
-      <StaticImage src="../images/banner05.jpg" alt="Banner" />
       <div id="page05" class="main-content">
+        <StaticImage src="../images/banner05.jpg" alt="Banner" />
         <div className="wrapper">
           <h1
             className="space-top-x"

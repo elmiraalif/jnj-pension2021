@@ -18,8 +18,8 @@ export default function Page03() {
       <Helmet>
         <title>{intl.formatMessage({ id: "page3.title" })}</title>
       </Helmet>
-      <StaticImage src="../images/banner03.jpg" alt="Banner" />
       <div id="page03" class="main-content">
+        <StaticImage src="../images/banner03.jpg" alt="Banner" />
         <div className="wrapper">
           <h1 className="space-x">
             <FormattedMessage id="nav.item3" />

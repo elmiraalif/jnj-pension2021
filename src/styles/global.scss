@@ -528,11 +528,11 @@ sup {
     text-align: center;
   }
   .content {
-    display: grid;
+    display: grid; display: -ms-grid;
     grid-template-columns: repeat(2, 1fr);
   }
   .cell {
-    display: grid;
+    display: grid; display: -ms-grid;
     place-content: center;
     padding: 1.5em;
     border: 1px solid darken($light-color, 5%);
@@ -642,7 +642,7 @@ sup {
 }
 
 .profile-container {
-  display: grid;
+  display: grid; display: -ms-grid;
   grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
   gap: 1em;
   &:last-child {
@@ -776,7 +776,7 @@ sup {
 // Scenarios for saving goals
 #page05 {
   .boxes {
-    display: grid;
+    display: grid; display: -ms-grid;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     gap: 1em;
     align-items: center;
@@ -883,7 +883,7 @@ sup {
     }
     &-content {
       background: $light-color;
-      display: grid;
+      display: grid; display: -ms-grid;
       place-content: center;
       text-align: center;
       .col {
@@ -1016,7 +1016,7 @@ sup {
 // Questions?
 #page09 {
   .content-container {
-    display: grid;
+    display: grid; display: -ms-grid;
     grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
     gap: 2em;
   }
