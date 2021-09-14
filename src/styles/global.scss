@@ -13,7 +13,7 @@ html,
 body {
   min-height: 100%;
   font-size: 16px;
-  @media all and  (min-width: 768px) {
+  @media all and (min-width: 768px) {
     font-size: 16px;
   }
 }
@@ -25,7 +25,7 @@ body {
   overflow-x: hidden;
 }
 // Short screens
-@media all and  (max-height: 700px) and (min-width: 900px) {
+@media all and (max-height: 700px) and (min-width: 900px) {
   .wrapper {
     width: 500px;
   }
@@ -35,14 +35,16 @@ body {
   }
 }
 
-.main-content{
-  margin-left: 330px;
+.main-content {
+  @media all and (min-width: 900px) {
+    margin-left: 330px;
+  }
 }
 
 main {
   min-height: 100vh;
   margin-top: calc(3em + 37px);
-  @media all and  (min-width: 900px) {
+  @media all and (min-width: 900px) {
     margin-top: 0;
     // margin-left: 330px;
   }
@@ -80,13 +82,13 @@ h2 {
 }
 
 h1 {
-  @media all and  (min-width: 900px) {
+  @media all and (min-width: 900px) {
     font-size: 3rem;
   }
 }
 
 h2 {
-  @media all and  (min-width: 900px) {
+  @media all and (min-width: 900px) {
     font-size: 2.7rem;
   }
 }
@@ -101,7 +103,7 @@ p {
   font-size: 1.1rem;
 }
 
-sup{
+sup {
   font-size: 60%;
 }
 
@@ -158,7 +160,7 @@ sup{
 .intro-copy {
   color: $secondary-color;
   font-size: 1.1rem;
-  @media all and  (min-width: 900px) {
+  @media all and (min-width: 900px) {
     font-size: 1.5rem;
   }
 }
@@ -180,7 +182,7 @@ sup{
 .switcher_landing {
   margin-top: 10%;
 
-  @media all and  (min-width: 1024px) {
+  @media all and (min-width: 1024px) {
     position: absolute;
     bottom: 5vh;
     margin-top: 0;
@@ -200,7 +202,7 @@ sup{
   img {
     display: none;
   }
-  img.visible{
+  img.visible {
     display: block;
   }
   p,
@@ -212,13 +214,13 @@ sup{
     font-size: 1.2rem;
     font-family: $font-book;
     line-height: 120%;
-    @media all and  (min-width: 900px) {
+    @media all and (min-width: 900px) {
       font-size: 1.3rem;
     }
   }
   p {
     font-size: 0.9rem;
-    @media all and  (min-width: 900px) {
+    @media all and (min-width: 900px) {
       font-size: 1rem;
     }
   }
@@ -228,7 +230,7 @@ sup{
     justify-content: space-around;
     align-items: flex-start;
   }
-  @media all and  (min-width: 450px) {
+  @media all and (min-width: 450px) {
     img {
       display: unset;
       margin-right: 1em;
@@ -239,7 +241,7 @@ sup{
 .copyright {
   padding: 1em;
   background: darken($light-color, 10%);
-  @media all and  (min-width: 900px) {
+  @media all and (min-width: 900px) {
     margin-left: 330px;
   }
 }
@@ -292,11 +294,11 @@ sup{
   min-width: 330px;
   max-width: 700px;
   margin: 0 auto;
-  @media all and  (min-width: 1100px) {
+  @media all and (min-width: 1100px) {
     margin: 0;
     margin-left: 5vw;
   }
-  @media all and  (min-width: 900) {
+  @media all and (min-width: 900) {
     margin-left: 3vw;
   }
 }
@@ -355,7 +357,7 @@ sup{
       top: 24px;
     }
   }
-  @media all and  (min-width: 900px) {
+  @media all and (min-width: 900px) {
     max-width: 330px;
     min-height: 5vh;
     .open {
@@ -428,7 +430,7 @@ sup{
       }
     }
   }
-  @media all and  (min-width: 900px) {
+  @media all and (min-width: 900px) {
     max-width: 330px;
     .sidebar-content {
       max-height: 100vh !important;
@@ -583,7 +585,7 @@ sup{
       left: 45%;
     }
   }
-  @media all and  (min-width: 450px) {
+  @media all and (min-width: 450px) {
     img {
       display: unset;
     }
@@ -646,7 +648,7 @@ sup{
   &:last-child {
     grid-column: 2 / span 2;
   }
-  @media all and  (min-width: 640px) {
+  @media all and (min-width: 640px) {
     gap: 0;
   }
 }
@@ -670,7 +672,7 @@ sup{
     margin: 1em 0;
     line-height: 120%;
   }
-  @media all and  (min-width: 500px) {
+  @media all and (min-width: 500px) {
     &-img {
       height: 25vh;
     }
@@ -700,7 +702,7 @@ sup{
     // @media all and  (min-width: 500px) {
     // }
     width: 100%;
-    @media all and  (min-width: 500px) {
+    @media all and (min-width: 500px) {
       height: 365px;
     }
   }
@@ -845,7 +847,7 @@ sup{
   .info {
     background: $light-color;
   }
-  @media all and  (min-width: 640px) {
+  @media all and (min-width: 640px) {
     ul {
       padding-left: 100px;
     }
@@ -861,7 +863,7 @@ sup{
   h4 {
     font-size: 1.1rem;
     color: $secondary-color;
-    @media all and  (min-width: 900px) {
+    @media all and (min-width: 900px) {
       font-size: 1.5rem;
     }
   }
@@ -911,7 +913,7 @@ sup{
     margin: 30px 0;
     font-family: $font-bold;
   }
-  @media all and  (min-width: 600px) {
+  @media all and (min-width: 600px) {
     .box-content {
       display: flex;
       .divider {
@@ -924,7 +926,7 @@ sup{
       }
     }
   }
-  @media all and  (min-width: 466px) {
+  @media all and (min-width: 466px) {
     .tip {
       flex-direction: row;
       align-items: flex-start;
