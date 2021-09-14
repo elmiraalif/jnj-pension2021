@@ -11,9 +11,8 @@ export default function Nav() {
       <ul className="menu">
         <li>
           <Link
-            to="/whats-changing"
+            to="/"
             activeClassName="active"
-            partiallyActive={true}
           >
             {intl.formatMessage({ id: "nav.item1" })}
           </Link>

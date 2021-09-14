@@ -1,6 +1,5 @@
 module.exports = {
   pathPrefix: `/pension`,
-  assetPrefix: `http://elmiraalif.com/`,
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-image`,

@@ -23,9 +23,12 @@ export default function Sidebar() {
         <div className="nav">
           <div className="nav-wrapper">
             <Nav />
-            <Link to="#" className="btn btn-red">
+            <a
+              href={intl.formatMessage({ id: "benefit_site" })}
+              className="btn btn-red"
+            >
               {intl.formatMessage({ id: "header.red_button" })}
-            </Link>
+            </a>
             <a
               href={intl.formatMessage({ id: "header.href_outline" })}
               target="_blank"
