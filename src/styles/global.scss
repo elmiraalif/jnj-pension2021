@@ -537,7 +537,6 @@ sup {
     -ms-grid-columns: 1fr 1fr;
   }
   .cell {
-    display: -ms-grid;
     display: grid;
     display: -ms-flexbox;
     place-content: center;
@@ -560,12 +559,8 @@ sup {
     }
   }
   .subtitle {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     background: darken($light-color, 40%);
     padding: 1em;
     text-transform: uppercase;
@@ -588,7 +583,7 @@ sup {
     padding: 0 1em 0 2em;
   }
   .top {
-    display: unset;
+    display: block;
     place-content: baseline;
   }
   .callout-pointer {
@@ -601,14 +596,33 @@ sup {
       display: block;
     }
   }
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .table {
+      display: flex;
+      flex-direction: column;
+      .content {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .content > * {
+        flex: 1 1 300px;
+        margin: 10px;
+      }
+      .subtitle {
+        display: flex;
+        margin: 0;
+        img {
+          margin: 0 1em;
+        }
+      }
+      .cell {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
 }
-  // @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  //   .subtitle{
-  //     display: -ms-flexbox;
-  //     width:100%;
-  //   }
-  // }
-
 
 .portal {
   .title {
