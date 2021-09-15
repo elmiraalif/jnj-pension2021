@@ -124,7 +124,7 @@ export default function Managing() {
                   <FormattedMessage id="page7.accordion2.acc3.p1" />
                 </p>
                 <div className="heading-icon-top">
-                  <img src="/icons/one_pink.svg" alt="One" width="25" />
+                  <img src="/icons/one_pink.svg" alt="One" />
                   <p
                     dangerouslySetInnerHTML={{
                       __html: intl.formatMessage({
@@ -134,7 +134,7 @@ export default function Managing() {
                   />
                 </div>
                 <div className="heading-icon-top">
-                  <img src="/icons/two_pink.svg" alt="Two" width="25" />
+                  <img src="/icons/two_pink.svg" alt="Two" />
                   <p
                     dangerouslySetInnerHTML={{
                       __html: intl.formatMessage({

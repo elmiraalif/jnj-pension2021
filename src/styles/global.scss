@@ -476,6 +476,9 @@ sup {
     align-items: center;
     width: 80%;
     line-height: 140%;
+    img {
+      width: 25px;
+    }
   }
   .cross {
     position: relative;
@@ -528,11 +531,15 @@ sup {
     text-align: center;
   }
   .content {
-    display: grid; display: -ms-grid;
+    display: grid;
+    display: -ms-grid;
     grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: 1fr 1fr;
   }
   .cell {
-    display: grid; display: -ms-grid;
+    display: -ms-grid;
+    display: grid;
+    display: -ms-flexbox;
     place-content: center;
     padding: 1.5em;
     border: 1px solid darken($light-color, 5%);
@@ -553,8 +560,12 @@ sup {
     }
   }
   .subtitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background: darken($light-color, 40%);
     padding: 1em;
     text-transform: uppercase;
@@ -587,10 +598,17 @@ sup {
   }
   @media all and (min-width: 450px) {
     img {
-      display: unset;
+      display: block;
     }
   }
 }
+  // @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  //   .subtitle{
+  //     display: -ms-flexbox;
+  //     width:100%;
+  //   }
+  // }
+
 
 .portal {
   .title {
@@ -642,7 +660,8 @@ sup {
 }
 
 .profile-container {
-  display: grid; display: -ms-grid;
+  display: grid;
+  display: -ms-flexbox;
   grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
   gap: 1em;
   &:last-child {
@@ -653,7 +672,10 @@ sup {
   }
 }
 .profile {
-  max-width: 100%;
+  max-width: 300px;
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    width: 250px;
+  }
   color: #fff;
   &-img {
     width: 100%;
@@ -776,13 +798,15 @@ sup {
 // Scenarios for saving goals
 #page05 {
   .boxes {
-    display: grid; display: -ms-grid;
+    display: grid;
+    display: -ms-flexbox;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     gap: 1em;
     align-items: center;
   }
   .box {
-    padding: 0.7em 0;
+    padding: 0.7em 1em;
+    margin-right: 0.5em;
     background: $primary-color;
     color: #fff;
     border-radius: 5px;
@@ -883,7 +907,8 @@ sup {
     }
     &-content {
       background: $light-color;
-      display: grid; display: -ms-grid;
+      display: grid;
+      display: -ms-flexbox;
       place-content: center;
       text-align: center;
       .col {
@@ -1016,9 +1041,17 @@ sup {
 // Questions?
 #page09 {
   .content-container {
-    display: grid; display: -ms-grid;
+    display: grid;
+    display: -ms-flexbox;
     grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
     gap: 2em;
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      display: -ms-flexbox;
+      justify-content: space-between;
+      .col {
+        width: 300px;
+      }
+    }
   }
   h3 {
     color: $secondary-color;

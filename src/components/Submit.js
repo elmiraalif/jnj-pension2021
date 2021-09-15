@@ -7,7 +7,7 @@ export default function Submit() {
   return (
     <div className={styles.submit}>
       <div className={styles.heading}>
-        <img src={"/icons/question_info.svg"} alt="" width="30" />
+        <img src={"/icons/question_info.svg"} alt=""/>
         <p
           dangerouslySetInnerHTML={{
             __html: intl.formatMessage({ id: "page9.callout.p" }),

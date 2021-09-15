@@ -3,7 +3,6 @@ import FooterIcon from "../images/footer-icon01.svg"
 import Language from "./Language"
 import { StaticImage } from "gatsby-plugin-image"
 import { useIntl } from "gatsby-plugin-intl"
-
 export default function Footer() {
   const intl = useIntl()
   return (
@@ -15,12 +14,7 @@ export default function Footer() {
         <p>{intl.formatMessage({ id: "footer.p2" })}</p>
         <Language />
         <div className="logo">
-          <StaticImage
-            src="../images/logo.svg"
-            alt="logo"
-            width="127"
-            placeholder="tracedSVG"
-          />
+          <img src="/icons/logo.svg" alt="" style={{ width: "127px" }} />
         </div>
       </div>
     </footer>

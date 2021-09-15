@@ -17,7 +17,7 @@ export default function Accordion({ title, icon, color, bg, border, children }) 
         }}
       >
         <div className="title">
-          <img src={icon} alt="" width="25" />
+          <img src={icon} alt="" />
           <h3>{title}</h3>
         </div>
         <div className="cross">

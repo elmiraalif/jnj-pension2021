@@ -658,7 +658,7 @@
   "page9": {
     "title": "Questions?",
     "callout": {
-      "p": "Submit a question about our new Pension & Savings Program by<span class=\"bold\">September 30</span>. We will answer your questions during the information sessions in October.",
+      "p": "Submit a question about our new Pension & Savings Program by <span class=\"bold\">September 30</span>. We will answer your questions during the information sessions in October.",
       "btn": "Submit a question"
     },
     "left_col":{

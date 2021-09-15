@@ -18,6 +18,7 @@ export default function Page04() {
       <Helmet>
         <title>{intl.formatMessage({ id: "page4.title" })}</title>
       </Helmet>
+
       <div id="page04" class="main-content">
         <StaticImage
           placeholder="none"
@@ -109,7 +110,7 @@ export default function Page04() {
           <Accordion
             border={secondary}
             title={intl.formatMessage({ id: "page4.accordion1.title" })}
-            icon="../icons/one_pink.svg"
+            icon="/icons/one_pink.svg"
             color={secondary}
           >
             <div>
@@ -133,7 +134,7 @@ export default function Page04() {
           <Accordion
             border={secondary}
             title={intl.formatMessage({ id: "page4.accordion2.title" })}
-            icon="../icons/two_pink.svg"
+            icon="/icons/two_pink.svg"
             color={secondary}
             svg="none"
           >
@@ -156,7 +157,7 @@ export default function Page04() {
           <Accordion
             border={secondary}
             title={intl.formatMessage({ id: "page4.accordion3.title" })}
-            icon="../icons/three_pink.svg"
+            icon="/icons/three_pink.svg"
             color={secondary}
           >
             <ul>
@@ -212,7 +213,7 @@ export default function Page04() {
           <Accordion
             border={secondary}
             title={intl.formatMessage({ id: "page4.accordion4.title" })}
-            icon="../icons/four_pink.svg"
+            icon="/icons/four_pink.svg"
             color={secondary}
           >
             <div>
@@ -237,7 +238,7 @@ export default function Page04() {
           <Accordion
             border={secondary}
             title={intl.formatMessage({ id: "page4.accordion5.title" })}
-            icon="../icons/five_pink.svg"
+            icon="/icons/five_pink.svg"
             color={secondary}
           >
             <div>
@@ -277,7 +278,7 @@ export default function Page04() {
           <Accordion
             border={secondary}
             title={intl.formatMessage({ id: "page4.accordion6.title" })}
-            icon="../icons/six_pink.svg"
+            icon="/icons/six_pink.svg"
             color={secondary}
           >
             <div>
