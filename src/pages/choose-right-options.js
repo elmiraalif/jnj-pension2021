@@ -20,11 +20,13 @@ export default function Page04() {
       </Helmet>
 
       <div id="page04" class="main-content">
-        <StaticImage
+        {/* <StaticImage
           placeholder="none"
-          src="../images/banner04.jpg"
+          src="../images/headers/banner04.jpg"
           alt="Banner"
-        />
+        /> */}
+        <img src="/headers/banner04.jpg" alt="Banner" class="banner-image" />
+
         <div className="wrapper">
           <h1
             className="space-top-x"
@@ -39,7 +41,11 @@ export default function Page04() {
             <FormattedMessage id="page4.copy1.bold1" />
           </p>
           <div className="heading-icon-top">
-            <img src={"/icons/one-red.svg"} alt="One" width="30" />
+            <img
+              src={"/icons/one-red.svg"}
+              alt="One"
+              style={{ maxWidth: "30px" }}
+            />
             <p>
               <FormattedMessage id="page4.copy1.item1" />
             </p>
@@ -52,7 +58,11 @@ export default function Page04() {
             />
           </div>
           <div className="heading-icon-top">
-            <img src={"/icons/two-red.svg"} alt="two" width="30" />
+            <img
+              src={"/icons/two-red.svg"}
+              alt="two"
+              style={{ maxWidth: "30px" }}
+            />
             <p>
               <FormattedMessage id="page4.copy1.item2" />
             </p>
@@ -80,7 +90,11 @@ export default function Page04() {
         </div>
         <div className="callout">
           <div className="wrapper">
-            <img src={"/icons/icon_info.svg"} alt="" width="35" />
+            <img
+              src={"/icons/icon_info.svg"}
+              alt=""
+              style={{ maxWidth: "35px" }}
+            />
             <div>
               <p>
                 <FormattedMessage id="page4.callout1.p1" />
@@ -305,7 +319,11 @@ export default function Page04() {
         </div>
         <div className="callout space-x">
           <div className="wrapper">
-            <img src={"/icons/icon_info.svg"} alt="" width="35" />
+            <img
+              src={"/icons/icon_info.svg"}
+              alt=""
+              style={{ maxWidth: "35px" }}
+            />
             <div>
               <p
                 dangerouslySetInnerHTML={{

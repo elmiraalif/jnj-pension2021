@@ -9,16 +9,16 @@ export default function Nav() {
   return (
     <nav>
       <ul className="menu">
-        <li>
+        {/* <li>
           <Link
             to="/"
             activeClassName="active"
           >
             {intl.formatMessage({ id: "nav.item1" })}
           </Link>
-        </li>
+        </li> */}
         <li>
-          <Link to="/pension-savings-program" activeClassName="active">
+          <Link to="/" activeClassName="active">
             {intl.formatMessage({ id: "nav.item2" })}
           </Link>
         </li>

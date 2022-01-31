@@ -16,7 +16,9 @@ export default function Enrol() {
         <title>{intl.formatMessage({ id: "page6.title" })}</title>
       </Helmet>
       <div id="page06" class="main-content">
-        <StaticImage src="../images/banner06.jpg" alt="Banner" />
+        {/* <StaticImage src="../images/headers/banner06.jpg" alt="Banner" /> */}
+        <img src="/headers/banner06.jpg" alt="Banner" class="banner-image" />
+
         <div className="wrapper">
           <h1
             className="space-top-x"
@@ -43,7 +45,11 @@ export default function Enrol() {
           </p>
           <div className="box box-primary space-x">
             <div className="heading-icon-top">
-              <img src="/icons/one-white.svg" alt="One" width="30" />
+              <img
+                src="/icons/one-white.svg"
+                alt="One"
+                style={{ maxWidth: "30px" }}
+              />
               <p
                 dangerouslySetInnerHTML={{
                   __html: intl.formatMessage({ id: "page6.copy1.item1" }),
@@ -53,7 +59,11 @@ export default function Enrol() {
           </div>
           <div className="box box-accent space-x">
             <div className="heading-icon-top">
-              <img src="/icons/two-white.svg" alt="One" width="30" />
+              <img
+                src="/icons/two-white.svg"
+                alt="One"
+                style={{ maxWidth: "30px" }}
+              />
               <p
                 dangerouslySetInnerHTML={{
                   __html: intl.formatMessage({ id: "page6.copy1.item2" }),
@@ -79,7 +89,11 @@ export default function Enrol() {
         <div className="callout">
           <div className="wrapper">
             <div className="heading-icon">
-              <img src={"/icons/icon_info.svg"} alt="" width="30" />
+              <img
+                src={"/icons/icon_info.svg"}
+                alt=""
+                style={{ maxWidth: "30px" }}
+              />
             </div>
             <div>
               <h3>

@@ -19,14 +19,20 @@ export default function Page03() {
         <title>{intl.formatMessage({ id: "page3.title" })}</title>
       </Helmet>
       <div id="page03" class="main-content">
-        <StaticImage src="../images/banner03.jpg" alt="Banner" />
+        {/* <StaticImage src="../images/headers/banner03.jpg" alt="Banner" /> */}
+        <img src="/headers/banner03.jpg" alt="Banner" class="banner-image" />
+
         <div className="wrapper">
           <h1 className="space-x">
             <FormattedMessage id="nav.item3" />
           </h1>
 
           <div className="heading-icon space-2x">
-            <img src={"/icons/one-red.svg"} alt="One" width="30" />
+            <img
+              src={"/icons/one-red.svg"}
+              alt="One"
+              style={{ maxWidth: "30px" }}
+            />
             <h3>
               <FormattedMessage id="page3.db" />
             </h3>
@@ -36,7 +42,11 @@ export default function Page03() {
             color={secondary}
           >
             <div className="subtitle">
-              <img src={"/icons/icon_dollar.svg"} alt="" width="35" />
+              <img
+                src={"/icons/icon_dollar.svg"}
+                alt=""
+                style={{ maxWidth: "35px" }}
+              />
               <h4
                 dangerouslySetInnerHTML={{
                   __html: intl.formatMessage({ id: "page3.your_contribution" }),
@@ -44,7 +54,11 @@ export default function Page03() {
               />
             </div>
             <div className="subtitle">
-              <img src={"/icons/icon_pig.svg"} alt="" width="35" />
+              <img
+                src={"/icons/icon_pig.svg"}
+                alt=""
+                style={{ maxWidth: "35px" }}
+              />
               <h4
                 dangerouslySetInnerHTML={{
                   __html: intl.formatMessage({ id: "page3.jj_contribution" }),
@@ -73,7 +87,11 @@ export default function Page03() {
           </Table>
           <div className="divider"></div>
           <div className="heading-icon space-2x">
-            <img src={"/icons/two-red.svg"} alt="Two" width="30" />
+            <img
+              src={"/icons/two-red.svg"}
+              alt="Two"
+              style={{ maxWidth: "30px" }}
+            />
             <h3>
               <FormattedMessage id="page3.non_db" />
             </h3>
@@ -83,7 +101,11 @@ export default function Page03() {
             color={accent}
           >
             <div className="subtitle">
-              <img src={"/icons/icon_dollar.svg"} alt="" width="35" />
+              <img
+                src={"/icons/icon_dollar.svg"}
+                alt=""
+                style={{ maxWidth: "35px" }}
+              />
               <h4
                 dangerouslySetInnerHTML={{
                   __html: intl.formatMessage({ id: "page3.your_contribution" }),
@@ -91,7 +113,11 @@ export default function Page03() {
               />
             </div>
             <div className="subtitle">
-              <img src={"/icons/icon_pig.svg"} alt="" width="35" />
+              <img
+                src={"/icons/icon_pig.svg"}
+                alt=""
+                style={{ maxWidth: "35px" }}
+              />
               <h4
                 dangerouslySetInnerHTML={{
                   __html: intl.formatMessage({ id: "page3.jj_contribution" }),
@@ -243,7 +269,11 @@ export default function Page03() {
         </div>
         <div className="callout">
           <div className="wrapper">
-            <img src={"/icons/icon_info.svg"} alt="" width="30" />
+            <img
+              src={"/icons/icon_info.svg"}
+              alt=""
+              style={{ maxWidth: "30px" }}
+            />
             <div>
               <h3>
                 <FormattedMessage id="page3.callout2.title" />

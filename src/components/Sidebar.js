@@ -29,13 +29,13 @@ export default function Sidebar() {
             >
               {intl.formatMessage({ id: "header.red_button" })}
             </a>
-            <a
+            {/* <a
               href={intl.formatMessage({ id: "header.href_outline" })}
               target="_blank"
               className="btn btn-outline"
             >
               {intl.formatMessage({ id: "header.outline_button" })}
-            </a>
+            </a> */}
           </div>
         </div>
 

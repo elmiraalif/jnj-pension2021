@@ -16,23 +16,33 @@ export default function Questions() {
       </Helmet>
 
       <div id="page09" class="main-content">
-        <StaticImage src="../images/banner09.jpg" alt="Banner" />
+        {/* <StaticImage src="../images/headers/banner09.jpg" alt="Banner" /> */}
+        <img src="/headers/banner09.jpg" alt="Banner" class="banner-image" />
+
         <div className="wrapper">
-          <h1 className="space-x">
+          <h1 className="space-top-x">
             {intl.formatMessage({ id: "page9.title" })}
           </h1>
-          <Submit />
-          <div className="content-container space-2x">
+          {/* <Submit /> */}
+          <div className="content-container">
             <div className="col">
               <h3 className="space-x" style={{ lineHeight: "140%" }}>
                 <FormattedMessage id="page9.left_col.title" />
               </h3>
               <div className="heading-icon">
-                <img src={"/icons/mail.png"} alt="" width="20" />
+                <img
+                  src={"/icons/mail.png"}
+                  alt=""
+                  style={{ maxWidth: "20px" }}
+                />
                 <a href="mailto:fyb@hroffice.com">fyb@hroffice.com</a>
               </div>
               <div className=" space-2x heading-icon">
-                <img src={"/icons/phone.png"} alt="" width="20" />
+                <img
+                  src={"/icons/phone.png"}
+                  alt=""
+                  style={{ maxWidth: "20px" }}
+                />
 
                 <div
                   className="phone"

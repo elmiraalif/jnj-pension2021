@@ -24,14 +24,14 @@ export default function Accordion({ title, icon, color, bg, border, children }) 
           <div
             className="bar"
             style={{
-              transform: content === false ? `initial` : `rotate(-45deg)`,
+              transform: content === false ? `rotate(0deg)` : `rotate(45deg)`,
               background: `${color}`,
             }}
           ></div>
           <div
             className="bar"
             style={{
-              transform: content === false ? `rotate(90deg)` : `rotate(45deg)`,
+              transform: content === false ? `rotate(90deg)` : `rotate(135deg)`,
               background: `${color}`,
             }}
           ></div>

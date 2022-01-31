@@ -22,7 +22,8 @@ export default function Scenarios() {
         <title>{intl.formatMessage({ id: "page5.title" })}</title>
       </Helmet>
       <div id="page05" class="main-content">
-        <StaticImage src="../images/banner05.jpg" alt="Banner" />
+        <img src="/headers/banner05.jpg" alt="Banner" class="banner-image" />
+        {/* <StaticImage src="../images/headers/banner05.jpg" alt="Banner" /> */}
         <div className="wrapper">
           <h1
             className="space-top-x"
@@ -46,9 +47,14 @@ export default function Scenarios() {
               <a href="#mid" className="box">
                 <FormattedMessage id="page5.buttons.middle" />
               </a>
-              <a href="#retired" className="box">
-                <FormattedMessage id="page5.buttons.right" />
-              </a>
+              <a
+                href="#retired"
+                className="box"
+                dangerouslySetInnerHTML={{
+                  __html: intl.formatMessage({ id: "page5.buttons.right" }),
+                }}
+              />
+              {/* <FormattedMessage id="page5.buttons.right" /> */}
             </div>
           </div>
         </div>

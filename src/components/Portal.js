@@ -18,7 +18,7 @@ export default function Portal() {
         </a>
       </div>
       {/* <div className="heading-icon">
-        <img src={Arrow} alt="" width="20" />
+        <img src={Arrow} alt="" style={{maxWidth: "20px"}} />
         <div>
           <h4
             dangerouslySetInnerHTML={{
@@ -31,7 +31,7 @@ export default function Portal() {
         </div>
       </div> */}
       <div className="heading-icon">
-        <img src={Arrow} alt="" width="20" />
+        <img src={Arrow} alt="" style={{maxWidth: "20px"}} />
         <div>
           <h4>
             <FormattedMessage id="portal.item2.title" />
@@ -42,7 +42,7 @@ export default function Portal() {
         </div>
       </div>
       <div className="heading-icon">
-        <img src={Arrow} alt="" width="20" />
+        <img src={Arrow} alt="" style={{maxWidth: "20px"}} />
         <div>
           <h4>
             <FormattedMessage id="portal.item3.title" />
@@ -53,7 +53,7 @@ export default function Portal() {
         </div>
       </div>
       <div className="heading-icon">
-        <img src={Arrow} alt="" width="20" />
+        <img src={Arrow} alt="" style={{maxWidth: "20px"}} />
         <div>
           <h4>
             <FormattedMessage id="portal.item4.title" />

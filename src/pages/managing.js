@@ -20,7 +20,9 @@ export default function Managing() {
         <title>{intl.formatMessage({ id: "page7.title" })}</title>
       </Helmet>
       <div id="page07" class="main-content">
-        <StaticImage src="../images/banner07.jpg" alt="Banner" />
+        {/* <StaticImage src="../images/headers/banner07.jpg" alt="Banner" /> */}
+        <img src="/headers/banner07.jpg" alt="Banner" class="banner-image" />
+
         <div className="wrapper">
           <h1
             className="space-top-x"
@@ -124,7 +126,7 @@ export default function Managing() {
                   <FormattedMessage id="page7.accordion2.acc3.p1" />
                 </p>
                 <div className="heading-icon-top">
-                  <img src="/icons/one_pink.svg" alt="One" />
+                  <img src="/icons/one_pink.svg" alt="One" style={{maxWidth: "25px"}} />
                   <p
                     dangerouslySetInnerHTML={{
                       __html: intl.formatMessage({
@@ -134,7 +136,7 @@ export default function Managing() {
                   />
                 </div>
                 <div className="heading-icon-top">
-                  <img src="/icons/two_pink.svg" alt="Two" />
+                  <img src="/icons/two_pink.svg" alt="Two" style={{maxWidth: "25px"}} />
                   <p
                     dangerouslySetInnerHTML={{
                       __html: intl.formatMessage({

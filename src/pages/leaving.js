@@ -20,7 +20,9 @@ export default function Leaving() {
         <title>{intl.formatMessage({ id: "page8.title" })}</title>
       </Helmet>
       <div id="page08" class="main-content">
-        <StaticImage src="../images/banner08.jpg" alt="banner" />
+        {/* <StaticImage src="../images/headers/banner08.jpg" alt="banner" /> */}
+        <img src="/headers/banner08.jpg" alt="Banner" class="banner-image" />
+
         <div className="wrapper">
           <h1
             className="space-x"
