@@ -13,7 +13,7 @@ export default function Splash() {
   return (
     <Layout>
       <Helmet>
-        <title>{intl.formatMessage({ id: "page6.title" })}</title>
+        <title>{intl.formatMessage({ id: "page10.title" })}</title>
       </Helmet>
       <div id="page10" class="main-content">
         {/* <StaticImage src="../images/headers/banner06.jpg" alt="Banner" /> */}
