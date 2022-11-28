@@ -670,5 +670,49 @@
       "p1": "AVA is a digital assistant that can answer your questions 24/7. AVA can help you access information about your benefits coverage, your retirement & savings program contributions, and account balances.",
       "p2": "Launch AVA from the"
     }
+  },
+  "page10": {
+    "copy1":{
+      "title": "It’s time to update your <span>Pension & Savings</span> Program choices!",
+      "subtitle": "Enrol between December 1 and December 30",
+      "p1": "Our Pension & Savings Program helps you save for the moments that matter, whether that means focusing on short-term or long-term savings goals.",
+      "p2": "Each year, you get the opportunity to review and update your pension and savings choices to make sure they meet your needs and help you maximize your savings potential!"
+    },
+    "h3_1": "Reasons you might want to <span>update your choices</span>",
+    "icon-group": {
+      "item1":{
+        "h5": "Get more money",
+        "p": "When you contribute to a Non-DB option, you get a match from Johnson & Johnson! Are you maximizing this match?"
+      },
+      "item2":{
+        "h5": "Focus on a new objective",
+        "p1": "From time to time, your needs will change. The Pension & Savings Program has lots of Non-DB options to help you achieve your savings objectives — whatever they may be.",
+        "p2": " Watch this video to learn more about the DB and Non-DB options!"
+      },
+      "item3":{
+        "h5": "Increase your savings",
+        "p": "Now is a great time to review how much you’re contributing to the Program and consider if you can afford to put in a bit more to push your savings even further ahead."
+      }
+    },
+    "callout": {
+      "title": "Good to know!",
+      "p": "If you do not enrol, your current choices will remain effect for the upcoming year."
+    },
+    "h3_2": "Get ready to <span>enrol</span>",
+    "icon-box":{
+      "item1":{
+        "span": "Review the enrolment checklist",
+        "link": "http://jnjbenefitsguide.ca/pensionsavingsinfographic/"
+      },
+      "item2":{
+        "span": "Check out these scenarios to see what other employees are choosing and why",
+        "link": "/scenarios"
+      },
+      "item3":{
+        "span": "Watch a detailed Pension Information Session recording",
+        "p": "Go to Forms & Documents, then Pension Forms"
+      }
+    }
   }
+
 }

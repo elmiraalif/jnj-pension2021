@@ -4,8 +4,6 @@ import { useIntl, Link } from "gatsby-plugin-intl"
 export default function Nav() {
   const intl = useIntl()
 
-
-
   return (
     <nav>
       <ul className="menu">
@@ -18,7 +16,7 @@ export default function Nav() {
           </Link>
         </li> */}
         <li>
-          <Link to="/" activeClassName="active">
+          <Link to="/pension-savings" activeClassName="active">
             {intl.formatMessage({ id: "nav.item2" })}
           </Link>
         </li>

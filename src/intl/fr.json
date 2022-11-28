@@ -669,5 +669,48 @@
       "p1": "AVA est un assistant numérique qui peut répondre à vos questions 24/7. AVA peut vous renseigner sur votre couverture d’assurance collective, vos cotisations au programme de retraite et d’épargne et le solde de vos comptes.",
       "p2": "Lancez AVA à partir du"
     }
+  },
+  "page10": {
+    "copy1":{
+      "title": "Actualisez vos choix du Programme de <span>retraite et d’épargne</span>!",
+      "subtitle": "Adhérez au programme entre le 1<sup>er</sup> décembre et le 30 décembre",
+      "p1": "Notre programme de retraite et d’épargne vous aide à épargner pour les événements importants, qu’il s’agisse d’objectifs d’épargne à court terme ou à long terme. ",
+      "p2": "Chaque année, vous avez l’occasion de modifier vos choix en matière de retraite et d’épargne pour qu’ils continuent de répondre à vos besoins et vous aident à maximiser votre potentiel d’épargne!"
+    },
+    "h3_1": "Raisons pour vouloir <span>modifier vos choix</span>",
+    "icon-group": {
+      "item1":{
+        "h5": "Obtenir plus d’argent",
+        "p": "Lorsque vous cotisez à une option non-PD, vous obtenez une cotisation de contrepartie de Johnson & Johnson! Maximisez-vous cette cotisation de contrepartie?"
+      },
+      "item2":{
+        "h5": "Privilégier un nouvel objectif",
+        "p1": "Vos besoins changent au fil du temps. Le programme de retraite et d’épargne propose plusieurs options non-PD pour vous aider à atteindre vos objectifs d’épargne, quels qu’ils soient.",
+        "p2": "Regardez cette vidéo pour vous renseigner sur les options PD et non-PD!"
+      },
+      "item3":{
+        "h5": "Accroître votre épargne",
+        "p": "C’est le moment idéal pour vérifier le montant de votre cotisation au programme et voir si vous pouvez cotiser un peu plus afin d’augmenter votre épargne."
+      }
+    },
+    "callout": {
+      "title": "Bon à savoir!",
+      "p": "Si vous n’adhérez pas, vos choix actuels seront maintenus pour l’année à venir."
+    },
+    "h3_2": "Préparez-vous à <span>adhérer</span>",
+    "icon-box":{
+      "item1":{
+        "span": "Consultez la liste de vérification de l’adhésion",
+        "link": "http://jnjbenefitsguide.ca/pensionsavingsinfographicfr/"
+      },
+      "item2":{
+        "span": "Jetez un coup d’œil à ces scénarios pour voir les choix que font les autres employés et leurs raisons",
+        "link": "/fr/scenarios"
+      },
+      "item3":{
+        "span": "Regardez l’enregistrement de la séance d’information sur la retraite",
+        "p": "Allez à Formulaires et documents, puis à Formulaires retraite et épargne"
+      }
+    }
   }
 }
