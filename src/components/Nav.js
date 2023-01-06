@@ -16,7 +16,7 @@ export default function Nav() {
           </Link>
         </li> */}
         <li>
-          <Link to="/pension-savings" activeClassName="active">
+          <Link to="/" activeClassName="active">
             {intl.formatMessage({ id: "nav.item2" })}
           </Link>
         </li>

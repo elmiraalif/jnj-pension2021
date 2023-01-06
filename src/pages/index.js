@@ -1,185 +1,190 @@
 import React from "react"
 import { Helmet } from "react-helmet"
+import { useIntl, FormattedMessage } from "gatsby-plugin-intl"
 import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/Layout"
-import Nextpage from "../components/NextPage"
-import { useIntl } from "react-intl"
+import Accordion from "../components/Accordion"
+import NextPage from "../components/NextPage"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
-import { FormattedMessage } from "gatsby-plugin-intl"
 
-export default function Splash() {
+export default function Page02() {
   const intl = useIntl()
+  const secondary = `#0800a0`
+  const accent = `#cc0299`
+  const Icon = "/icons/component_icon.svg"
   return (
     <Layout>
       <Helmet>
-        <title>{intl.formatMessage({ id: "page10.title" })}</title>
+        <title>{intl.formatMessage({ id: "page2.title" })}</title>
       </Helmet>
-      <div id="page10" class="main-content">
-        {/* <StaticImage src="../images/headers/banner06.jpg" alt="Banner" /> */}
-        <img src="/headers/banner10.jpg" alt="Banner" class="banner-image" />
+      <div className="main-content"></div>
+      <div id="page02" class="main-content">
+        {/* <StaticImage src="../images/headers/banner02.jpg" alt="Banner" /> */}
+        <img src="/headers/banner02.jpg" alt="Banner" class="banner-image" />
 
         <div className="wrapper">
           <h1
             className="space-top-x"
             dangerouslySetInnerHTML={{
-              __html: intl.formatMessage({ id: "page10.copy1.title" }),
+              __html: intl.formatMessage({ id: "page2.copy1.title" }),
             }}
           />
-          <h4
-            className="space-top-x space-bottom-2x subtitle"
-            dangerouslySetInnerHTML={{
-              __html: intl.formatMessage({ id: "page10.copy1.subtitle" }),
-            }}
-          />
-
           <p className="intro-copy">
-            <FormattedMessage id="page10.copy1.p1" />
+            <FormattedMessage id="page2.copy1.p1" />
           </p>
-          <p className="intro-copy">
-            <FormattedMessage id="page10.copy1.p2" />
+          <p>
+            <FormattedMessage id="page2.copy1.p2" />
           </p>
-          <h3
-            className="space-x title"
-            dangerouslySetInnerHTML={{
-              __html: intl.formatMessage({ id: "page10.h3_1" }),
-            }}
-          />
-
-          <div className="icon-group divider-bottom">
-            <img className="icon" src="/icons/icon_48x48_get_more_money.png" />
-            <div className="icon-group-copy">
-              <h5>
-                <FormattedMessage id="page10.icon-group.item1.h5" />
-              </h5>
-              <p>
-                <FormattedMessage id="page10.icon-group.item1.p" />
-              </p>
+          <div className="space-top-x">&nbsp;</div>
+          <iframe
+            width="100%"
+            height="365"
+            src={intl.formatMessage({ id: "page2.video.src" })}
+            title={intl.formatMessage({ id: "page2.video.title" })}
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <div className="space-bottom-2x">&nbsp;</div>
+          <p>
+            <FormattedMessage id="page2.copy2.p" />{" "}
+            <span className="bold">
+              <FormattedMessage id="page2.copy2.bold" />
+            </span>
+          </p>
+          <Accordion
+            title={intl.formatMessage({ id: "core_component" })}
+            icon={Icon}
+            color={secondary}
+            border={secondary}
+          >
+            <div className="acc-box secondary">
+              <FormattedMessage id="core_db" />
             </div>
-          </div>
-
-          <div className="icon-group">
-            <img className="icon" src="/icons/icon_48x48_focus.png" />
-            <div className="icon-group-copy">
-              <h5>
-                <FormattedMessage id="page10.icon-group.item2.h5" />
-              </h5>
-              <p>
-                <FormattedMessage id="page10.icon-group.item2.p1" />
-              </p>
-              <p>
-                <FormattedMessage id="page10.icon-group.item2.p2" />
-              </p>
+            <p className="space-2x">
+              <FormattedMessage id="page2.accordion1" />
+            </p>
+          </Accordion>
+          <Accordion
+            title={intl.formatMessage({ id: "optional_components" })}
+            icon={Icon}
+            color={secondary}
+            border={secondary}
+          >
+            <div className="acc-box primary">
+              <FormattedMessage id="db_option" />
             </div>
-          </div>
-          <div className="video-wrapper space-2x">
-            <iframe
-              width="100%"
-              height="100%"
-              src={intl.formatMessage({ id: "page2.video.src" })}
-              title={intl.formatMessage({ id: "page2.video.title" })}
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-
-          <div className="icon-group divider-top">
-            <img className="icon" src="/icons/investment_icon.svg" />
-            <div className="icon-group-copy">
-              <h5>
-                <FormattedMessage id="page10.icon-group.item3.h5" />
-              </h5>
-              <p>
-                <FormattedMessage id="page10.icon-group.item3.p" />
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="callout">
-          <div className="wrapper">
-            <div className="heading-icon">
-              <img
-                src={"/icons/icon_info.svg"}
-                alt=""
-                style={{ maxWidth: "30px" }}
-              />
-            </div>
-            <div>
-              <h4>
-                <FormattedMessage id="page10.callout.title" />
-              </h4>
-              <p className="intro-copy">
-                <FormattedMessage id="page10.callout.p" />
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="wrapper">
-          <div className="space-2x"></div>
-
-          <h3
-            className="space-x title"
-            dangerouslySetInnerHTML={{
-              __html: intl.formatMessage({ id: "page10.h3_2" }),
-            }}
-          />
-          <div className="icon-box space-top-x">
-            <div className="icon-box-item">
-              <img src="/icons/icon-list.svg" style={{ maxWidth: "34px" }} />
-              <span className="space-x bold">
-                <FormattedMessage id="page10.icon-box.item1.span" />
-              </span>
-              <a
-                href={intl.formatMessage({ id: "page10.icon-box.item1.link" })}
-                target="_blank"
+            <div className="wrapper-center">
+              <Accordion
+                title={intl.formatMessage({ id: "optional_db" })}
+                icon={Icon}
+                color={accent}
               >
-                Learn more
-                <span className="link-icon">
-                  &nbsp;
-                  <FontAwesomeIcon icon={faExternalLinkAlt} />
-                </span>
-              </a>
+                <p>
+                  <FormattedMessage id="page2.accordion2" />
+                </p>
+              </Accordion>
             </div>
-            <div className="icon-box-item">
-              <img
-                src="/icons/icon-profile-thin.svg"
-                style={{ maxWidth: "44px" }}
-              />
-              <span className="space-x bold">
-                <FormattedMessage id="page10.icon-box.item2.span" />
-              </span>
-              <a
-                href={intl.formatMessage({ id: "page10.icon-box.item2.link" })}
-                target="_blank"
+            <div className="acc-box accent">
+              <FormattedMessage id="non_db_options" />
+            </div>
+            <div className="wrapper-center">
+              <Accordion
+                icon={Icon}
+                color={accent}
+                border={secondary}
+                title={intl.formatMessage({ id: "dc" })}
               >
-                Learn more
-                <span className="link-icon">
-                  &nbsp;
-                  <FontAwesomeIcon icon={faExternalLinkAlt} />
-                </span>
-              </a>
+                <p>
+                  <FormattedMessage id="page2.accordion3" />
+                </p>
+              </Accordion>
+              <Accordion
+                border={secondary}
+                icon={Icon}
+                color={accent}
+                title={intl.formatMessage({ id: "rrsp" })}
+                border={secondary}
+              >
+                <p>
+                  <FormattedMessage id="page2.accordion4.p1" />{" "}
+                  <a
+                    href={intl.formatMessage({ id: "home_buyers_href" })}
+                    target="_blank"
+                  >
+                    <FormattedMessage id="home_buyers_1" />{" "}
+                    <span className="link-icon">
+                      <span style={{ textDecoration: "underline" }}>
+                        <FormattedMessage id="home_buyers_2" />
+                      </span>
+                      &nbsp;
+                      <FontAwesomeIcon icon={faExternalLinkAlt} />
+                    </span>
+                  </a>
+                  <FormattedMessage id="page2.accordion4.p2" />{" "}
+                  <a
+                    href={intl.formatMessage({ id: "lifelong_learning_href" })}
+                    target="_blank"
+                  >
+                    <FormattedMessage id="lifelong_learning_1" />{" "}
+                    <span className="link-icon">
+                      <span style={{ textDecoration: "underline" }}>
+                        <FormattedMessage id="lifelong_learning_2" />
+                      </span>
+                      &nbsp;
+                      <FontAwesomeIcon icon={faExternalLinkAlt} />
+                    </span>
+                  </a>
+                  <FormattedMessage id="page2.accordion4.p3" />
+                </p>
+              </Accordion>
+              <Accordion
+                border={secondary}
+                icon={Icon}
+                color={accent}
+                title={intl.formatMessage({ id: "oac" })}
+              >
+                <p>
+                  <FormattedMessage id="page2.accordion5.p1" />{" "}
+                  <a
+                    href={intl.formatMessage({ id: "cra_maximum_href" })}
+                    target="_blank"
+                  >
+                    <FormattedMessage id="cra_maximum" />
+                    <span className="link-icon">
+                      &nbsp;
+                      <FontAwesomeIcon icon={faExternalLinkAlt} />
+                    </span>
+                  </a>
+                  <FormattedMessage id="page2.accordion5.p2" />
+                </p>
+              </Accordion>
+              <Accordion
+                border={secondary}
+                icon={Icon}
+                color={accent}
+                title={intl.formatMessage({ id: "tfsa" })}
+              >
+                <p>
+                  <FormattedMessage id="page2.accordion6" />
+                </p>
+              </Accordion>
+              <Accordion
+                border={secondary}
+                icon={Icon}
+                color={accent}
+                title={intl.formatMessage({ id: "non_registered" })}
+              >
+                <p>
+                  <FormattedMessage id="page2.accordion7" />
+                </p>
+              </Accordion>
             </div>
-            <div className="icon-box-item">
-              <img src="/icons/icon-play.png" style={{ maxWidth: "44px" }} />
-              <span className="space-top-x bold">
-                <FormattedMessage id="page10.icon-box.item3.span" />
-              </span>
-              <p>
-                <FormattedMessage id="page10.icon-box.item3.p" />
-              </p>
-              <a href="https://jnj.hroffice.com/" target="_blank">
-                Learn more
-                <span className="link-icon">
-                  &nbsp;
-                  <FontAwesomeIcon icon={faExternalLinkAlt} />
-                </span>
-              </a>
-            </div>
-          </div>
-          <Nextpage
-            title={intl.formatMessage({ id: "nav.item9" })}
-            url="/questions"
+          </Accordion>
+          <NextPage
+            title={intl.formatMessage({ id: "nav.item3" })}
+            url="/contributions"
           />
         </div>
       </div>
