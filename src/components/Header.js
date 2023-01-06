@@ -6,7 +6,7 @@ export default function Header(props) {
   return (
     <header className="header">
       <div className="wrapper header-wrapper">
-        <a href="/pension" style={{ textDecoration: "none" }}>
+        <a href="/" style={{ textDecoration: "none" }}>
           <div className="site-title">
             {intl.formatMessage({ id: "title" })}
           </div>
