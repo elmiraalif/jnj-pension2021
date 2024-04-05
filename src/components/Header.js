@@ -1,4 +1,5 @@
 import React from "react"
+import { withPrefix } from "gatsby"
 import { useIntl } from "gatsby-plugin-intl"
 
 export default function Header(props) {
@@ -6,7 +7,7 @@ export default function Header(props) {
   return (
     <header className="header">
       <div className="wrapper header-wrapper">
-        <a href="/" style={{ textDecoration: "none" }}>
+        <a href={withPrefix("/")} style={{ textDecoration: "none" }}>
           <div className="site-title">
             {intl.formatMessage({ id: "title" })}
           </div>

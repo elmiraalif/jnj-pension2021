@@ -4,8 +4,9 @@ import { Helmet } from "react-helmet"
 import Layout from "../components/Layout"
 import Submit from "../components/Submit"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
+import ExtLink from "../../static/icons/arrow-up-right-thin.svg"
 import { FormattedMessage, useIntl } from "gatsby-plugin-intl"
+import { withPrefix } from "gatsby"
 
 export default function Questions() {
   const intl = useIntl()
@@ -17,7 +18,11 @@ export default function Questions() {
 
       <div id="page09" class="main-content">
         {/* <StaticImage src="../images/headers/banner09.jpg" alt="Banner" /> */}
-        <img src="/headers/banner09.jpg" alt="Banner" class="banner-image" />
+        <img
+          src={withPrefix("/headers/banner09.jpg")}
+          alt="Banner"
+          class="banner-image"
+        />
 
         <div className="wrapper">
           <h1 className="space-top-x">
@@ -31,7 +36,7 @@ export default function Questions() {
               </h3>
               <div className="heading-icon">
                 <img
-                  src={"/icons/mail.png"}
+                  src={withPrefix("/icons/mail.png")}
                   alt=""
                   style={{ maxWidth: "20px" }}
                 />
@@ -39,7 +44,7 @@ export default function Questions() {
               </div>
               <div className=" space-2x heading-icon">
                 <img
-                  src={"/icons/phone.png"}
+                  src={withPrefix("/icons/phone.png")}
                   alt=""
                   style={{ maxWidth: "20px" }}
                 />
@@ -65,7 +70,7 @@ export default function Questions() {
                   <FormattedMessage id="fyb_portal" />
                   <span className="link-icon">
                     &nbsp;
-                    <FontAwesomeIcon icon={faExternalLinkAlt} />
+                    <img src={ExtLink} alt="" className="external-link" />
                   </span>
                 </a>
               </p>

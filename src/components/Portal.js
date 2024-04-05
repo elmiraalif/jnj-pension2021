@@ -1,7 +1,7 @@
 import React from "react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
 import { FormattedMessage, useIntl } from "gatsby-plugin-intl"
+import ExtLink from "../../static/icons/arrow-up-right-thin.svg"
+import Checkmark from "../../static/icons/checkmark.svg"
 
 export default function Portal() {
   const Arrow = "/icons/right-arrow-red.svg"
@@ -11,10 +11,7 @@ export default function Portal() {
       <div className="title space-2x">
         <a href="https://jnj.hroffice.com/" target="_blank">
           <FormattedMessage id="fyb_portal" />{" "}
-          <FontAwesomeIcon
-            icon={faExternalLinkAlt}
-            style={{ marginLeft: "3px" }}
-          />
+          <img src={ExtLink} alt="" className="external-link" />
         </a>
       </div>
       {/* <div className="heading-icon">
@@ -31,7 +28,7 @@ export default function Portal() {
         </div>
       </div> */}
       <div className="heading-icon">
-        <img src={Arrow} alt="" style={{maxWidth: "20px"}} />
+        <img src={Checkmark} alt="" style={{ maxWidth: "20px" }} />
         <div>
           <h4>
             <FormattedMessage id="portal.item2.title" />
@@ -42,7 +39,7 @@ export default function Portal() {
         </div>
       </div>
       <div className="heading-icon">
-        <img src={Arrow} alt="" style={{maxWidth: "20px"}} />
+        <img src={Checkmark} alt="" style={{ maxWidth: "20px" }} />
         <div>
           <h4>
             <FormattedMessage id="portal.item3.title" />
@@ -53,7 +50,7 @@ export default function Portal() {
         </div>
       </div>
       <div className="heading-icon">
-        <img src={Arrow} alt="" style={{maxWidth: "20px"}} />
+        <img src={Checkmark} alt="" style={{ maxWidth: "20px" }} />
         <div>
           <h4>
             <FormattedMessage id="portal.item4.title" />
@@ -76,7 +73,7 @@ export default function Portal() {
           <FormattedMessage id="portal.copy.link" />
           <span className="link-icon">
             &nbsp;
-            <FontAwesomeIcon icon={faExternalLinkAlt} />
+            <img src={ExtLink} alt="" className="external-link" />
           </span>
         </a>
         .

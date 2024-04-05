@@ -1,0 +1,109 @@
+@font-face {
+  font-family: "MyFont";
+  src: url("/pension/fonts/myfont.woff2") format("woff2");
+  /* Other font properties */
+}
+@font-face {
+  font-family: "Johnson Display Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("/pension/fonts/JohnsonDisplay-Regular.woff") format("woff"), url("/pension/fonts/JohnsonDisplay-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Johnson Display Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("/pension/fonts/JohnsonDisplay-Bold.woff") format("woff"), url("/pension/fonts/JohnsonDisplay-Bold.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Johnson Text Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("/pension/fonts/JohnsonText-Regular.woff") format("woff"), url("/pension/fonts/JohnsonText-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Johnson Text Light";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("/pension/fonts/JohnsonText-Light.woff") format("woff"), url("/pension/fonts/JohnsonText-Light.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Johnson Text Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("/pension/fonts/JohnsonText-Bold.woff") format("woff"), url("/pension/fonts/JohnsonText-Bold.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Johnson Text Bold Italic";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("/pension/fonts/JohnsonText-Bold.woff") format("woff"), url("/pension/fonts/JohnsonText-Bold.woff2") format("woff2");
+  font-display: swap;
+}
+.title {
+  font-size: 1.3rem;
+}
+
+.timeline {
+  position: relative;
+  max-width: 700px;
+  margin: 2em 0;
+  color: #000;
+  z-index: 1;
+}
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: #000;
+}
+.timeline .container {
+  padding: 2em;
+  position: relative;
+}
+.timeline .container::after {
+  content: "";
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background: #eb1700;
+  top: 2em;
+  left: -7.5px;
+  z-index: 2;
+}
+.timeline span {
+  font-family: "Johnson Text Bold", Helvetica, sans-serif;
+}
+.timeline .callout {
+  margin-top: 1em;
+  padding: 2em;
+}
+.timeline .callout p {
+  margin: 0;
+}
+.timeline .callout-icon {
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.timeline .callout-icon img {
+  margin-right: 1em;
+}
+.timeline .gray {
+  background: #f4f3f1;
+}
+.timeline .blue {
+  color: #fff;
+  padding: 2em 2em 1em;
+  background: #eb1700;
+}

@@ -1,76 +1,116 @@
-// Typography
-@font-face {
-  font-family: "J&J CircularTT Bold Web";
-  src: url("/fonts/J&J CircularTT-Bold.eot");
-  src: url("/fonts/J&J CircularTT-Bold.woff2") format("woff2"),
-    url("/fonts/J&J CircularTT-Bold.woff") format("woff");
-}
-
-@font-face {
-  font-family: "J&J CircularTT sBold Italic Web";
-  src: url("/fonts/J&J CircularTT-BoldItalic.eot");
-  src: url("/fonts/J&J CircularTT-BoldItalic.woff2") format("woff2"),
-    url("/fonts/J&J CircularTT-BoldItalic.woff") format("woff");
-}
-
-@font-face {
-  font-family: "J&J CircularTT Book Web";
-  src: url("/fonts/J&J CircularTT-Book.eot");
-  src: url("/fonts/J&J CircularTT-Book.woff2") format("woff2"),
-    url("/fonts/J&J CircularTT-Book.woff") format("woff");
-}
-
-@font-face {
-  font-family: "J&J CircularTT Book Italic Web";
-  src: url("/fonts/J&J CircularTT-BookItalic.eot");
-  src: url("/fonts/J&J CircularTT-BookItalic.woff2") format("woff2"),
-    url("/fonts/J&J CircularTT-BookItalic.woff") format("woff");
-}
-
-@font-face {
-  font-family: "J&J CircularTT Light Web";
-  src: url("/fonts/J&J CircularTT-Light.eot");
-  src: url("/fonts/J&J CircularTT-Light.woff2") format("woff2"),
-    url("/fonts/J&J CircularTT-Light.woff") format("woff");
-}
-
-@font-face {
-  font-family: "J&J CircularTT Light Italic Web";
-  src: url("/fonts/J&J CircularTT-LightItalic.eot");
-  src: url("/fonts/J&J CircularTT-LightItalic.woff2") format("woff2"),
-    url("/fonts/J&J CircularTT-LightItalic.woff") format("woff");
-}
-
-@font-face {
-  font-family: "J&J CircularTT Medium Web";
-  src: url("/fonts/J&J CircularTT-Medium.eot");
-  src: url("/fonts/J&J CircularTT-Medium.woff2") format("woff2"),
-    url("/fonts/J&J CircularTT-Medium.woff") format("woff");
-}
-
-@font-face {
-  font-family: "J&J CircularTT Medium Italic Web";
-  src: url("/fonts/J&J CircularTT-MediumItalic.eot");
-  src: url("/fonts/J&J CircularTT-MediumItalic.woff2") format("woff2"),
-    url("/fonts/J&J CircularTT-MediumItalic.woff") format("woff");
-}
-
 // Variables
 $font-bold: "J&J CircularTT Bold Web", sans-serif;
-$font-bold-italic: "J&J CircularTT sBold Italic Web", sans-serif;
-$font-book: "J&J CircularTT Book Web";
-$font-book-italic: "J&J CircularTT Book Italic Web";
+$font-text-bold-italic: "J&J CircularTT sBold Italic Web", sans-serif;
+$font-text-bold: "J&J CircularTT Book Web", sans-serif;
+$font-text-bold-italic: "J&J CircularTT Book Italic Web";
 $font-light: "J&J CircularTT Light Web", sans-serif;
 $font-light-italic: "J&J CircularTT Light Italic Web", sans-serif;
 $font-medium: "J&J CircularTT Medium Web", sans-serif;
 $font-medium-italic: "J&J CircularTT Medium Italic Web", sans-serif;
 
-$primary-color: #da0025;
-$secondary-color: #0800a0;
-$accent-color: #db00a6;
-$copy-color: #212121;
-$light-color: #f4f4f4;
-$nav-color: #3b3b3b;
+$basePath: '/pension/';
+
+@font-face {
+    font-family: 'MyFont';
+    src: url('#{$basePath}fonts/myfont.woff2') format('woff2');
+    /* Other font properties */
+}
+
+
+// Typography
+
+@font-face {
+  font-family: "Johnson Display Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('#{$basePath}fonts/JohnsonDisplay-Regular.woff') format('woff'),
+    url('#{$basePath}fonts/JohnsonDisplay-Regular.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Johnson Display Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+  url('#{$basePath}fonts/JohnsonDisplay-Bold.woff') format('woff'),
+  url('#{$basePath}fonts/JohnsonDisplay-Bold.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Johnson Text Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+  url('#{$basePath}fonts/JohnsonText-Regular.woff') format('woff'),
+  url('#{$basePath}fonts/JohnsonText-Regular.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Johnson Text Light";
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+  url('#{$basePath}fonts/JohnsonText-Light.woff') format('woff'),
+  url('#{$basePath}fonts/JohnsonText-Light.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Johnson Text Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+    url('#{$basePath}fonts/JohnsonText-Bold.woff') format('woff'),
+    url('#{$basePath}fonts/JohnsonText-Bold.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: "Johnson Text Bold Italic";
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+    url('#{$basePath}fonts/JohnsonText-Bold.woff') format('woff'),
+    url('#{$basePath}fonts/JohnsonText-Bold.woff2') format('woff2');
+  font-display: swap;
+}
+
+// Variables
+
+// Colours
+
+$black: #000;
+$white: #fff;
+$red: #eb1700;
+$gray1: #f4f3f1;
+$gray2: #e9e8e4;
+$gray3: #d6d1cb;
+$gray4: #c5beb6;
+$gray5: #83786f;
+$gray6: #5e5047;
+$color-link-text-hover: #b81200;
+
+$primary-color: $red;
+$secondary-color: $red;
+$accent-color: $red;
+$copy-color: $black;
+$light-color: $gray1;
+$nav-color: $black;
+
+
+// Fonts
+
+$font-heading-regular:'Johnson Display Regular', Helvetica, sans-serif;
+$font-heading-bold: 'Johnson Display Bold', Helvetica, sans-serif;
+$font-text-bold: 'Johnson Text Bold', Helvetica, sans-serif;
+$font-text-bold-italic: 'Johnson Text Bold Italic', Helvetica, sans-serif;
+$font-text-regular: 'Johnson Text Regular', Helvetica, sans-serif;
+$font-text-light: 'Johnson Text Light', Helvetica, sans-serif;
+$font-awesome: 'Font Awesome 5 Pro';
+
 
 // Mixins
 @mixin easeOut {

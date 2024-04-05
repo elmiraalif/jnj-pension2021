@@ -5,8 +5,9 @@ import Layout from "../components/Layout"
 import Nextpage from "../components/NextPage"
 import { useIntl } from "react-intl"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
+import ExtLink from "../../static/icons/arrow-up-right-thin.svg"
 import { FormattedMessage } from "gatsby-plugin-intl"
+import { withPrefix } from "gatsby"
 
 export default function Splash() {
   const intl = useIntl()
@@ -17,7 +18,11 @@ export default function Splash() {
       </Helmet>
       <div id="page10" class="main-content">
         {/* <StaticImage src="../images/headers/banner06.jpg" alt="Banner" /> */}
-        <img src="/headers/banner10.jpg" alt="Banner" class="banner-image" />
+        <img
+          src={withPrefix("/headers/banner10.jpg")}
+          alt="Banner"
+          class="banner-image"
+        />
 
         <div className="wrapper">
           <h1
@@ -47,7 +52,10 @@ export default function Splash() {
           />
 
           <div className="icon-group divider-bottom">
-            <img className="icon" src="/icons/icon_48x48_get_more_money.png" />
+            <img
+              className="icon"
+              src={withPrefix("/icons/icon_48x48_get_more_money.png")}
+            />
             <div className="icon-group-copy">
               <h5>
                 <FormattedMessage id="page10.icon-group.item1.h5" />
@@ -59,7 +67,10 @@ export default function Splash() {
           </div>
 
           <div className="icon-group">
-            <img className="icon" src="/icons/icon_48x48_focus.png" />
+            <img
+              className="icon"
+              src={withPrefix("/icons/icon_48x48_focus.png")}
+            />
             <div className="icon-group-copy">
               <h5>
                 <FormattedMessage id="page10.icon-group.item2.h5" />
@@ -85,7 +96,10 @@ export default function Splash() {
           </div>
 
           <div className="icon-group divider-top">
-            <img className="icon" src="/icons/investment_icon.svg" />
+            <img
+              className="icon"
+              src={withPrefix("/icons/investment_icon.svg")}
+            />
             <div className="icon-group-copy">
               <h5>
                 <FormattedMessage id="page10.icon-group.item3.h5" />
@@ -100,7 +114,7 @@ export default function Splash() {
           <div className="wrapper">
             <div className="heading-icon">
               <img
-                src={"/icons/icon_info.svg"}
+                src={withPrefix("/icons/icon_info.svg")}
                 alt=""
                 style={{ maxWidth: "30px" }}
               />
@@ -126,7 +140,10 @@ export default function Splash() {
           />
           <div className="icon-box space-top-x">
             <div className="icon-box-item">
-              <img src="/icons/icon-list.svg" style={{ maxWidth: "34px" }} />
+              <img
+                src={withPrefix("/icons/icon-list.svg")}
+                style={{ maxWidth: "34px" }}
+              />
               <span className="space-x bold">
                 <FormattedMessage id="page10.icon-box.item1.span" />
               </span>
@@ -137,13 +154,13 @@ export default function Splash() {
                 Learn more
                 <span className="link-icon">
                   &nbsp;
-                  <FontAwesomeIcon icon={faExternalLinkAlt} />
+                  <img src={ExtLink} alt="" className="external-link" />
                 </span>
               </a>
             </div>
             <div className="icon-box-item">
               <img
-                src="/icons/icon-profile-thin.svg"
+                src={withPrefix("/icons/icon-profile-thin.svg")}
                 style={{ maxWidth: "44px" }}
               />
               <span className="space-x bold">
@@ -156,12 +173,15 @@ export default function Splash() {
                 Learn more
                 <span className="link-icon">
                   &nbsp;
-                  <FontAwesomeIcon icon={faExternalLinkAlt} />
+                  <img src={ExtLink} alt="" className="external-link" />
                 </span>
               </a>
             </div>
             <div className="icon-box-item">
-              <img src="/icons/icon-play.png" style={{ maxWidth: "44px" }} />
+              <img
+                src={withPrefix("/icons/icon-play.png")}
+                style={{ maxWidth: "44px" }}
+              />
               <span className="space-top-x bold">
                 <FormattedMessage id="page10.icon-box.item3.span" />
               </span>
@@ -172,7 +192,7 @@ export default function Splash() {
                 Learn more
                 <span className="link-icon">
                   &nbsp;
-                  <FontAwesomeIcon icon={faExternalLinkAlt} />
+                  <img src={ExtLink} alt="" className="external-link" />
                 </span>
               </a>
             </div>

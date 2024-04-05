@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 27.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<!-- Generator: Adobe Illustrator 28.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
 <style type="text/css">
 	.st0{display:none;opacity:0.25;}
 	.st1{display:inline;}
 	.st2{fill:none;stroke:#000000;stroke-width:0.25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st3{fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st4{fill:none;stroke:#313896;stroke-width:25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st5{fill:none;stroke:#BB3E96;stroke-width:25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st6{fill:none;stroke:#DA1A32;stroke-width:25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#EB1700;stroke-width:25.001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10.0004;}
+	.st5{fill:none;stroke:#EB1700;stroke-width:25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 </style>
 <g id="grid" class="st0">
 	<g class="st1">
@@ -49,10 +48,11 @@
 </g>
 <g id="icons">
 	<g>
-		<ellipse transform="matrix(0.1891 -0.982 0.982 0.1891 25.3957 309.3456)" class="st4" cx="200" cy="139.3" rx="56.2" ry="56.2"/>
+		
+			<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -39.9099 182.2235)" class="st4" cx="200" cy="139.3" rx="56.2" ry="56.2"/>
 		<path class="st5" d="M335.8,324.4c-7.7-31.7-47.6-70.3-80.1-71.4c-1,0-2,0-3,0H147.4c-1,0-2,0-3,0c-32.5,1.1-72.4,39.6-80.2,71.2"
 			/>
-		<circle class="st6" cx="200" cy="200" r="187.8"/>
+		<circle class="st5" cx="200" cy="200" r="187.8"/>
 	</g>
 </g>
 </svg>

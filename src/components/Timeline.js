@@ -2,7 +2,7 @@ import React from "react"
 import * as styles from "../styles/timeline.module.scss"
 import { useIntl, FormattedMessage } from "react-intl"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
+import ExtLink from "../../static/icons/arrow-up-right-thin.svg"
 
 export default function Timeline() {
   const intl = useIntl()
@@ -23,7 +23,7 @@ export default function Timeline() {
             <FormattedMessage id="home.timeline.september_copy.link" />
             <span className="link-icon">
               &nbsp;
-              <FontAwesomeIcon icon={faExternalLinkAlt} />
+              <img src={ExtLink} alt="" className="external-link" />
             </span>
           </a>{" "}
           <strong>
@@ -59,7 +59,7 @@ export default function Timeline() {
             <FormattedMessage id="home.timeline.october_copy.link2" />
             <span className="link-icon">
               &nbsp;
-              <FontAwesomeIcon icon={faExternalLinkAlt} />
+              <img src={ExtLink} alt="" className="external-link" />
             </span>
           </a>{" "}
           <FormattedMessage id="home.timeline.october_copy.p3" />

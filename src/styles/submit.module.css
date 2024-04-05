@@ -1,0 +1,104 @@
+@font-face {
+  font-family: "MyFont";
+  src: url("/pension/fonts/myfont.woff2") format("woff2");
+  /* Other font properties */
+}
+@font-face {
+  font-family: "Johnson Display Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("/pension/fonts/JohnsonDisplay-Regular.woff") format("woff"), url("/pension/fonts/JohnsonDisplay-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Johnson Display Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("/pension/fonts/JohnsonDisplay-Bold.woff") format("woff"), url("/pension/fonts/JohnsonDisplay-Bold.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Johnson Text Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("/pension/fonts/JohnsonText-Regular.woff") format("woff"), url("/pension/fonts/JohnsonText-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Johnson Text Light";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("/pension/fonts/JohnsonText-Light.woff") format("woff"), url("/pension/fonts/JohnsonText-Light.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Johnson Text Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("/pension/fonts/JohnsonText-Bold.woff") format("woff"), url("/pension/fonts/JohnsonText-Bold.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Johnson Text Bold Italic";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("/pension/fonts/JohnsonText-Bold.woff") format("woff"), url("/pension/fonts/JohnsonText-Bold.woff2") format("woff2");
+  font-display: swap;
+}
+.submit {
+  background: #eb1700;
+  color: #fff;
+  padding: 1.5em;
+}
+.submit a {
+  text-decoration: none;
+}
+
+.heading {
+  display: flex;
+}
+.heading img {
+  margin: 0 auto 1em;
+}
+.heading p {
+  margin: 0;
+}
+
+.btn {
+  margin-top: 2em;
+  border: 2px solid #fff;
+  padding: 1em;
+  background: none;
+  color: #fff;
+  border-radius: 3px;
+  display: block;
+  font-size: 0.8rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.btn:hover {
+  color: #eb1700;
+  background-color: #fff;
+}
+
+@media all and (min-width: 500px) {
+  .submit {
+    padding: 2.5em;
+  }
+  .heading {
+    flex-flow: unset;
+    align-items: flex-start;
+  }
+  .heading img {
+    margin: 0;
+  }
+  .heading p {
+    margin-left: 1em;
+  }
+  .btn {
+    padding: 1em 3em;
+    display: inline-block;
+    margin-left: calc(30px + 1em);
+  }
+}

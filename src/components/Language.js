@@ -6,7 +6,6 @@ const languageName = {
   fr: "FR",
 }
 
-
 export default function Language() {
   return (
     <div>
@@ -18,7 +17,7 @@ export default function Language() {
               key={language}
               onClick={() => changeLocale(language)}
               style={{
-                color: currentLocale === language ? `black` : `#cc0299`,
+                color: currentLocale === language ? `black` : `#eb1700`,
                 textDecoration:
                   currentLocale === language ? `none` : `underline`,
               }}

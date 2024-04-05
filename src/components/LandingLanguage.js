@@ -8,7 +8,6 @@ const languageName = {
 }
 
 export default function Language() {
-  
   return (
     <div className="switcher_landing">
       <IntlContextConsumer>
@@ -22,8 +21,8 @@ export default function Language() {
                 color: "#fff",
                 fontFamily:
                   currentLocale === language
-                    ? `'J&J CircularTT Light Web'`
-                    : `'J&J CircularTT Bold Web'`,
+                    ? `'Johnson Text Light'`
+                    : `'Johnson Text Bold'`,
                 textDecoration:
                   currentLocale === language ? `none` : `underline`,
               }}

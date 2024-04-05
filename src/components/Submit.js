@@ -1,4 +1,5 @@
 import { useIntl } from "gatsby-plugin-intl"
+import { withPrefix } from "gatsby"
 import React from "react"
 import * as styles from "../styles/submit.module.scss"
 
@@ -7,7 +8,7 @@ export default function Submit() {
   return (
     <div className={styles.submit}>
       <div className={styles.heading}>
-        <img src={"/icons/question_info.svg"} alt=""/>
+        <img src={withPrefix("/icons/question_info.svg")} alt="" />
         <p
           dangerouslySetInnerHTML={{
             __html: intl.formatMessage({ id: "page9.callout.p" }),

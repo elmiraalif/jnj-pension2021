@@ -262,7 +262,7 @@
     },
     "callout2": {
       "title": "Why is the maximum Company match different for each optional component?",
-      "p": "The aggregate maximum amount that a member can have matched by Johnson & Johnson for Non-DB options is either 1.75% if Optional DB is selected or 4% if Optional DB is not selected. How much Johnson & Johnson matches also depends on your selection of Non-DB options (i.e., DC, RRSP, OAC, TFSA or Non-registered) — as shown in the table above. The Company match is higher for DC, RRSP and OAC since the Company wants to encourage you to save for the long-term."
+      "p": "The aggregate maximum amount that a member can have matched by <span class=\"nowrap\">Johnson & Johnson</span> for Non-DB options is either 1.75% if Optional DB is selected or 4% if Optional DB is not selected. How much Johnson & Johnson matches also depends on your selection of Non-DB options (i.e., DC, RRSP, OAC, TFSA or Non-registered) — as shown in the table above. The Company match is higher for DC, RRSP and OAC since the Company wants to encourage you to save for the long-term."
     }
   },
   "page4": {
@@ -274,7 +274,7 @@
       "item1": "Will you participate in the Optional DB, Non-DB components, or both?",
       "item2": "If you choose Non-DB components, which ones? Each option (DC, RRSP, OAC, TFSA and Non-registered) comes with different features and benefits.",
       "bold2": "To help you make the first decision, watch this video!",
-      "image": "/icons/boxes.png"
+      "image": "/icons/boxes.svg"
     },
     "video": {
       "src": "https://player.vimeo.com/video/596626024?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;h=3456cefbd8",
@@ -512,7 +512,7 @@
     },
     "callout1": {
       "title": "What happens if you don’t enrol?",
-      "p": "Enrolling in the program is critical. Optional components are only available if you enrol during the enrolment period. If you don’t enrol, you will also miss out on Johnson & Johnson matching contributions and/or additional pension benefits earned."
+      "p": "Enrolling in the program is critical. Optional components are only available if you enrol during the enrolment period. If you don’t enrol, you will also miss out on <span class=\"nowrap\">Johnson & Johnson</span> matching contributions and/or additional pension benefits earned."
     },
     "copy2": {
       "title": "Here’s how you enrol:",
@@ -632,7 +632,7 @@
         "li2": "If you are younger than 55, you may transfer the lump-sum value of your pension to a locked-in plan (e.g., your next employer’s pension plan (if allowed) or a personal locked-in retirement account, LIRA)."
       },
       "acc2": {
-        "p": "You will receive the total value of your account (including your own and Johnson & Johnson’s contributions, plus investment returns). ",
+        "p": "You will receive the total value of your account (including your own and <span class=\"nowrap\">Johnson & Johnson</span>’s contributions, plus investment returns). <span class=\"bold\">You can:</span> ",
         "li1": "Transfer the money to a locked-in plan (e.g., your next employer’s pension plan (if allowed) or a personal locked-in retirement account, LIRA), or",
         "li2": "Purchase a deferred annuity."
       },

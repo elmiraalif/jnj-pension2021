@@ -7,14 +7,20 @@ import Accordion from "../components/Accordion"
 import NextPage from "../components/NextPage"
 import { useIntl } from "react-intl"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
+import ExtLink from "../../static/icons/arrow-up-right-thin.svg"
 import { FormattedMessage } from "gatsby-plugin-intl"
+import { withPrefix } from "gatsby"
 
 export default function Scenarios() {
-  const primary = `#da0025`
-  const secondary = `#0800a0`
-  const accent = `#db00a6`
-  const light = `#dbdbdb`
+  const primary = `#eb1700`
+  const secondary = `#5e5047`
+  const accent = `#5e5047`
+  const white = `#fff`
+  const black = `#000`
+  const gray2 = `#e9e8e4`
+  const gray3 = `#d6d1cb`
+  const light = `#d6d1cb`
+  const none = `none`
   const intl = useIntl()
   return (
     <Layout>
@@ -22,7 +28,11 @@ export default function Scenarios() {
         <title>{intl.formatMessage({ id: "page5.title" })}</title>
       </Helmet>
       <div id="page05" class="main-content">
-        <img src="/headers/banner05.jpg" alt="Banner" class="banner-image" />
+        <img
+          src={withPrefix("/headers/banner05.jpg")}
+          alt="Banner"
+          class="banner-image"
+        />
         {/* <StaticImage src="../images/headers/banner05.jpg" alt="Banner" /> */}
         <div className="wrapper">
           <h1
@@ -65,8 +75,9 @@ export default function Scenarios() {
           </h3>
           <div className="profile-container" id="early">
             <Profile
-              color={primary}
-              src="/profiles/priyanka.jpg"
+              color={black}
+              background={white}
+              src={withPrefix("/profiles/priyanka.jpg")}
               name="Priyanka"
               age="24"
               family={intl.formatMessage({ id: "profile.priyanka.family" })}
@@ -74,8 +85,9 @@ export default function Scenarios() {
               goals={intl.formatMessage({ id: "profile.priyanka.goals" })}
             />
             <Profile
-              color={secondary}
-              src="/profiles/taylor.jpg"
+              color={black}
+              background={gray2}
+              src={withPrefix("/profiles/taylor.jpg")}
               name="Taylor"
               age="29"
               family={intl.formatMessage({ id: "profile.taylor.family" })}
@@ -83,8 +95,9 @@ export default function Scenarios() {
               goals={intl.formatMessage({ id: "profile.taylor.goals" })}
             />
             <Profile
-              color={accent}
-              src="/profiles/hang.jpg"
+              color={black}
+              background={gray3}
+              src={withPrefix("/profiles/hang.jpg")}
               name="Hang"
               age="34"
               family={intl.formatMessage({ id: "profile.hang.family" })}
@@ -93,10 +106,11 @@ export default function Scenarios() {
             />
           </div>
           <Accordion
-            border={light}
+            border={white}
+            background={white}
             title="Priyanka"
             color={primary}
-            icon="/icons/icon_profile.svg"
+            icon={withPrefix("/icons/icon_profile.svg")}
           >
             <p>
               <FormattedMessage id="page5.priyanka.p1" />
@@ -108,7 +122,7 @@ export default function Scenarios() {
               <div className="box heading">
                 <FormattedMessage id="page5.priyanka.box1" />
               </div>
-              <h4 className="secondary-color" className="secondary-color">
+              <h4>
                 <FormattedMessage id="page5.priyanka.title1" />
               </h4>
             </div>
@@ -125,7 +139,7 @@ export default function Scenarios() {
                       <FormattedMessage id="home_buyers_2" />
                     </span>
                     &nbsp;
-                    <FontAwesomeIcon icon={faExternalLinkAlt} />
+                    <img src={ExtLink} alt="" className="external-link" />
                   </span>
                 </a>{" "}
                 <FormattedMessage id="page5.priyanka.li1.p2" />
@@ -138,7 +152,7 @@ export default function Scenarios() {
               <div className="box heading">
                 <FormattedMessage id="page5.priyanka.box2" />
               </div>
-              <h4 className="secondary-color" className="secondary-color">
+              <h4>
                 <FormattedMessage id="page5.priyanka.title2" />
               </h4>
             </div>
@@ -161,10 +175,11 @@ export default function Scenarios() {
             <div className="space-2x"></div>
           </Accordion>
           <Accordion
-            border={light}
+            border={gray2}
+            background={gray2}
             title="Taylor"
-            color={secondary}
-            icon="/icons/icon_profile.svg"
+            color={primary}
+            icon={withPrefix("/icons/icon_profile.svg")}
           >
             <p>
               <FormattedMessage id="page5.taylor.p1" />
@@ -176,7 +191,7 @@ export default function Scenarios() {
               <div className="box heading">
                 <FormattedMessage id="page5.taylor.box" />
               </div>
-              <h4 className="secondary-color">
+              <h4 className>
                 <FormattedMessage id="page5.taylor.title" />
               </h4>
             </div>
@@ -191,10 +206,11 @@ export default function Scenarios() {
             <div className="space-2x"></div>
           </Accordion>
           <Accordion
-            border={light}
+            border={gray3}
+            background={gray3}
             title="Hang"
-            color={accent}
-            icon="/icons/icon_profile.svg"
+            color={primary}
+            icon={withPrefix("/icons/icon_profile.svg")}
           >
             <p>
               <FormattedMessage id="page5.hang.p1" />
@@ -206,7 +222,7 @@ export default function Scenarios() {
               <div className="box heading">
                 <FormattedMessage id="page5.hang.box1" />
               </div>
-              <h4 className="secondary-color">
+              <h4 className>
                 <FormattedMessage id="page5.hang.title1" />
               </h4>
             </div>
@@ -219,7 +235,7 @@ export default function Scenarios() {
               <div className="box heading">
                 <FormattedMessage id="page5.hang.box2" />
               </div>
-              <h4 className="secondary-color">
+              <h4 className>
                 <FormattedMessage id="page5.hang.title2" />
               </h4>
             </div>
@@ -248,8 +264,9 @@ export default function Scenarios() {
           </h3>
           <div className="profile-container" id="mid">
             <Profile
-              color={primary}
-              src="/profiles/amir.jpg"
+              color={black}
+              background={white}
+              src={withPrefix("/profiles/amir.jpg")}
               name="Amir"
               age="38"
               family={intl.formatMessage({ id: "profile.amir.family" })}
@@ -257,8 +274,9 @@ export default function Scenarios() {
               goals={intl.formatMessage({ id: "profile.amir.goals" })}
             />
             <Profile
-              color={secondary}
-              src="/profiles/tony.jpg"
+              color={black}
+              background={gray2}
+              src={withPrefix("/profiles/tony.jpg")}
               name="Tony"
               age="40"
               family={intl.formatMessage({ id: "profile.tony.family" })}
@@ -266,8 +284,9 @@ export default function Scenarios() {
               goals={intl.formatMessage({ id: "profile.tony.goals" })}
             />
             <Profile
-              color={accent}
-              src="/profiles/allison.jpg"
+              color={black}
+              background={gray3}
+              src={withPrefix("/profiles/allison.jpg")}
               name="Allison"
               age="45"
               family={intl.formatMessage({ id: "profile.allison.family" })}
@@ -276,10 +295,11 @@ export default function Scenarios() {
             />
           </div>
           <Accordion
-            border={light}
+            border={white}
+            background={white}
             title="Amir"
             color={primary}
-            icon="/icons/icon_profile.svg"
+            icon={withPrefix("/icons/icon_profile.svg")}
           >
             <p>
               <FormattedMessage id="page5.amir.p1" />
@@ -291,7 +311,7 @@ export default function Scenarios() {
               <div className="box heading">
                 <FormattedMessage id="page5.amir.box1" />
               </div>
-              <h4 className="secondary-color">
+              <h4 className>
                 <FormattedMessage id="page5.amir.title1" />
               </h4>
             </div>
@@ -304,7 +324,7 @@ export default function Scenarios() {
               <div className="box heading">
                 <FormattedMessage id="page5.amir.box2" />
               </div>
-              <h4 className="secondary-color">
+              <h4 className>
                 <FormattedMessage id="page5.amir.title2" />
               </h4>
             </div>
@@ -327,10 +347,11 @@ export default function Scenarios() {
             <div className="space-2x"></div>
           </Accordion>
           <Accordion
-            border={light}
+            border={gray2}
+            background={gray2}
             title="Tony"
-            color={secondary}
-            icon="/icons/icon_profile.svg"
+            color={primary}
+            icon={withPrefix("/icons/icon_profile.svg")}
           >
             <p>
               <FormattedMessage id="page5.tony.p1" />
@@ -342,7 +363,7 @@ export default function Scenarios() {
               <div className="box heading">
                 <FormattedMessage id="page5.tony.box1" />
               </div>
-              <h4 className="secondary-color">
+              <h4 className>
                 <FormattedMessage id="page5.tony.title1" />{" "}
               </h4>
             </div>
@@ -355,7 +376,7 @@ export default function Scenarios() {
               <div className="box heading">
                 <FormattedMessage id="page5.tony.box2" />
               </div>
-              <h4 className="secondary-color">
+              <h4 className>
                 <FormattedMessage id="page5.tony.title2" />
               </h4>
             </div>
@@ -371,7 +392,7 @@ export default function Scenarios() {
               <div className="box heading">
                 <FormattedMessage id="page5.tony.box3" />
               </div>
-              <h4 className="secondary-color">
+              <h4 className>
                 <FormattedMessage id="page5.tony.title3" />
               </h4>
             </div>
@@ -394,10 +415,11 @@ export default function Scenarios() {
             <div className="space-2x"></div>
           </Accordion>
           <Accordion
-            border={light}
+            border={gray3}
+            background={gray3}
             title="Allison"
-            color={accent}
-            icon="/icons/icon_profile.svg"
+            color={primary}
+            icon={withPrefix("/icons/icon_profile.svg")}
           >
             <p>
               <FormattedMessage id="page5.allison.p1" />
@@ -409,7 +431,7 @@ export default function Scenarios() {
               <div className="box heading">
                 <FormattedMessage id="page5.allison.box1" />
               </div>
-              <h4 className="secondary-color">
+              <h4 className>
                 <FormattedMessage id="page5.allison.title1" />{" "}
               </h4>
             </div>
@@ -422,7 +444,7 @@ export default function Scenarios() {
               <div className="box heading">
                 <FormattedMessage id="page5.allison.box2" />
               </div>
-              <h4 className="secondary-color">
+              <h4 className>
                 <FormattedMessage id="page5.allison.title2" />
               </h4>
             </div>
@@ -442,8 +464,9 @@ export default function Scenarios() {
           </h3>
           <div className="profile-container" id="retired">
             <Profile
-              color={primary}
-              src={"/profiles/sundeep.jpg"}
+              color={black}
+              background={white}
+              src={withPrefix("/profiles/sundeep.jpg")}
               name="Sundeep"
               age="51"
               family={intl.formatMessage({ id: "profile.sundeep.family" })}
@@ -451,8 +474,9 @@ export default function Scenarios() {
               goals={intl.formatMessage({ id: "profile.sundeep.goals" })}
             />
             <Profile
-              color={secondary}
-              src={"/profiles/aamna.jpg"}
+              color={black}
+              background={gray2}
+              src={withPrefix("/profiles/aamna.jpg")}
               name="Aamna"
               age="54"
               family={intl.formatMessage({ id: "profile.aamna.family" })}
@@ -460,8 +484,9 @@ export default function Scenarios() {
               goals={intl.formatMessage({ id: "profile.aamna.goals" })}
             />
             <Profile
-              color={accent}
-              src={"/profiles/scott.jpg"}
+              color={black}
+              background={gray3}
+              src={withPrefix("/profiles/scott.jpg")}
               name="Scott"
               age="60"
               family={intl.formatMessage({ id: "profile.scott.family" })}
@@ -470,10 +495,11 @@ export default function Scenarios() {
             />
           </div>
           <Accordion
-            border={light}
+            border={white}
+            background={white}
             title="Sundeep"
             color={primary}
-            icon="/icons/icon_profile.svg"
+            icon={withPrefix("/icons/icon_profile.svg")}
           >
             <p>
               <FormattedMessage id="page5.sundeep.p1" />
@@ -485,7 +511,7 @@ export default function Scenarios() {
               <div className="box heading">
                 <FormattedMessage id="page5.sundeep.box1" />
               </div>
-              <h4 className="secondary-color">
+              <h4 className>
                 <FormattedMessage id="page5.sundeep.title1" />
               </h4>
             </div>
@@ -501,7 +527,7 @@ export default function Scenarios() {
               <div className="box heading">
                 <FormattedMessage id="page5.sundeep.box2" />
               </div>
-              <h4 className="secondary-color">
+              <h4 className>
                 <FormattedMessage id="page5.sundeep.title2" />
               </h4>
             </div>
@@ -524,10 +550,11 @@ export default function Scenarios() {
             <div className="space-2x"></div>
           </Accordion>
           <Accordion
-            border={light}
+            border={gray2}
+            background={gray2}
             title="Aamna"
-            color={secondary}
-            icon="/icons/icon_profile.svg"
+            color={primary}
+            icon={withPrefix("/icons/icon_profile.svg")}
           >
             <p>
               <FormattedMessage id="page5.aamna.p1" />
@@ -539,7 +566,7 @@ export default function Scenarios() {
               <div className="box heading">
                 <FormattedMessage id="page5.aamna.box1" />
               </div>
-              <h4 className="secondary-color">
+              <h4 className>
                 <FormattedMessage id="page5.aamna.title1" />{" "}
               </h4>
             </div>
@@ -552,7 +579,7 @@ export default function Scenarios() {
               <div className="box heading">
                 <FormattedMessage id="page5.aamna.box2" />{" "}
               </div>
-              <h4 className="secondary-color">
+              <h4 className>
                 <FormattedMessage id="page5.aamna.title2" />
               </h4>
             </div>
@@ -567,10 +594,11 @@ export default function Scenarios() {
             <div className="space-2x"></div>
           </Accordion>
           <Accordion
-            border={light}
+            border={gray3}
+            background={gray3}
             title="Scott"
-            color={accent}
-            icon="/icons/icon_profile.svg"
+            color={primary}
+            icon={withPrefix("/icons/icon_profile.svg")}
           >
             <p>
               <FormattedMessage id="page5.scott.p1" />
@@ -582,7 +610,7 @@ export default function Scenarios() {
               <div className="box heading">
                 <FormattedMessage id="page5.scott.box1" />
               </div>
-              <h4 className="secondary-color">
+              <h4 className>
                 <FormattedMessage id="page5.scott.title1" />
               </h4>
             </div>
@@ -612,7 +640,7 @@ export default function Scenarios() {
                   <FormattedMessage id="page5.callout1.help" />
                   <span className="link-icon">
                     &nbsp;
-                    <FontAwesomeIcon icon={faExternalLinkAlt} />
+                    <img src={ExtLink} alt="" className="external-link" />
                   </span>
                 </a>{" "}
                 <FormattedMessage id="page5.callout1.p2" />
@@ -636,7 +664,7 @@ export default function Scenarios() {
                 <FormattedMessage id="page5.callout2.link" />
                 <span className="link-icon">
                   &nbsp;
-                  <FontAwesomeIcon icon={faExternalLinkAlt} />
+                  <img src={ExtLink} alt="" className="external-link" />
                 </span>
               </a>
               .

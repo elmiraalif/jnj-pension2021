@@ -1,4 +1,5 @@
 import React from "react"
+import { withPrefix } from "gatsby"
 import { FormattedMessage, useIntl } from "gatsby-plugin-intl"
 import { Helmet } from "react-helmet"
 import { StaticImage } from "gatsby-plugin-image"
@@ -6,13 +7,13 @@ import Layout from "../components/Layout"
 import Table from "../components/Table"
 import NextPage from "../components/NextPage"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
+import ExtLink from "../../static/icons/arrow-up-right-thin.svg"
 
 export default function Page03() {
   const intl = useIntl()
-  const primary = `#da0025`
-  const secondary = `#0800a0`
-  const accent = `#cc0299`
+  const primary = `#eb1700`
+  const secondary = `#5e5047`
+  const accent = `#eb1700`
   return (
     <Layout>
       <Helmet>
@@ -20,7 +21,11 @@ export default function Page03() {
       </Helmet>
       <div id="page03" class="main-content">
         {/* <StaticImage src="../images/headers/banner03.jpg" alt="Banner" /> */}
-        <img src="/headers/banner03.jpg" alt="Banner" class="banner-image" />
+        <img
+          src={withPrefix("/headers/banner03.jpg")}
+          alt="Banner"
+          class="banner-image"
+        />
 
         <div className="wrapper">
           <h1 className="space-x">
@@ -29,7 +34,7 @@ export default function Page03() {
 
           <div className="heading-icon space-2x">
             <img
-              src={"/icons/one-red.svg"}
+              src={withPrefix("/icons/one-red.svg")}
               alt="One"
               style={{ maxWidth: "30px" }}
             />
@@ -43,7 +48,7 @@ export default function Page03() {
           >
             <div className="subtitle">
               <img
-                src={"/icons/icon_dollar.svg"}
+                src={withPrefix("/icons/icon_dollar.svg")}
                 alt=""
                 style={{ maxWidth: "35px" }}
               />
@@ -55,7 +60,7 @@ export default function Page03() {
             </div>
             <div className="subtitle">
               <img
-                src={"/icons/icon_pig.svg"}
+                src={withPrefix("/icons/icon_pig.svg")}
                 alt=""
                 style={{ maxWidth: "35px" }}
               />
@@ -76,7 +81,7 @@ export default function Page03() {
           </Table>
           <Table
             title={intl.formatMessage({ id: "optional_db" })}
-            color={primary}
+            color={secondary}
           >
             <div className="cell">
               <FormattedMessage id="page3.optional_db.left" />
@@ -88,7 +93,7 @@ export default function Page03() {
           <div className="divider"></div>
           <div className="heading-icon space-2x">
             <img
-              src={"/icons/two-red.svg"}
+              src={withPrefix("/icons/two-red.svg")}
               alt="Two"
               style={{ maxWidth: "30px" }}
             />
@@ -102,7 +107,7 @@ export default function Page03() {
           >
             <div className="subtitle">
               <img
-                src={"/icons/icon_dollar.svg"}
+                src={withPrefix("/icons/icon_dollar.svg")}
                 alt=""
                 style={{ maxWidth: "35px" }}
               />
@@ -114,7 +119,7 @@ export default function Page03() {
             </div>
             <div className="subtitle">
               <img
-                src={"/icons/icon_pig.svg"}
+                src={withPrefix("/icons/icon_pig.svg")}
                 alt=""
                 style={{ maxWidth: "35px" }}
               />
@@ -171,7 +176,7 @@ export default function Page03() {
                 <FormattedMessage id="cra_maximum" />
                 <span className="link-icon">
                   &nbsp;
-                  <FontAwesomeIcon icon={faExternalLinkAlt} />
+                  <img src={ExtLink} alt="" className="external-link" />
                 </span>
               </a>{" "}
               <FormattedMessage id="page3.rrsp.left2" />
@@ -214,9 +219,10 @@ export default function Page03() {
                 target="_blank"
               >
                 <FormattedMessage id="cra_maximum" />
+
                 <span className="link-icon">
                   &nbsp;
-                  <FontAwesomeIcon icon={faExternalLinkAlt} />
+                  <img src={ExtLink} alt="" className="external-link" />
                 </span>
               </a>{" "}
               <FormattedMessage id="page3.tfsa.left2" />
@@ -270,7 +276,7 @@ export default function Page03() {
         <div className="callout">
           <div className="wrapper">
             <img
-              src={"/icons/icon_info.svg"}
+              src={withPrefix("/icons/icon_info.svg")}
               alt=""
               style={{ maxWidth: "30px" }}
             />

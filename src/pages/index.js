@@ -1,4 +1,5 @@
 import React from "react"
+import { withPrefix } from "gatsby"
 import { Helmet } from "react-helmet"
 import { useIntl, FormattedMessage } from "gatsby-plugin-intl"
 import { StaticImage } from "gatsby-plugin-image"
@@ -6,13 +7,14 @@ import Layout from "../components/Layout"
 import Accordion from "../components/Accordion"
 import NextPage from "../components/NextPage"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
+import ExtLink from "../../static/icons/arrow-up-right-thin.svg"
 
 export default function Page02() {
   const intl = useIntl()
-  const secondary = `#0800a0`
-  const accent = `#cc0299`
-  const Icon = "/icons/component_icon.svg"
+  const primary = `#eb1700`
+  const accent = `#eb1700`
+  const border = `#d6d1cb`
+  const Icon = "../icons/component_icon.svg"
   return (
     <Layout>
       <Helmet>
@@ -21,7 +23,11 @@ export default function Page02() {
       <div className="main-content"></div>
       <div id="page02" class="main-content">
         {/* <StaticImage src="../images/headers/banner02.jpg" alt="Banner" /> */}
-        <img src="/headers/banner02.jpg" alt="Banner" class="banner-image" />
+        <img
+          src={withPrefix("../headers/banner02.jpg")}
+          alt="Banner"
+          class="banner-image"
+        />
 
         <div className="wrapper">
           <h1
@@ -56,8 +62,8 @@ export default function Page02() {
           <Accordion
             title={intl.formatMessage({ id: "core_component" })}
             icon={Icon}
-            color={secondary}
-            border={secondary}
+            color={primary}
+            border={border}
           >
             <div className="acc-box secondary">
               <FormattedMessage id="core_db" />
@@ -69,8 +75,8 @@ export default function Page02() {
           <Accordion
             title={intl.formatMessage({ id: "optional_components" })}
             icon={Icon}
-            color={secondary}
-            border={secondary}
+            color={primary}
+            border={border}
           >
             <div className="acc-box primary">
               <FormattedMessage id="db_option" />
@@ -79,7 +85,7 @@ export default function Page02() {
               <Accordion
                 title={intl.formatMessage({ id: "optional_db" })}
                 icon={Icon}
-                color={accent}
+                color={primary}
               >
                 <p>
                   <FormattedMessage id="page2.accordion2" />
@@ -93,7 +99,7 @@ export default function Page02() {
               <Accordion
                 icon={Icon}
                 color={accent}
-                border={secondary}
+                border={border}
                 title={intl.formatMessage({ id: "dc" })}
               >
                 <p>
@@ -101,11 +107,11 @@ export default function Page02() {
                 </p>
               </Accordion>
               <Accordion
-                border={secondary}
+                border={border}
                 icon={Icon}
                 color={accent}
                 title={intl.formatMessage({ id: "rrsp" })}
-                border={secondary}
+                border={border}
               >
                 <p>
                   <FormattedMessage id="page2.accordion4.p1" />{" "}
@@ -119,7 +125,7 @@ export default function Page02() {
                         <FormattedMessage id="home_buyers_2" />
                       </span>
                       &nbsp;
-                      <FontAwesomeIcon icon={faExternalLinkAlt} />
+                      <img src={ExtLink} alt="" className="external-link" />
                     </span>
                   </a>
                   <FormattedMessage id="page2.accordion4.p2" />{" "}
@@ -133,14 +139,14 @@ export default function Page02() {
                         <FormattedMessage id="lifelong_learning_2" />
                       </span>
                       &nbsp;
-                      <FontAwesomeIcon icon={faExternalLinkAlt} />
+                      <img src={ExtLink} alt="" className="external-link" />
                     </span>
                   </a>
                   <FormattedMessage id="page2.accordion4.p3" />
                 </p>
               </Accordion>
               <Accordion
-                border={secondary}
+                border={border}
                 icon={Icon}
                 color={accent}
                 title={intl.formatMessage({ id: "oac" })}
@@ -154,14 +160,14 @@ export default function Page02() {
                     <FormattedMessage id="cra_maximum" />
                     <span className="link-icon">
                       &nbsp;
-                      <FontAwesomeIcon icon={faExternalLinkAlt} />
+                      <img src={ExtLink} alt="" className="external-link" />
                     </span>
                   </a>
                   <FormattedMessage id="page2.accordion5.p2" />
                 </p>
               </Accordion>
               <Accordion
-                border={secondary}
+                border={border}
                 icon={Icon}
                 color={accent}
                 title={intl.formatMessage({ id: "tfsa" })}
@@ -171,7 +177,7 @@ export default function Page02() {
                 </p>
               </Accordion>
               <Accordion
-                border={secondary}
+                border={border}
                 icon={Icon}
                 color={accent}
                 title={intl.formatMessage({ id: "non_registered" })}

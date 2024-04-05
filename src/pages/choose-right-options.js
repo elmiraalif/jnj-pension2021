@@ -1,4 +1,5 @@
 import React from "react"
+import { withPrefix } from "gatsby"
 import { Helmet } from "react-helmet"
 import { StaticImage } from "gatsby-plugin-image"
 import { useIntl } from "react-intl"
@@ -7,11 +8,14 @@ import Accordion from "../components/Accordion"
 import Portal from "../components/Portal"
 import NextPage from "../components/NextPage"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
+import ExtLink from "../../static/icons/arrow-up-right-thin.svg"
+import ExtLinkWhite from "../../static/icons/arrow-up-right-thin-white.svg"
 import { FormattedMessage } from "gatsby-plugin-intl"
 
 export default function Page04() {
+  const primary = `#eb1700`
   const secondary = "#0800a0"
+  const border = `#d6d1cb`
   const intl = useIntl()
   return (
     <Layout>
@@ -25,7 +29,11 @@ export default function Page04() {
           src="../images/headers/banner04.jpg"
           alt="Banner"
         /> */}
-        <img src="/headers/banner04.jpg" alt="Banner" class="banner-image" />
+        <img
+          src={withPrefix("/headers/banner04.jpg")}
+          alt="Banner"
+          class="banner-image"
+        />
 
         <div className="wrapper">
           <h1
@@ -42,7 +50,7 @@ export default function Page04() {
           </p>
           <div className="heading-icon-top">
             <img
-              src={"/icons/one-red.svg"}
+              src={withPrefix("/icons/one-red.svg")}
               alt="One"
               style={{ maxWidth: "30px" }}
             />
@@ -52,14 +60,14 @@ export default function Page04() {
           </div>
           <div className="components wrapper-center">
             <img
-              src={intl.formatMessage({ id: "page4.copy1.image" })}
+              src={withPrefix(intl.formatMessage({ id: "page4.copy1.image" }))}
               alt=""
               width="220"
             />
           </div>
           <div className="heading-icon-top">
             <img
-              src={"/icons/two-red.svg"}
+              src={withPrefix("/icons/two-red.svg")}
               alt="two"
               style={{ maxWidth: "30px" }}
             />
@@ -74,7 +82,7 @@ export default function Page04() {
             <iframe
               width="100%"
               height="365"
-              src={intl.formatMessage({ id: "page4.video.src" })}
+              src={withPrefix(intl.formatMessage({ id: "page4.video.src" }))}
               title={intl.formatMessage({ id: "page4.video.title" })}
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -91,7 +99,7 @@ export default function Page04() {
         <div className="callout">
           <div className="wrapper">
             <img
-              src={"/icons/icon_info.svg"}
+              src={withPrefix("/icons/icon_info.svg")}
               alt=""
               style={{ maxWidth: "35px" }}
             />
@@ -122,10 +130,10 @@ export default function Page04() {
             <FormattedMessage id="page4.copy2.p1" />
           </p>
           <Accordion
-            border={secondary}
+            border={border}
             title={intl.formatMessage({ id: "page4.accordion1.title" })}
-            icon="/icons/one_pink.svg"
-            color={secondary}
+            icon={withPrefix("/icons/one_pink.svg")}
+            color={primary}
           >
             <div>
               <ul>
@@ -138,7 +146,9 @@ export default function Page04() {
               </ul>
               <div className="space-2x">
                 <img
-                  src={intl.formatMessage({ id: "page4.accordion1.image.src" })}
+                  src={withPrefix(
+                    intl.formatMessage({ id: "page4.accordion1.image.src" })
+                  )}
                   alt={intl.formatMessage({ id: "page4.accordion1.image.alt" })}
                   width="100%"
                 />
@@ -146,10 +156,10 @@ export default function Page04() {
             </div>
           </Accordion>
           <Accordion
-            border={secondary}
+            border={border}
             title={intl.formatMessage({ id: "page4.accordion2.title" })}
-            icon="/icons/two_pink.svg"
-            color={secondary}
+            icon={withPrefix("/icons/two_pink.svg")}
+            color={primary}
             svg="none"
           >
             <ul>
@@ -162,17 +172,19 @@ export default function Page04() {
             </ul>
             <div className="space-2x">
               <img
-                src={intl.formatMessage({ id: "page4.accordion2.image.src" })}
+                src={withPrefix(
+                  intl.formatMessage({ id: "page4.accordion2.image.src" })
+                )}
                 alt={intl.formatMessage({ id: "page4.accordion2.image.alt" })}
                 width="100%"
               />
             </div>
           </Accordion>
           <Accordion
-            border={secondary}
+            border={border}
             title={intl.formatMessage({ id: "page4.accordion3.title" })}
-            icon="/icons/three_pink.svg"
-            color={secondary}
+            icon={withPrefix("/icons/three_pink.svg")}
+            color={primary}
           >
             <ul>
               <li>
@@ -196,7 +208,7 @@ export default function Page04() {
                       <FormattedMessage id="home_buyers_2" />
                     </span>
                     &nbsp;
-                    <FontAwesomeIcon icon={faExternalLinkAlt} />
+                    <img src={ExtLink} alt="" className="external-link" />
                   </span>
                 </a>{" "}
                 <FormattedMessage id="page4.accordion3.li4.and" />{" "}
@@ -210,7 +222,7 @@ export default function Page04() {
                       <FormattedMessage id="lifelong_learning_2" />
                     </span>
                     &nbsp;
-                    <FontAwesomeIcon icon={faExternalLinkAlt} />
+                    <img src={ExtLink} alt="" className="external-link" />
                   </span>
                 </a>
                 <FormattedMessage id="page4.accordion3.li4.p2" />
@@ -218,17 +230,19 @@ export default function Page04() {
             </ul>
             <div className="space-2x">
               <img
-                src={intl.formatMessage({ id: "page4.accordion3.image.src" })}
+                src={withPrefix(
+                  intl.formatMessage({ id: "page4.accordion3.image.src" })
+                )}
                 alt={intl.formatMessage({ id: "page4.accordion3.image.alt" })}
                 width="100%"
               />
             </div>
           </Accordion>
           <Accordion
-            border={secondary}
+            border={border}
             title={intl.formatMessage({ id: "page4.accordion4.title" })}
-            icon="/icons/four_pink.svg"
-            color={secondary}
+            icon={withPrefix("/icons/four_pink.svg")}
+            color={primary}
           >
             <div>
               <ul>
@@ -241,7 +255,9 @@ export default function Page04() {
               </ul>
               <div className="space-2x">
                 <img
-                  src={intl.formatMessage({ id: "page4.accordion4.image.src" })}
+                  src={withPrefix(
+                    intl.formatMessage({ id: "page4.accordion4.image.src" })
+                  )}
                   alt={intl.formatMessage({ id: "page4.accordion3.image.alt" })}
                   width="100%"
                 />
@@ -250,10 +266,10 @@ export default function Page04() {
           </Accordion>
 
           <Accordion
-            border={secondary}
+            border={border}
             title={intl.formatMessage({ id: "page4.accordion5.title" })}
-            icon="/icons/five_pink.svg"
-            color={secondary}
+            icon={withPrefix("/icons/five_pink.svg")}
+            color={primary}
           >
             <div>
               <ul>
@@ -282,7 +298,9 @@ export default function Page04() {
               </ul>
               <div className="space-2x">
                 <img
-                  src={intl.formatMessage({ id: "page4.accordion5.image.src" })}
+                  src={withPrefix(
+                    intl.formatMessage({ id: "page4.accordion5.image.src" })
+                  )}
                   alt={intl.formatMessage({ id: "page4.accordion4.image.alt" })}
                   width="100%"
                 />
@@ -290,10 +308,10 @@ export default function Page04() {
             </div>
           </Accordion>
           <Accordion
-            border={secondary}
+            border={border}
             title={intl.formatMessage({ id: "page4.accordion6.title" })}
-            icon="/icons/six_pink.svg"
-            color={secondary}
+            icon={withPrefix("/icons/six_pink.svg")}
+            color={primary}
           >
             <div>
               <ul>
@@ -309,7 +327,9 @@ export default function Page04() {
               </ul>
               <div className="space-2x">
                 <img
-                  src={intl.formatMessage({ id: "page4.accordion6.image.src" })}
+                  src={withPrefix(
+                    intl.formatMessage({ id: "page4.accordion6.image.src" })
+                  )}
                   alt={intl.formatMessage({ id: "page4.accordion5.image.alt" })}
                   width="100%"
                 />
@@ -320,7 +340,7 @@ export default function Page04() {
         <div className="callout space-x">
           <div className="wrapper">
             <img
-              src={"/icons/icon_info.svg"}
+              src={withPrefix("/icons/icon_info.svg")}
               alt=""
               style={{ maxWidth: "35px" }}
             />
@@ -343,7 +363,7 @@ export default function Page04() {
                   })}
                   <span className="link-icon">
                     &nbsp;
-                    <FontAwesomeIcon icon={faExternalLinkAlt} />
+                    <img src={ExtLinkWhite} alt="" className="external-link" />
                   </span>
                 </a>
                 .

@@ -3,6 +3,7 @@ import React from "react"
 
 export default function Profile({
   color,
+  background,
   src,
   name,
   age,
@@ -12,7 +13,10 @@ export default function Profile({
 }) {
   const intl = useIntl()
   return (
-    <div className="profile" style={{ background: `${color}` }}>
+    <div
+      className="profile"
+      style={{ background: `${background}`, color: `${color}` }}
+    >
       <div
         className="profile-img"
         style={{ backgroundImage: `url(${src})` }}

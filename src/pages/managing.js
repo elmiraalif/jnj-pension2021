@@ -1,4 +1,5 @@
 import React from "react"
+import { withPrefix } from "gatsby"
 import { Helmet } from "react-helmet"
 import { useIntl } from "react-intl"
 import { StaticImage } from "gatsby-plugin-image"
@@ -7,12 +8,14 @@ import Accordion from "../components/Accordion"
 import Portal from "../components/Portal"
 import Nextpage from "../components/NextPage"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
+import ExtLink from "../../static/icons/arrow-up-right-thin.svg"
 import { FormattedMessage, Link } from "gatsby-plugin-intl"
 
 export default function Managing() {
   const intl = useIntl()
-  const primary = `#da0025`
+  const primary = `#eb1700`
+  const secondary = `#5e5047`
+  const white = `white`
   const accent = `#db00a6`
   return (
     <Layout>
@@ -21,7 +24,11 @@ export default function Managing() {
       </Helmet>
       <div id="page07" class="main-content">
         {/* <StaticImage src="../images/headers/banner07.jpg" alt="Banner" /> */}
-        <img src="/headers/banner07.jpg" alt="Banner" class="banner-image" />
+        <img
+          src={withPrefix("/headers/banner07.jpg")}
+          alt="Banner"
+          class="banner-image"
+        />
 
         <div className="wrapper">
           <h1
@@ -36,7 +43,8 @@ export default function Managing() {
           <Accordion
             title={intl.formatMessage({ id: "optional_db" })}
             color="#fff"
-            bg={primary}
+            border={secondary}
+            bg={secondary}
           >
             <p className="space-2x">
               <FormattedMessage id="page7.accordion1.p" />
@@ -46,7 +54,7 @@ export default function Managing() {
           <Accordion
             title={intl.formatMessage({ id: "non_db_options" })}
             color="#fff"
-            bg={accent}
+            bg={primary}
           >
             <p>
               <FormattedMessage id="page7.accordion2.p" />
@@ -56,8 +64,8 @@ export default function Managing() {
                 title={intl.formatMessage({
                   id: "page7.accordion2.acc1.title",
                 })}
-                color={accent}
-                icon={"/icons/component_icon.svg"}
+                color={primary}
+                icon={withPrefix("/icons/component_icon.svg")}
               >
                 <p>
                   <FormattedMessage id="page7.accordion2.acc1.p1" />
@@ -74,8 +82,8 @@ export default function Managing() {
                 title={intl.formatMessage({
                   id: "page7.accordion2.acc2.title",
                 })}
-                color={accent}
-                icon={"/icons/contribution_icon.svg"}
+                color={primary}
+                icon={withPrefix("/icons/contribution_icon.svg")}
               >
                 <p>
                   <FormattedMessage id="page7.accordion2.acc2.p1" />
@@ -104,9 +112,13 @@ export default function Managing() {
                           className="bold"
                         >
                           <FormattedMessage id="page7.accordion2.acc2.link" />
-                          <span style={{ display: "inline-block" }}>
+                          <span style={{ display: "inline-flex" }}>
                             &nbsp;
-                            <FontAwesomeIcon icon={faExternalLinkAlt} />
+                            <img
+                              src={ExtLink}
+                              alt=""
+                              className="external-link"
+                            />
                           </span>
                         </a>
                         .
@@ -119,14 +131,18 @@ export default function Managing() {
                 title={intl.formatMessage({
                   id: "page7.accordion2.acc3.title",
                 })}
-                color={accent}
-                icon={"/icons/investment_icon.svg"}
+                color={primary}
+                icon={withPrefix("/icons/investment_icon.svg")}
               >
                 <p>
                   <FormattedMessage id="page7.accordion2.acc3.p1" />
                 </p>
                 <div className="heading-icon-top">
-                  <img src="/icons/one_pink.svg" alt="One" style={{maxWidth: "25px"}} />
+                  <img
+                    src={withPrefix("/icons/one_pink.svg")}
+                    alt="One"
+                    style={{ maxWidth: "25px" }}
+                  />
                   <p
                     dangerouslySetInnerHTML={{
                       __html: intl.formatMessage({
@@ -136,7 +152,11 @@ export default function Managing() {
                   />
                 </div>
                 <div className="heading-icon-top">
-                  <img src="/icons/two_pink.svg" alt="Two" style={{maxWidth: "25px"}} />
+                  <img
+                    src={withPrefix("/icons/two_pink.svg")}
+                    alt="Two"
+                    style={{ maxWidth: "25px" }}
+                  />
                   <p
                     dangerouslySetInnerHTML={{
                       __html: intl.formatMessage({
@@ -151,7 +171,7 @@ export default function Managing() {
                     <FormattedMessage id="fyb_portal" />
                     <span className="link-icon">
                       &nbsp;
-                      <FontAwesomeIcon icon={faExternalLinkAlt} />
+                      <img src={ExtLink} alt="" className="external-link" />
                     </span>
                   </a>{" "}
                   <FormattedMessage id="page7.accordion2.acc3.path" />

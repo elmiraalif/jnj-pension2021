@@ -1,19 +1,25 @@
 import React, { useState } from "react"
 
-export default function Accordion({ title, icon, color, bg, border, children }) {
+export default function Accordion({
+  title,
+  background,
+  icon,
+  color,
+  bg,
+  border,
+  children,
+}) {
   const [content, showContent] = useState(false)
   return (
-    <div className="accordion">
+    <div className="accordion" style={{ background: `${background}` }}>
       <div
         className="heading"
         onClick={() => {
           showContent(!content)
         }}
         style={{
-          color: `${color}`,
-
           transition: `border-bottom 0.3s ease`,
-          background:`${bg}`
+          background: `${bg}`,
         }}
       >
         <div className="title">

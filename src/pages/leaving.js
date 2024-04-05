@@ -1,4 +1,5 @@
 import { StaticImage } from "gatsby-plugin-image"
+import { withPrefix } from "gatsby"
 import React from "react"
 import { Helmet } from "react-helmet"
 import { useIntl } from "react-intl"
@@ -6,14 +7,16 @@ import Layout from "../components/Layout"
 import Accordion from "../components/Accordion"
 import NextPage from "../components/NextPage"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
+import ExtLink from "../../static/icons/arrow-up-right-thin.svg"
+import ExtLinkWhite from "../../static/icons/arrow-up-right-thin-white.svg"
 import { FormattedMessage } from "gatsby-plugin-intl"
 
 export default function Leaving() {
   const intl = useIntl()
-  const secondary = `#0800a0`
+  const primary = `#eb1700`
+  const border = `#d6d1cb`
   const accent = `#cc0299`
-  const Icon = "/icons/component_icon.svg"
+  const Icon = withPrefix("/icons/component_icon.svg")
   return (
     <Layout>
       <Helmet>
@@ -21,7 +24,11 @@ export default function Leaving() {
       </Helmet>
       <div id="page08" class="main-content">
         {/* <StaticImage src="../images/headers/banner08.jpg" alt="banner" /> */}
-        <img src="/headers/banner08.jpg" alt="Banner" class="banner-image" />
+        <img
+          src={withPrefix("/headers/banner08.jpg")}
+          alt="Banner"
+          class="banner-image"
+        />
 
         <div className="wrapper">
           <h1
@@ -31,10 +38,10 @@ export default function Leaving() {
             }}
           />
           <Accordion
-            border={secondary}
+            border={border}
             title={intl.formatMessage({ id: "core_component" })}
             icon={Icon}
-            color={secondary}
+            color={primary}
           >
             <div className="acc-box secondary">
               {intl.formatMessage({ id: "core_db" })}
@@ -52,7 +59,7 @@ export default function Leaving() {
                   <FormattedMessage id="fyb_portal" />
                   <span className="link-icon">
                     &nbsp;
-                    <FontAwesomeIcon icon={faExternalLinkAlt} />
+                    <img src={ExtLink} alt="" className="external-link" />
                   </span>
                 </a>
               </p>
@@ -60,20 +67,20 @@ export default function Leaving() {
             <div className="space-x"></div>
           </Accordion>
           <Accordion
-            border={secondary}
+            border={border}
             title={intl.formatMessage({ id: "optional_components" })}
             icon={Icon}
-            color={secondary}
+            color={primary}
           >
             <div className="acc-box primary">
               {intl.formatMessage({ id: "db_option" })}
             </div>
             <div className="wrapper-center">
               <Accordion
-                border={secondary}
+                border={border}
                 title={intl.formatMessage({ id: "optional_db" })}
                 icon={Icon}
-                color={accent}
+                color={primary}
               >
                 <p>
                   <FormattedMessage id="page8.accordion2.acc1.p" />
@@ -88,7 +95,7 @@ export default function Leaving() {
                       <FormattedMessage id="fyb_portal" />
                       <span className="link-icon">
                         &nbsp;
-                        <FontAwesomeIcon icon={faExternalLinkAlt} />
+                        <img src={ExtLink} alt="" className="external-link" />
                       </span>
                     </a>
                   </p>
@@ -100,9 +107,9 @@ export default function Leaving() {
             </div>
             <div className="wrapper-center">
               <Accordion
-                border={secondary}
+                border={border}
                 icon={Icon}
-                color={accent}
+                color={primary}
                 title={intl.formatMessage({ id: "dc" })}
               >
                 <p>
@@ -113,9 +120,9 @@ export default function Leaving() {
                 </p>
               </Accordion>
               <Accordion
-                border={secondary}
+                border={border}
                 icon={Icon}
-                color={accent}
+                color={primary}
                 title={intl.formatMessage({ id: "rrsp" })}
               >
                 <p>
@@ -133,7 +140,7 @@ export default function Leaving() {
                         <FormattedMessage id="home_buyers_2" />
                       </span>
                       &nbsp;
-                      <FontAwesomeIcon icon={faExternalLinkAlt} />
+                      <img src={ExtLink} alt="" className="external-link" />
                     </span>
                   </a>{" "}
                   <FormattedMessage id="page8.accordion2.acc3.and" />{" "}
@@ -147,16 +154,16 @@ export default function Leaving() {
                         <FormattedMessage id="lifelong_learning_2" />
                       </span>
                       &nbsp;
-                      <FontAwesomeIcon icon={faExternalLinkAlt} />
+                      <img src={ExtLink} alt="" className="external-link" />
                     </span>
                   </a>
                   <FormattedMessage id="page8.accordion2.acc3.p3" />{" "}
                 </p>
               </Accordion>
               <Accordion
-                border={secondary}
+                border={border}
                 icon={Icon}
-                color={accent}
+                color={primary}
                 title={intl.formatMessage({ id: "oac" })}
               >
                 <p>
@@ -168,16 +175,16 @@ export default function Leaving() {
                     <FormattedMessage id="cra_maximum" />
                     <span className="link-icon">
                       &nbsp;
-                      <FontAwesomeIcon icon={faExternalLinkAlt} />
+                      <img src={ExtLink} alt="" className="external-link" />
                     </span>
                   </a>
                   . <FormattedMessage id="page8.accordion2.acc4.p2" />
                 </p>
               </Accordion>
               <Accordion
-                border={secondary}
+                border={border}
                 icon={Icon}
-                color={accent}
+                color={primary}
                 title={intl.formatMessage({ id: "tfsa" })}
               >
                 <p>
@@ -185,9 +192,9 @@ export default function Leaving() {
                 </p>
               </Accordion>
               <Accordion
-                border={secondary}
+                border={border}
                 icon={Icon}
-                color={accent}
+                color={primary}
                 title={intl.formatMessage({ id: "non_registered" })}
               >
                 <p>
@@ -199,7 +206,7 @@ export default function Leaving() {
         </div>
         <div className="callout space-2x">
           <div className="wrapper">
-            <img src={"/icons/icon_info.svg"} alt="" width="30" />
+            <img src={withPrefix("/icons/icon_info.svg")} alt="" width="30" />
             <div>
               <h3>
                 <FormattedMessage id="page8.callout.title" />
@@ -216,7 +223,7 @@ export default function Leaving() {
                   <FormattedMessage id="page8.callout.link" />
                   <span className="link-icon">
                     &nbsp;
-                    <FontAwesomeIcon icon={faExternalLinkAlt} />
+                    <img src={ExtLinkWhite} alt="" className="external-link" />
                   </span>
                 </a>
                 .
@@ -232,10 +239,10 @@ export default function Leaving() {
             }}
           />
           <Accordion
-            border={secondary}
+            border={border}
             title={intl.formatMessage({ id: "core_component" })}
             icon={Icon}
-            color={secondary}
+            color={primary}
           >
             <div className="acc-box secondary">
               {intl.formatMessage({ id: "core_db" })}
@@ -253,20 +260,20 @@ export default function Leaving() {
             </ul>
           </Accordion>
           <Accordion
-            border={secondary}
+            border={border}
             title={intl.formatMessage({ id: "optional_components" })}
             icon={Icon}
-            color={secondary}
+            color={primary}
           >
             <div className="acc-box primary">
               {intl.formatMessage({ id: "db_option" })}
             </div>
             <div className="wrapper-center">
               <Accordion
-                border={secondary}
+                border={border}
                 title={intl.formatMessage({ id: "optional_db" })}
                 icon={Icon}
-                color={accent}
+                color={primary}
               >
                 <div className="bold space-bottom-2x">
                   <FormattedMessage id="page8.copy2.either" />
@@ -286,17 +293,24 @@ export default function Leaving() {
             </div>
             <div className="wrapper-center">
               <Accordion
-                border={secondary}
+                border={border}
                 icon={Icon}
-                color={accent}
+                color={primary}
                 title={intl.formatMessage({ id: "dc" })}
               >
-                <p>
+                {/* <p>
                   <FormattedMessage id="page8.accordion4.acc2.p" />{" "}
                   <span className="bold">
                     <FormattedMessage id="page8.copy2.you_can" />
                   </span>
-                </p>
+                </p> */}
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: intl.formatMessage({
+                      id: "page8.accordion4.acc2.p",
+                    }),
+                  }}
+                />
                 <ul>
                   <li>
                     <FormattedMessage id="page8.accordion4.acc2.li1" />
@@ -307,9 +321,9 @@ export default function Leaving() {
                 </ul>
               </Accordion>
               <Accordion
-                border={secondary}
+                border={border}
                 icon={Icon}
-                color={accent}
+                color={primary}
                 title={intl.formatMessage({ id: "rrsp" })}
               >
                 <p>
@@ -328,9 +342,9 @@ export default function Leaving() {
                 </ul>
               </Accordion>
               <Accordion
-                border={secondary}
+                border={border}
                 icon={Icon}
-                color={accent}
+                color={primary}
                 title={intl.formatMessage({ id: "oac" })}
               >
                 <ul>
@@ -343,9 +357,9 @@ export default function Leaving() {
                 </ul>
               </Accordion>
               <Accordion
-                border={secondary}
+                border={border}
                 icon={Icon}
-                color={accent}
+                color={primary}
                 title={intl.formatMessage({ id: "tfsa" })}
               >
                 <p>
@@ -365,9 +379,9 @@ export default function Leaving() {
                 </ul>
               </Accordion>
               <Accordion
-                border={secondary}
+                border={border}
                 icon={Icon}
-                color={accent}
+                color={primary}
                 title={intl.formatMessage({ id: "non_registered" })}
               >
                 <p>

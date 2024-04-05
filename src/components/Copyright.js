@@ -5,7 +5,7 @@ export default function Copyright() {
   return (
     <div className="copyright">
       <div className="wrapper" style={{ paddingLeft: "1em" }}>
-        © {year} Johnson & Johnson
+        © {year} – {year + 1} Johnson & Johnson
       </div>
     </div>
   )

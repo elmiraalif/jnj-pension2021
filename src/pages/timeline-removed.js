@@ -6,7 +6,7 @@ import Layout from "../components/Layout"
 import Timeline from "../components/Timeline"
 import NextPage from "../components/NextPage"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
+import ExtLink from "../../static/icons/arrow-up-right-thin.svg"
 
 export default function Home() {
   const intl = useIntl()
@@ -75,7 +75,7 @@ export default function Home() {
                   <FormattedMessage id="fyb_portal" />
                   <span class="link-icon">
                     &nbsp;
-                    <FontAwesomeIcon icon={faExternalLinkAlt} />
+                    <img src={ExtLink} alt="" className="external-link" />
                   </span>
                 </a>{" "}
                 <FormattedMessage id="home.callout2.p2" />

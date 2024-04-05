@@ -1,4 +1,5 @@
 import React from "react"
+import { withPrefix } from "gatsby"
 import FooterIcon from "../images/footer-icon01.svg"
 import Language from "./Language"
 import { StaticImage } from "gatsby-plugin-image"
@@ -14,7 +15,11 @@ export default function Footer() {
         <p>{intl.formatMessage({ id: "footer.p2" })}</p>
         <Language />
         <div className="logo">
-          <img src="/icons/logo.svg" alt="" style={{ width: "127px" }} />
+          <img
+            src={withPrefix("/icons/logo.svg")}
+            alt=""
+            style={{ width: "127px" }}
+          />
         </div>
       </div>
     </footer>
